@@ -4,13 +4,16 @@
     overflow: hidden;
     object-fit: cover;
     object-position: 50% 50%;
+    padding: 15px;
     border: 5px solid black;
+    border-radius: 50%;
 }
 
 .page-container {
     border: 5px solid violet;
     display: flex;
 }
+
 
 .left-box {
     border: 5px solid red; 
@@ -26,10 +29,35 @@
     text-align: center;
 }
 
+.links-container {
+    list-style: none;
+}
+
 .links {
     border: 5px solid blue;
-    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
     text-align: center;
+
+    width: 120px;
+    height: 100px;
+    padding: 5px;
+    margin: 2.5px;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+}
+
+.git-cat {
+    height: 90px;
 }
 
 .right-box {

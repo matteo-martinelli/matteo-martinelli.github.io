@@ -6,7 +6,7 @@
         <!--Setting card title-->
         <title>Matteo Martinelli's personal website</title>
         <!--Setting favicon-->
-        <link rel="icon" href="assets/images/favicon_smile.ico">
+        <link rel="icon" href="assets/images/favicon/favicon_smile.ico">
         <!--Importing stylesheets-->
         <link rel='stylesheet' href='assets/css/style.css'/>
         <link rel='stylesheet' href='style.css'/>
@@ -19,59 +19,70 @@
             </nav>
         </header>
         
-        <header>
-            <div class="page-container">
-                <div class="left-box">
-                    <figure class="personal-pic">
-                        <img class="me" 
-                        src="assets/images/personal/personal-pic.jpg" 
-                        width='300' alt="me, myself, and I."/>
-                    </figure>
+        <div class="page-container" comment='style="border: 5px solid violet;"'>
+            <div class="left-box" comment='style="border: 5px solid red;"'>
+                <figure class="personal-pic">
+                    <img class="me" 
+                    src="assets/images/personal/personal-pic.jpg" 
+                    width='300' alt="me, myself, and I."/>
+                </figure>
+                
+                <div class="personal-name" comment='style="border: 4px solid green;"'>
+                    <!--Maybe this can be considered as a caption-->
+                    <h2>Matteo Martinelli</h2>
+                    <h3 style="color:grey">Researcher for Industry 4.0</h3>
+                    <h3><a class="link-uni" 
+                        href="https://international.unimore.it/">
+                            University of Modena and Reggio nell'Emilia</a></h3>
+                </div>
+                
+                <!--Github, LinkedIn, CV download section-->
+                <nav class="list" comment='style="border: 2px solid blue;"'>
+                    <a class="button Github" 
+                    href="https://github.com/wmex91"
+                    comment='style="border: 2px solid red;"'>
+                        <img class="git-cat" 
+                        src="assets/images/icons/github-light-icon.jpeg">
+                        <!--my repos-->
+                    </a>
                     
-                    <div class="caption-box">
-                        <div class="personal-name">
-                            <!--Maybe this can be considered as a caption-->
-                            <h2>Matteo Martinelli</h2>
-                            <h3>Researcher for Industry 4.0</h3>
-                            <h3>University of Modena and Reggio 
-                                nell'Emilia</h3>
-                        </div>
-                        
-                        <!--Github, LinkedIn, CV download section-->
-                        <div class="links-container">
-                            <nav class="links">
-                                <ul class="list">
-                                    <li>
-                                        <a class="button Github">
-                                            <img class="git-cat" 
-                                            src="assets/images/icons/github-light-icon.png">
-                                            Button one</a>
-                                    </li>
-                                    <li>
-                                        <a class="button Linkedin">Button two</a>
-                                    </li>
-                                    <li>
-                                        <a class="button CV">Button three</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="right-box">
-                    <article class="personal-biography">
-                        <section>
-                            <h1 class="bio-header">Biography</h1>
-                            <p>Hi, my name is Matteo Martinelli. Hi, my name is 
-                                Matteo Martinelli. Hi, my name is Matteo 
-                                Martinelli. Hi, my name is Matteo Martinelli. 
-                            </p>
-                        </section>
-                    </article>
-                </div>
-            </div>                     
-        </header>
+                    <a class="button Linkedin" 
+                    href="https://www.linkedin.com/in/matteo-martinelli/"
+                    comment='style="border: 2px solid red;"'>
+                        <img class="git-cat" 
+                        src="assets/images/icons/linkedin-icon.png">
+                        <!--my linkedin-->
+                    </a>
+                
+                    <a class="button Skype"
+                    href="skype:live:wmatte2005?chat"
+                    comment='style="border: 2px solid red;"'>
+                        <img class="git-cat" 
+                        src="assets/images/icons/skype-icon2.png">
+                        <!--my skype-->
+                    </a>
+                </nav>
+            </div>
+
+            <div class="right-box" comment='style="border: 5px solid green;"'>
+                <article class="personal-biography">
+                    <section>
+                        <h1 class="bio-header">Biography</h1>
+                        <p>Hi, my name is Matteo Martinelli. Hi, my name is 
+                            Matteo Martinelli. Hi, my name is Matteo 
+                            Martinelli. Hi, my name is Matteo Martinelli. 
+                            Hi, my name is Matteo Martinelli. Hi, my name is 
+                            Matteo Martinelli. Hi, my name is Matteo 
+                            Martinelli. Hi, my name is Matteo Martinelli. 
+                            <br>
+                            Download my CV <a class="CV-link" 
+                            href="assets/docs/CV 3.5 ENG - October 2021.pdf" 
+                            download="CV 3.5 ENG - Matteo Martinelli.pdf">here</a>.  
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
         
     </body>
 </html>

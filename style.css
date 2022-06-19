@@ -11,11 +11,21 @@
 
 .page-container {
     display: flex;
-    padding: 0px 20px 0px 20px;
+    padding: 2% 20px 2% 20px;
     margin-right: auto;
     margin-left: auto;
 }
 
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid pink;
+    height: 75px;
+}
+
+.nav-element{
+    text-align: center;
+}
 
 .left-box {
     display: flex;

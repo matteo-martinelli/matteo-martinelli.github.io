@@ -18,13 +18,22 @@
 
 .nav-menu{
     display: flex;
-    flex-direction: row;
-    border: 5px solid pink;
-    height: 75px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .nav-element{
-    text-align: center;
+    list-style-type: none;
+
+    width: 50%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    border-top: 1px solid #888F95;
 }
 
 .left-box {

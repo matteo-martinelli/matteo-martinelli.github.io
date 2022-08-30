@@ -16,16 +16,32 @@
     margin-left: auto;
 }
 
-.nav-menu{
-    display: flex;
+nav {
+    background-color: #54575A;
+}
+
+.header-list{
+    /*display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    display: inline;
+    /*justify-content: space-between;*/
+
+    padding: auto;
+    margin: auto;
+    margin-top: 15px;
   
     width: 100%;
-    max-width: 900px;
+    /*max-width: 900px;*/
     margin: 0 auto;
 }
 
+/*
 .nav-element{
     list-style-type: none;
 
@@ -35,6 +51,7 @@
 
     border-top: 1px solid #888F95;
 }
+*/
 
 .left-box {
     display: flex;
@@ -65,7 +82,7 @@
     align-content: center;
 }
 
-.list {
+.social-list {
     display: flex;
     flex-direction: row;
     list-style: none;

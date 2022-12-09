@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*width: 480px;*/
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 855px;
+    border: solid 1px red;
+}
+
+.page.one {
+    flex-direction: column;
+}
+
+.pic-box {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px red;
+}
+
+.name-box {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: solid 2px blue;
+}
+
+.link-box {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.bib-box {
+    background-color: #F5CF8E; /* Yellow */
+    width: 100%;
+}
+
+.me {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 50%;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 45%;
+}
+
+.button {
+    display: flex;
+    margin: 0 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.button:hover{
+    zoom: 105%;
+    cursor: pointer;
+}

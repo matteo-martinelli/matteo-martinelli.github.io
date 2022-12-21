@@ -1,21 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    /*width: 480px;*/
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 .page {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: 855px;
-    border: solid 1px red;
-}
-
-.page.one {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: solid 1px red;
 }
 
 .pic-box {
@@ -26,7 +27,7 @@
 }
 
 .name-box {
-    height: 200px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +40,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    color: violet;
     padding: 20px 0;
 }
 

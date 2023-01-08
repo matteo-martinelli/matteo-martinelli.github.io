@@ -1,104 +1,116 @@
+/*Mobile first method*/
+
 * {
+    /*Dimensions settings*/
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
 }
 
 html, body {
+    /*Dimensions settings*/
     height: 100%;
 }
 
 body {
+    /*Flexbox settings*/
     display: flex;
     flex-wrap: wrap;
 }
 
 .section {
+    /*Dimensions settings*/
     width: 100%;
     height: 100%;
     padding: 0 0;
+    /*Flexbox settings*/
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;                /*For managing flexbox overflow*/
     justify-content: center;
-    align-items: stretch;
+    align-content: space-around;    /*For spacing flexboxes alongside 
+                                    the main axis*/
+}
+
+.icon-buttons-box {
+    /*Flexbox settings*/
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.icon-button {
+    /*Dimensions settings*/
+    margin: 0 5px 0 5px;
+    height: 80px;
+    width: 80px;
+    /*Flexbox settings*/
+    display: flex;
 }
 
 /*Maybe you could get rid of the pic box and directly "flex-box" the img span.*/
-.pic-box {
+#profile-image {
+    /*Dimensions settings*/
     margin-top: 10%;
     padding: 0 0;
     width: 100%;
+    /*Flexbox settings*/
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.name-box {
+#profile-name {
+    /*Dimensions settings*/
     width: 100%;
+    /*Flexbox settings*/
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.name-box h1, .name-box h2 {
+#profile-name h1, #profile-name h2 {
+    /*Dimensions settings*/
     width: 100%;    
     text-align: center;
 }
 
 #me {
-    width: 250px; 
-    height: 250px; 
+    /*Dimensions settings*/
+    width: 250px;               /*Make this setting relative*/
+    height: 250px;              /*Make this setting relative*/
     object-fit: cover;
     border: 5px solid black;
     border-radius: 50%;
 }
 
-.link-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.link-box .button {
-    display: flex;
-    margin: 0 5px 0 5px;
-    height: 80px;
-    width: 80px;
-    /*border: solid 3px violet;*/
-}
-
 #bibliography {
-    height: max-content;
-    justify-content: flex-start;
-    align-self: center
+    /*Dimensions settings*/
+    padding: 0 40px;
 }
 
-/* Mobile Style */
-@media only screen and (max-width: 400px) {
-    .presentation {
-        background-color: #282935;
-    }
-    
-    .bibliography {
-        background-color: #F09A9D;
-    }
-}
 
 /* Desktop Style */
 @media only screen and (min-width: 401px) {
 	body {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        /*Dimensions settings*/
+        width: 960px;
+        margin: 0 auto; /*Deletes margins on the upper and lower side, and 
+                        distributes the space evenly on the left and on the 
+                        right*/
     }
-    .presentation {
-		flex: 1;
+
+    #presentation {
+		/*Flexbox settings*/
+        flex: 1;
 	}
 
     #bibliography {
-		background-color: green; /* Green */
+        /*Flexbox settings*/
         flex: 2;
+        height: max-content;
+        align-self: center
 	}
 }

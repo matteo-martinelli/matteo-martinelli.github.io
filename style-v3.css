@@ -4,7 +4,13 @@
     /*Dimensions settings*/
     margin: 0; 
     padding: 0; 
-    box-sizing: border-box;
+    box-sizing: border-box;     /*To have width and height referred to the outer
+                                 part of the box and not to its content*/
+}
+
+/*Semantic settings for legacy browsers*/
+section, article, aside, footer, header, nav {
+    display: block;
 }
 
 html, body {
@@ -108,6 +114,9 @@ body {
 	}
 
     #bibliography {
+        /*Dimensions settings*/
+        position: relative;
+        bottom: 50px;
         /*Flexbox settings*/
         flex: 2;
         height: max-content;

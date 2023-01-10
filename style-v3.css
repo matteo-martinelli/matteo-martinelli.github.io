@@ -147,7 +147,7 @@ body {
     #bibliography {
         /*Dimensions settings*/
         position: relative;
-        bottom: 50px;
+        bottom: 50px;*/
         /*Flexbox settings*/
         flex: 3;
         height: max-content;

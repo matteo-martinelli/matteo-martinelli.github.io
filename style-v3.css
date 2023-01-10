@@ -138,6 +138,8 @@ body {
     }
 
     #presentation {
+        /*Color settings*/
+        background-color: #36373c;
 		/*Flexbox settings*/
         flex: 2;
 	}

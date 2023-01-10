@@ -54,6 +54,27 @@ body {
     display: flex;
 }
 
+.icon-button:active {
+    transform: scale(1.15);
+}
+
+.cv-download:link {
+    /*color: rgb(79, 79, 147);*/
+    color: rgb(9, 255, 0);
+    text-decoration: none;
+}
+
+.cv-download:active {
+    color: rgb(241, 206, 3);
+    text-decoration: none;
+}
+
+.cv-download:visited {
+    color: rgb(79, 79, 147);
+    /*color: rgb(9, 255, 0);*/
+    text-decoration: none;
+}
+
 /*Maybe you could get rid of the pic box and directly "flex-box" the img span.*/
 #profile-image {
     /*Dimensions settings*/
@@ -108,9 +129,17 @@ body {
                         right*/
     }
 
+    .icon-button:hover {
+        transform: scale(1.15);
+    }
+    
+    .cv-download:hover {
+        color: rgb(202, 53, 53);
+    }
+
     #presentation {
 		/*Flexbox settings*/
-        flex: 1;
+        flex: 2;
 	}
 
     #bibliography {
@@ -118,7 +147,7 @@ body {
         position: relative;
         bottom: 50px;
         /*Flexbox settings*/
-        flex: 2;
+        flex: 3;
         height: max-content;
         align-self: center
 	}

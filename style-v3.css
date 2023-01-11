@@ -25,8 +25,8 @@ body {
 }
 
 .section {
-    /*Debug settings*/
-    border: red solid 1px;
+    /*Debug settings
+    border: red solid 1px;*/
     /*Dimensions settings*/
     width: 100%;
     height: 100%;
@@ -146,11 +146,15 @@ body {
     #presentation {
         /*Color settings*/
         background-color: #36373c;
+        
+        border-radius: 30px;
         /*Position settings*/
-        position: fixed;    /*Removes the flexbox from the flow*/
+        position: fixed;    /*Removes the flexbox from the flow*/  
         /*Dimensions settings*/
         width: 316.8px;
-        height: 100%;
+        height: 97%;
+        margin: 10px 0 10px 0;
+        
 	}
 
     #bibliography, #projects{

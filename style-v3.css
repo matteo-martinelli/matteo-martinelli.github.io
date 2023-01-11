@@ -77,7 +77,6 @@ body {
     text-decoration: none;
 }
 
-/*Maybe you could get rid of the pic box and directly "flex-box" the img span.*/
 #profile-image {
     /*Dimensions settings*/
     margin-top: 10%;
@@ -88,6 +87,15 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+#me {
+    /*Dimensions settings*/
+    width: 250px;               /*Make this setting relative*/
+    height: 250px;              /*Make this setting relative*/
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 #profile-name {
@@ -106,13 +114,16 @@ body {
     text-align: center;
 }
 
-#me {
+#presentation {
+    /*Color settings*/
+    background-color: #36373c;
+    border: 1px solid black;
+    border-radius: 30px;
+    /*Position settings*/
+    margin: 10px 10px;
     /*Dimensions settings*/
-    width: 250px;               /*Make this setting relative*/
-    height: 250px;              /*Make this setting relative*/
-    object-fit: cover;
-    border: 5px solid black;
-    border-radius: 50%;
+    height: 97%;
+    width: 97%;
 }
 
 #bibliography, #projects {
@@ -144,17 +155,10 @@ body {
     }
 
     #presentation {
-        /*Color settings*/
-        background-color: #36373c;
-        
-        border-radius: 30px;
         /*Position settings*/
         position: fixed;    /*Removes the flexbox from the flow*/  
         /*Dimensions settings*/
         width: 316.8px;
-        height: 97%;
-        margin: 10px 0 10px 0;
-        
 	}
 
     #bibliography, #projects{

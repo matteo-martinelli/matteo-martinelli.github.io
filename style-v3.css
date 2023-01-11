@@ -8,10 +8,10 @@
                                  part of the box and not to its content*/
 }
 
-/*Semantic settings for legacy browsers*/
+/*Semantic settings for legacy browsers
 section, article, aside, footer, header, nav {
     display: block;
-}
+}*/
 
 html, body {
     /*Dimensions settings*/
@@ -25,6 +25,8 @@ body {
 }
 
 .section {
+    /*Debug settings*/
+    border: red solid 1px;
     /*Dimensions settings*/
     width: 100%;
     height: 100%;
@@ -58,18 +60,18 @@ body {
     transform: scale(1.15);
 }
 
-.cv-download:link {
+.link:link {
     /*color: rgb(79, 79, 147);*/
     color: rgb(9, 255, 0);
     text-decoration: none;
 }
 
-.cv-download:active {
+.link:active {
     color: rgb(241, 206, 3);
     text-decoration: none;
 }
 
-.cv-download:visited {
+.link:visited {
     color: rgb(79, 79, 147);
     /*color: rgb(9, 255, 0);*/
     text-decoration: none;
@@ -113,9 +115,13 @@ body {
     border-radius: 50%;
 }
 
-#bibliography {
+#bibliography, #projects {
     /*Dimensions settings*/
     padding: 0 40px;
+}
+
+#projects-table, .separator {
+    padding: 10px;
 }
 
 
@@ -133,24 +139,26 @@ body {
         transform: scale(1.15);
     }
     
-    .cv-download:hover {
+    .link:hover {
         color: rgb(202, 53, 53);
     }
 
     #presentation {
         /*Color settings*/
         background-color: #36373c;
-		/*Flexbox settings*/
-        flex: 2;
+        /*Position settings*/
+        position: fixed;    /*Removes the flexbox from the flow*/
+        /*Dimensions settings*/
+        width: 316.8px;
+        height: 100%;
 	}
 
-    #bibliography {
-        /*Dimensions settings*/
+    #bibliography, #projects{
+        /*Dimensions settings*/        
+        width: 633.6px;
+        height: 100%;
+        /*Position settings*/
         position: relative;
-        bottom: 50px;
-        /*Flexbox settings*/
-        flex: 3;
-        height: max-content;
-        align-self: center
+        left: 316.8px;
 	}
 }

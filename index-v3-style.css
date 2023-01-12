@@ -115,4 +115,8 @@
         padding: 50px;
         justify-content: center;
     }
+
+    #submit-button button {
+        width: 100%;
+    }
 }

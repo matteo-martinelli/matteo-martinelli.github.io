@@ -169,8 +169,8 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   /*Dimensions settings*/
-  min-height: 300px;    /*Put a percentage*/
-  min-width: 300px;
+  min-height: 200px;    /*How to make it responsive?*/
+  min-width: 300px;     /*How to make it responsive?*/
   margin-bottom: 1px;
   padding: 7px;
   resize: none;
@@ -209,8 +209,9 @@ body {
   color: #FFFFFF;
   /*Background settings*/
   background-color: #407FC7;
-  /*Transform settings*/
-  transform: scale(1.15);
+  border: 2px solid blue;
+  /*Transform settings
+  transform: scale(1.15);*/
 }
 
 /* Desktop Style **************************************************************/
@@ -236,7 +237,7 @@ body {
   .sub-button button:hover {
     /*Fonts settings*/
     color: #36373C;
-    /*Background settings*/
-    background-color: rgb(9, 255, 0);
+    /*Background settings
+    background-color: rgb(9, 255, 0);*/
   }
 }

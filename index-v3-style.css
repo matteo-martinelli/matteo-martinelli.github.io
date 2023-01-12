@@ -1,0 +1,118 @@
+/*Mobile first style*/
+
+/*Local page style*************************************************************/
+#presentation, #contact-form-container {
+    /*Background settings*/
+    background-color: #36373c;
+    border: 1px solid black;
+    border-radius: 30px;
+    /*Position settings*/
+    margin: 10px 10px;
+    /*Dimensions settings*/
+    height: 97.7%;
+    width: 97%;
+}
+
+#profile-image {
+    /*Dimensions settings*/
+    margin-top: 10%;
+    padding: 0 0;
+    width: 100%;
+    /*Flexbox settings*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#me {
+    /*Dimensions settings*/
+    width: 250px;
+    height: 250px;
+    /*Rendering settings*/
+    object-fit: cover;
+    /*border: 1px solid black;*/
+    border-radius: 50%;
+}
+
+#profile-name {
+    /*Dimensions settings*/
+    width: 100%;
+    /*Flexbox settings*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profile-name h1, #profile-name h2 {
+    /*Dimensions settings*/
+    width: 100%;    
+    text-align: center;
+}
+
+#bibliography, #projects {
+    /*Dimensions settings*/
+    padding: 0 40px;
+}
+
+#projects-table, .separator {
+    /*Dimensions settings*/
+    padding: 10px;
+}
+
+#contact-form-container {
+    /*Flexbox settings*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form-header {
+    /*Fonts settings*/
+    text-align: center;
+    /*Dimensions settings*/
+    width: 100%;
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 401px) {
+    #presentation {
+        /*Dimensions settings*/
+        width: 316.8px;
+        /*Position settings*/
+        position: fixed;    /*Removes the flexbox from the flow*/  
+	}
+
+    #bibliography, #projects {
+        /*Dimensions settings*/        
+        width: 633.6px;
+        height: 100%;
+        /*Position settings*/
+        position: relative;
+        left: 316.8px;
+	}
+
+    #contact {
+        /*Dimensions settings*/
+        width: 633.6px;
+        /*Position settings*/
+        position: relative;
+        left: 316.8px;
+    }
+
+    /*Think to change it into .content-container*/
+    #bibliography-container, #projects-container, #contact-form-container {
+        /*Dimensions settings*/
+        width: 100%;
+        margin: 25px;
+    }
+
+    #contact-form-container {
+        align-items: inherit;
+        padding: 50px;
+        justify-content: center;
+    }
+}

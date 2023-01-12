@@ -9,8 +9,8 @@
         <!--Setting favicon-->
         <link rel="icon" href="assets/images/favicon/favicon_smile.ico">
         <!--Importing stylesheets-->
-        <link rel='stylesheet' href='assets/css/style.css'/>
-        <link rel='stylesheet' href='style-v3.css'/>
+        <link rel='stylesheet' href='assets/css/global-style.css'/>
+        <link rel='stylesheet' href='index-v3-style.css'/>
     </head>
 
     <body>
@@ -32,7 +32,7 @@
                 <!-- Github -->  
                 <a class="icon-button" id="github" 
                 href="https://github.com/wmex91">
-                    <img src="assets/images/icons/github-light-icon.jpeg">
+                    <img src="assets/images/icons/github-light-icon-trasnparent.png">
                     <!--my repos-->
                 </a>
                 
@@ -55,7 +55,7 @@
 
         <!-- Second page - start -->
         <div class="section" id="bibliography">
-            <article>
+            <article id="bibliography-container">
                 <h2>Bibliography:</h2>
                 <section>
                     <p>
@@ -86,7 +86,7 @@
         
         <!-- Third page - start -->
         <div class="section" id="projects">
-            <article>
+            <article id="projects-container">
                 <section>
                     <h2>Projects:</h2>
                     <p>
@@ -158,7 +158,7 @@
                                 <td>
                                     <a class="link" 
                                     id="smed-presentation-download" 
-                                    href="assets/docs/smed/smed_IF90-website_version.pdf">presentation</a>
+                                    href="assets/docs/smed/smed_IF90-presentation-website_version.pdf">presentation</a>
                                 </td>
                             </tr>
 
@@ -196,6 +196,54 @@
             </article>
         </div>
         <!-- Third page - end -->
+
+        <!-- Fourth page - start -->
+        <div class="section" id="contact">
+            <form action='' method='get' id='contact-form-container'>
+                <header id='contact-form-header'>
+                    <h2>Contact form</h2>
+                    <p>Want to be in touch? <em>Fill out this form!</em></p>
+                </header>
+
+                <fieldset class='radio-selector' id='legacy-title-form'>
+                    <legend>Title:</legend>
+                    
+                    <input id='mr-radio'name='title' type='radio' value='mr'/>
+                    <label for='mr-radio' class='radio-label'>Mr.</label>
+                    
+                    <input id='ms-radio' name='title' type='radio' value='ms'/>
+                    <label for='ms-radio' class='radio-label'>Ms.</label>
+
+                    <input id='mrs-radio' name='title' type='radio' value='mrs'/>
+                    <label for='mrs-radio' class='radio-label'>Mrs.</label>
+                </fieldset>
+
+                <div class='text-form' id='name-form'>
+                    <label for='name-field'>Name</label>
+                    <input id='name-field' name='name' type='text'/>
+
+                    <label for='surname-field'>Surname</label>
+                    <input id='surname-field' name='surname' type='text'/>
+                </div>
+                
+                <div class='text-form' id='email-form'>
+                    <label for='email-field'>Email</label>
+                    <input id='email-field' name='email' type='email' placeholder='your@email.net'/>
+                </div>
+
+                <div class="text-form" id='message-form'>
+                    <label for='message'>Messaggio</label>
+                    <textarea id='message' name='message'></textarea>
+                    <div class='instruction'>Scrivi qui il tuo messaggio!</div>
+                </div>
+
+                <div class='sub-button' id="submit-button">
+                    <button>Submit</button>
+                </div>
+                
+            </form>
+        </div>
+        <!-- Fourth page - end -->
 
     </body>
 </html>

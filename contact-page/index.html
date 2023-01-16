@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8" content="width=device-width, 
+        initial-scale=1" name="viewport" />
+        <!--Setting card title-->
+        <title>Matteo Martinelli's personal website</title>
+        <!--Setting favicon-->
+        <link rel="icon" href="../assets/images/favicon/favicon_smile.ico">
+        <!--Importing stylesheets-->
+        <link rel='stylesheet' href='../assets/css/global-style.css'/>
+        <link rel='stylesheet' href='contact-form-style.css'/>
+    </head>
+
+    <body>
+        <!-- First page - start -->
+        <div class="section" id="presentation">
+            <figure id="profile-image">
+                <img id="me"
+                src="../assets/images/personal/personal-pic-resized.jpg" 
+                alt="me, myself, and I."/>
+            </figure>
+
+            <div id="profile-name">
+                <h1>Matteo Martinelli</h1>
+                <h2>Management Engineer</h2>
+                <h3>🏭 Industry 4.0 Researcher 🏭</h3>
+            </div>
+
+            <nav class="icon-buttons-box">
+                <!-- Github -->  
+                <a class="icon-button" id="github" 
+                href="https://github.com/wmex91" 
+                target="_blank" rel="noopener noreferrer">
+                    <img src="/../assets/images/icons/github-light-icon-transparent-bordered.png">
+                    <!--my repos-->
+                </a>
+                
+                <!-- Linkedin -->
+                <a class="icon-button" id="linkedin" 
+                href="https://www.linkedin.com/in/matteo-martinelli/" 
+                target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/images/icons/linkedin-icon-bordered.png">
+                    <!--my linkedin-->
+                </a>
+
+                <!-- Skype -->
+                <a class="icon-button" id="skype" 
+                href="skype:live:wmatte2005?chat">
+                    <img src="../assets/images/icons/skype-icon2-bordered.png">
+                    <!--my skype-->
+                </a>
+            </nav>
+        </div>
+        <!-- First page - end -->
+
+        <!-- Fourth page - start -->
+        <div class="section" id="contact">
+            <form action='' method='get' id='contact-form-container'>
+                <header id='contact-form-header'>
+                    <h2>Contact form</h2>
+                    <p>Mi vuoi contattare? <em>Completa il form!</em></p>
+                </header>
+
+                <fieldset class='radio-selector' id='legacy-title-form'>
+                    <legend>Titolo:</legend>
+                    
+                    <input id='mr-radio'name='title' type='radio' value='mr'/>
+                    <label for='mr-radio' class='radio-label'>Mr.</label>
+                    
+                    <input id='ms-radio' name='title' type='radio' value='ms'/>
+                    <label for='ms-radio' class='radio-label'>Ms.</label>
+
+                    <input id='mrs-radio' name='title' type='radio' value='mrs'/>
+                    <label for='mrs-radio' class='radio-label'>Mrs.</label>
+                </fieldset>
+
+                <div class='text-form' id='name-form'>
+                    <label for='name-field'>Nome</label>
+                    <input id='name-field' name='name' type='text'/>
+
+                    <label for='surname-field'>Cognome</label>
+                    <input id='surname-field' name='surname' type='text'/>
+                </div>
+                
+                <div class='text-form' id='email-form'>
+                    <label for='email-field'>Email</label>
+                    <input id='email-field' name='email' type='email' placeholder='your@email.net'/>
+                </div>
+
+                <div class="text-form" id='message-form'>
+                    <label for='message'>Messaggio</label>
+                    <textarea id='message' name='message'></textarea>
+                    <div class='instruction'>Scrivi qui il tuo messaggio!</div>
+                </div>
+
+                <div class='sub-button' id="submit-button">
+                    <button>Invia!</button>
+                </div>
+                
+            </form>
+        </div>
+        <!-- Fourth page - end -->
+
+    </body>
+</html>
+    

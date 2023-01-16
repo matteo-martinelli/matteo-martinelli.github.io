@@ -1,0 +1,41 @@
+/*Mobile first style*/
+
+/*Local page style*************************************************************/
+#presentation {
+    display: none;
+}
+
+/*Keep in the actual page*/
+#projects {
+    /*Dimensions settings*/
+    padding: 0 40px;
+}
+
+#projects-table, .separator {
+    /*Dimensions settings*/
+    padding: 10px;
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 401px) {
+    #presentation{
+        display: inherit;
+    }
+    
+    #projects {
+        /*Dimensions settings*/        
+        width: 633.6px;
+        height: 100%;
+        /*Position settings*/
+        position: relative;
+        left: 316.8px;
+	}
+
+    /*Think to change it into .content-container*/
+    #projects-container {
+        /*Dimensions settings*/
+        width: 100%;
+        margin: 25px;
+    }
+}

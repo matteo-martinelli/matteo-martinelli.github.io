@@ -51,7 +51,7 @@
     text-align: center;
 }
 
-#bibliography, #projects {
+#biography, #projects {
     /*Dimensions settings*/
     padding: 0 40px;
 }
@@ -86,7 +86,7 @@
         position: fixed;    /*Removes the flexbox from the flow*/  
 	}
 
-    #bibliography, #projects {
+    #biography, #projects {
         /*Dimensions settings*/        
         width: 633.6px;
         height: 100%;

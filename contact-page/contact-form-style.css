@@ -1,0 +1,60 @@
+/*Mobile first style*/
+
+/*Local page style*************************************************************/
+#presentation{
+    display: none;
+}
+
+#contact-form-container {
+    /*Background settings*/
+    background-color: #36373c;
+    border: 1px solid black;
+    border-radius: 30px;
+    /*Position settings*/
+    margin: 10px 10px;
+    /*Dimensions settings*/
+    height: 97.7%;
+    width: 97%;
+    /*Flexbox settings*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form-header {
+    /*Fonts settings*/
+    text-align: center;
+    /*Dimensions settings*/
+    width: 100%;
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 401px) {
+    #presentation{
+        display: inherit;
+    }
+    
+    #contact {
+        /*Dimensions settings*/
+        width: 633.6px;
+        /*Position settings*/
+        position: relative;
+        left: 316.8px;
+    }
+
+    /*Think to change it into .content-container*/
+    #contact-form-container {
+        /*Dimensions settings*/
+        width: 100%;
+        margin: 25px;
+        align-items: inherit;
+        padding: 50px;
+        justify-content: center;
+    }
+
+    #submit-button button {
+        width: 100%;
+    }
+}

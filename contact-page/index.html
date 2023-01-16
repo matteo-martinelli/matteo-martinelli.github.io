@@ -14,19 +14,22 @@
     </head>
 
     <body>
-        <!-- First page - start -->
+        <!-- Presentation page - start -->
         <div class="section" id="presentation">
             <figure id="profile-image">
                 <img id="me"
                 src="../assets/images/personal/personal-pic-resized.jpg" 
                 alt="me, myself, and I."/>
             </figure>
-
-            <div id="profile-name">
-                <h1>Matteo Martinelli</h1>
-                <h2>Management Engineer</h2>
-                <h3>🏭 Industry 4.0 Researcher 🏭</h3>
-            </div>
+            
+            <a class="home-button" id="homepage" 
+                href="../index.html">
+                <div id="profile-name">
+                    <h1>Matteo Martinelli</h1>
+                    <h2>Management Engineer</h2>
+                    <h3>🏭 Industry 4.0 Researcher 🏭</h3>
+                </div>
+            </a>
 
             <nav class="icon-buttons-box">
                 <!-- Github -->  
@@ -53,9 +56,9 @@
                 </a>
             </nav>
         </div>
-        <!-- First page - end -->
+        <!-- Presentation page - end -->
 
-        <!-- Fourth page - start -->
+        <!-- Contact page - start -->
         <div class="section" id="contact">
             <form action='' method='get' id='contact-form-container'>
                 <header id='contact-form-header'>
@@ -72,7 +75,8 @@
                     <input id='ms-radio' name='title' type='radio' value='ms'/>
                     <label for='ms-radio' class='radio-label'>Ms.</label>
 
-                    <input id='mrs-radio' name='title' type='radio' value='mrs'/>
+                    <input id='mrs-radio' name='title' type='radio'
+                    value='mrs'/>
                     <label for='mrs-radio' class='radio-label'>Mrs.</label>
                 </fieldset>
 
@@ -86,7 +90,8 @@
                 
                 <div class='text-form' id='email-form'>
                     <label for='email-field'>Email</label>
-                    <input id='email-field' name='email' type='email' placeholder='your@email.net'/>
+                    <input id='email-field' name='email' type='email' 
+                    placeholder='your@email.net'/>
                 </div>
 
                 <div class="text-form" id='message-form'>
@@ -101,7 +106,7 @@
                 
             </form>
         </div>
-        <!-- Fourth page - end -->
+        <!-- Contact page - end -->
 
     </body>
 </html>

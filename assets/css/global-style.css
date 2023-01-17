@@ -276,7 +276,7 @@ body {
 }
 
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 451px) {
 	body {
     /*Dimensions settings*/
     width: 960px;

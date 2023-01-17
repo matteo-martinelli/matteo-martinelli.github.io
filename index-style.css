@@ -9,20 +9,8 @@
 
 
 /* Desktop Style **************************************************************/
-<<<<<<< Updated upstream
-@media only screen and (min-width: 401px) {
-    #presentation {
-        /*Dimensions settings*/
-        width: 316.8px;
-        /*Position settings*/
-        position: fixed;    /*Removes the flexbox from the flow*/  
-	}
-
-    #biography, #projects {
-=======
 @media only screen and (min-width: 451px) {
     #biography {
->>>>>>> Stashed changes
         /*Dimensions settings*/        
         width: 633.6px;
         height: 100%;

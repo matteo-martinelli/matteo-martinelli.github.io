@@ -8,7 +8,8 @@
 /*Keep in the actual page*/
 #projects {
     /*Dimensions settings*/
-    padding: 0 40px;
+    padding: 0 30px;
+    margin: 0 0px;
 }
 
 #projects-table, .separator {
@@ -18,7 +19,7 @@
 
 
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 451px) {
     #presentation{
         display: inherit;
     }
@@ -29,7 +30,7 @@
         height: 100%;
         /*Position settings*/
         position: relative;
-        left: 316.8px;
+        left: 326.8px;
 	}
 
     /*Think to change it into .content-container*/

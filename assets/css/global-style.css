@@ -59,17 +59,24 @@ body {
 }
 
 .section {
+  /*Debug*/
+  border: solid 1px red;
   /*Dimensions settings*/
   width: 100%;
   height: 100%;
-  padding: 0 0;
+  /*test*/
+  margin: 0;
+  padding: 10px 10px;
   /*Flexbox settings*/
   display: flex;
+  flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;                /*For managing flexbox overflow*/
   justify-content: center;
   align-content: space-around;    /*For spacing flexboxes alongside 
                                   the main axis*/
+  /*Scroll behavior*/
+  scroll-behavior: smooth;
 }
 
 .icon-buttons-box {
@@ -120,7 +127,7 @@ body {
 
 .radio-selector legend{
   /*Dimensions settings*/
-  margin-bottom: 5px;
+  margin: 5px 0 0 0;
 }
 
 .radio-selector .radio-label{
@@ -167,7 +174,7 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   /*Dimensions settings*/
-  min-height: 200px;    /*How to make it responsive?*/
+  min-height: 100px;    /*How to make it responsive?*/
   min-width: 300px;     /*How to make it responsive?*/
   margin-bottom: 1px;
   padding: 7px;
@@ -216,13 +223,13 @@ body {
 #presentation {
   /*Background settings*/
   background-color: #36373c;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-radius: 30px;
-  /*Position settings*/
-  margin: 10px 10px;
   /*Dimensions settings*/
   height: 97.7%;
   width: 97%;
+  /*Position settings*/
+  margin: 10px 10px;
 }
 
 #profile-image {

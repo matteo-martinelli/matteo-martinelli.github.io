@@ -59,9 +59,7 @@ body {
 }
 
 .section {
-  /*Debug*/
-  border: solid 1px red;
-  /*Dimensions settings*/
+    /*Dimensions settings*/
   width: 100%;
   height: 100%;
   /*test*/
@@ -69,7 +67,6 @@ body {
   padding: 10px 10px;
   /*Flexbox settings*/
   display: flex;
-  flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;                /*For managing flexbox overflow*/
   justify-content: center;
@@ -174,11 +171,12 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   /*Dimensions settings*/
-  min-height: 100px;    /*How to make it responsive?*/
-  min-width: 300px;     /*How to make it responsive?*/
+  min-height: 200px;    /*How to make it responsive?*/
+  min-width: 270px;     /*How to make it responsive?*/
   margin-bottom: 1px;
   padding: 7px;
   resize: none;
+  overflow: auto;
 }
 
 .text-form label {
@@ -250,7 +248,7 @@ body {
   height: 250px;
   /*Rendering settings*/
   object-fit: cover;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   border-radius: 50%;
 }
 
@@ -264,7 +262,7 @@ body {
   flex-direction: column;
 }
 
-#profile-name h1, #profile-name h2 {
+#profile-name h1, #profile-name h2, #profile-name h3 {
   /*Dimensions settings*/
   width: 100%;    
   text-align: center;
@@ -274,6 +272,12 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.section {
+  /*Debug*/
+  border: 1px solid red;
+}
+
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 451px) {

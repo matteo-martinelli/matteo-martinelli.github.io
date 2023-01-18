@@ -8,8 +8,13 @@
 /*Keep in the actual page*/
 #projects {
     /*Dimensions settings*/
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0 0px;
+}
+
+#projects-container {
+    padding: 10px 10px;
+    max-height: 100%;
 }
 
 #projects-table, .separator {

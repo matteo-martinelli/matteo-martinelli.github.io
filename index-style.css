@@ -1,22 +1,31 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
+
 #biography {
     /*Dimensions settings*/
-    padding: 0 10px; 
-    margin: 0;
     display: flex;
-    
+    align-items: center;
 }
 
 #biography-container {
-    padding: 10px 10px;
+    padding: 10px;
     max-height: 100%;
 }
 
 
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #biography {
+        /*Dimensions settings*/        
+        min-height: 66%;
+        height: auto;
+	}
+}
+
+
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 451px) {
+@media only screen and (min-width: 769px) {
     #biography {
         /*Dimensions settings*/        
         width: 633.6px;

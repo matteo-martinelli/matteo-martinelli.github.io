@@ -24,8 +24,8 @@
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 451px) and (max-width: 960px) {
-    #presentation{
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #presentation {
         display: inherit;
     }
 
@@ -36,25 +36,42 @@
 }
 
 
-/* Desktop Style **************************************************************/
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 769px) and (max-width: 980px) {
     #presentation{
         display: inherit;
     }
-    
+
     #projects {
         /*Dimensions settings*/        
-        width: 633.6px;
+        width: calc(100% - 316.8px);
         height: 100%;
         /*Position settings*/
         position: relative;
-        left: 326.8px;
+        left: 316.8px;
 	}
 
     /*Think to change it into .content-container*/
     #projects-container {
         /*Dimensions settings*/
         width: 100%;
-        margin: 25px;
+    }
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+    #presentation {
+        display: inherit;
+    }
+    
+    #projects {
+        /*Dimensions settings*/        
+        height: 100%;
+	}
+
+    /*Think to change it into .content-container*/
+    #projects-container {
+        /*Dimensions settings*/
+        width: 100%;
     }
 }

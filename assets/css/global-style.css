@@ -286,7 +286,7 @@ body {
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 426px) and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   /*Presentation card - global setting*/
   #presentation {
     /*Dimensions settings*/
@@ -294,13 +294,15 @@ body {
     display: flex;
     align-items: center;
     min-height: 240px;
+    max-height: 260px;
   }
 
   #presentation-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;  
-    max-height: 223px;
+    height: 100%;
+    max-width: 550px;
     padding: 10px;
   }
 
@@ -348,19 +350,12 @@ body {
     max-width: 66px;
     height: auto;
   }
+
 }
 
 
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 768px) and (orientation: landscape){
-	body {
-    /*Dimensions settings*/
-    width: 961px;
-    margin: 0 auto; /*Deletes margins on the upper and lower side, and 
-                    distributes the space evenly on the left and on the 
-                    right*/
-  }
-
+@media only screen and (min-width: 769px) and (max-width: 980px) {
   .icon-button:hover {
     /*Transform settings*/
     transform: scale(1.15);
@@ -384,5 +379,27 @@ body {
     width: 316.8px;
     /*Position settings*/
     position: fixed;    /*Removes the flexbox from the flow*/  
+  }
+}
+
+@media only screen and (min-width: 981px) {
+  body {
+    /*Dimensions settings*/
+    width: 981px;
+    margin: 0 auto; /*Deletes margins on the upper and lower side, and 
+                    distributes the space evenly on the left and on the 
+                    right*/
+    
+    display: flex;
+    justify-content: center;
+  }
+
+  #presentation {
+    /*Dimensions settings*/
+    width:50%;
+  }
+
+  #presentation-container {
+    height: 100%;
   }
 }

@@ -1,8 +1,13 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
-#presentation{
+#presentation {
     display: none;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
 }
 
 #contact-form-container {
@@ -37,7 +42,7 @@
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 426px) and (max-width: 960px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     #presentation{
         display: inherit;
     }
@@ -50,35 +55,50 @@
     #contact-form-container {
         border: 1px solid red;
         height: 100%;
+        max-width: 550px;
     }
 }
 
 
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 769px) and (max-width: 980px) {
     #presentation{
         display: inherit;
     }
     
     #contact {
         /*Dimensions settings*/
-        width: 633.6px;
+        width: calc(100% - 316.8px);
+        height: 100%;
         /*Position settings*/
         position: relative;
-        left: 326.8px;
+        left: 316.8px;
     }
 
     /*Think to change it into .content-container*/
     #contact-form-container {
         /*Dimensions settings*/
         width: 100%;
-        margin: 0;
-        align-items: inherit;
-        padding: 0 50px;
-        justify-content: center;
     }
 
     #submit-button button {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 981px) {
+    #presentation {
+        display: inherit;
+    }
+    
+    #contact {
+        /*Dimensions settings*/        
+        height: 100%;
+	}
+
+    /*Think to change it into .content-container*/
+    #contact-form-container {
+        /*Dimensions settings*/
+        padding: 0;
     }
 }

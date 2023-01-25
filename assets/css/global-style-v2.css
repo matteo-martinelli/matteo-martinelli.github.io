@@ -1,0 +1,218 @@
+/*Mobile first style*/
+
+/*Global site style************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*To set dimensions rendering based on the actual 
+                              external box size*/
+}
+
+
+/*Semantic settings for legacy browsers*/
+section, article, aside, footer, header, nav {
+  display: block;
+}
+
+html, body {
+  /*Dimensions settings*/
+  height: 100%;
+}
+
+/*Merge with the lower code*/
+body {
+  /*Background settings*/
+  background-color: #282935; 
+  /*Flexbox settings
+  display: flex;
+  flex-wrap: wrap;*/
+  /*Fonts settings*/
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16.17px;
+  color: #FFFFFF;                    /*Font color*/
+  font-family: 'Roboto',sans-serif;
+  font-size: 16.17px;
+  /*line-height: 1.8em;*/
+  line-height: 1.65;  
+}
+
+.icon-buttons-box {
+  /*Flexbox settings*/
+  display: flex;
+  justify-content: center;
+}
+
+.icon-button {
+  /*Dimensions settings*/
+  margin: 0 5px 0 5px;
+  /*Flexbox settings*/
+  display: flex;
+  justify-content: center;
+}
+
+.icon-button img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.icon-button:active {
+  /*Transform settings*/
+  transform: scale(1.15);
+}
+
+.link:link {
+  /*Fonts settings*/
+  color: rgb(9, 255, 0);
+  text-decoration: none;
+}
+
+.link:active {
+  /*Fonts settings*/
+  color: rgb(241, 206, 3);
+  text-decoration: none;
+}
+
+.link:visited {
+  /*Fonts settings*/
+  color: rgb(79, 79, 147);
+  text-decoration: none;
+}
+
+.radio-selector {
+  /*Background settings*/
+  border: none;
+  /*Dimensions settings*/
+  padding-bottom: 10px;
+}
+
+.radio-selector .radio-label{
+  /*Fonts settings*/
+  font-size: 18px;
+  /*Dimensions settings*/
+  margin: 0 13px 0 2px;
+}
+
+.radio-selector input[type='radio']{
+  /*Dimensions settings*/
+  margin-top: 2px;
+}
+
+.radio-selector legend{
+  /*Dimensions settings*/
+  padding-top: 5px;
+  text-align: center;
+}
+
+.text-form {
+  /*Dimensions settings*/
+  padding-bottom: 10px;
+  /*Flexbox settings*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.text-form input[type='text'],
+.text-form input[type='email'] {
+  max-width: 200px;
+}
+
+.text-form input[type='text'],
+.text-form input[type='email'],
+.text-form textarea {
+  /*Background settings*/
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 6px;
+  /*Dimensions settings*/
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.text-form textarea {
+  /*Fonts settings*/
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  /*Dimensions settings*/
+  min-height: 140px;    /*How to make it responsive?*/
+  min-width: 260px;     /*How to make it responsive?*/
+  margin-bottom: 1px;
+  padding: 7px;
+  resize: none;
+  overflow: auto;
+}
+
+.text-form label {
+  /*Dimensions settings*/
+  margin-top: 5px;
+}
+
+.text-form .instruction {
+  /*Font settings*/
+  color: #999999;
+  font-size: 12px;
+  text-align: center;
+  /*Dimensions settings*/
+  margin-bottom: 10px;
+}
+
+.sub-button button {
+  /*Font settings*/
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  /*Background settings*/
+  background-color: rgb(106, 106, 200);
+  border: 1px solid black;
+  border-radius: 6px;
+  /*Dimensions settings*/;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.sub-button button:active {
+  /*Font settings*/
+  color: #FFFFFF;
+  /*Background settings*/
+  background-color: #407FC7;
+  border: 2px solid blue;
+  /*Transform settings
+  transform: scale(1.15);*/
+}
+
+
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /*Presentation card - global setting*/
+  
+
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+  .icon-button:hover {
+    /*Transform settings*/
+    transform: scale(1.15);
+  }
+    
+  .link:hover {
+    /*Fonts settings*/
+    color: rgb(202, 53, 53);
+  }
+
+  .sub-button button:hover {
+    /*Fonts settings*/
+    color: #36373C;
+    /*Background settings
+    background-color: rgb(9, 255, 0);*/
+  }  
+}
+
+@media only screen and (min-width: 981px) {
+
+}

@@ -1,6 +1,14 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
+.menu {
+    width: 100%;
+    max-width: 480px;
+    border: 2px blue;
+    border-radius: 20%;
+    margin: 0 auto;
+    text-align: center;     /*To be deleted*/
+}
 .section {
   /*Debug*/
   border: 1px solid red;

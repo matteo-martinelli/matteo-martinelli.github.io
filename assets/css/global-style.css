@@ -1,27 +1,5 @@
 /*Mobile first style*/
 
-/*FONT-FACES*******************************************************************/
-@font-face {
-  font-family: 'Roboto';
-  src: url('typography/Roboto-Regular-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Roboto Light Italic';
-  src: url('typography/Roboto-LightItalic-webfont.woff') format('woff');
-  font-style: italic;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Roboto Bold';
-  src: url('typography/Roboto-Bold-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 700;
-}
-
 /*Global site style************************************************************/
 * {
     margin: 0;
@@ -275,7 +253,7 @@ body {
   text-align: center;
 }
 
-#homepage h3 {
+#homepage h1, #homepage h2, #homepage h3 {
   white-space: nowrap;
 }
 
@@ -373,6 +351,8 @@ body {
     background-color: rgb(9, 255, 0);*/
   }
 
+  /**/
+
   /*Presentation card global setting*/
   #presentation {
     /*Dimensions settings*/
@@ -380,6 +360,61 @@ body {
     /*Position settings*/
     position: fixed;    /*Removes the flexbox from the flow*/  
   }
+
+  #presentation-container {
+    height: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-image {
+    /*Flexbox settings*/
+    width: 47%;
+    height: auto;
+    margin: auto;
+    padding-right: 0;
+    max-width: 254px;
+  }
+
+  #me {
+    /*Dimensions settings*/
+    width: 85%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+  }
+
+  #homepage {
+    /*Layout settings*/
+    height: 47%;
+    width: 50%;
+    font-size: min(2.6vw, 14px);
+    max-width: 254px;
+    margin: auto;
+    text-align: justify;
+  }
+
+  .icon-buttons-box {
+    height: auto;
+    display: flex;
+    align-items: center;
+    min-width: 186px;
+    max-width: 240px;
+  }
+
+  .icon-button {
+    /*Dimensions settings*/
+    height: 75%;
+    margin: 0;
+  }
+
+  .icon-button img {
+    max-width: 66px;
+    height: auto;
+  }
+  
 }
 
 @media only screen and (min-width: 981px) {

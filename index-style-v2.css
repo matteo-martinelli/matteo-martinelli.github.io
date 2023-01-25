@@ -1,0 +1,23 @@
+/*Mobile first style*/
+
+/*Local page style*************************************************************/
+
+
+
+/* Small Tablet Style *********************************************************/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+}
+
+
+/* Big Tablet, Small Desktop Style ********************************************/
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+
+}
+

@@ -1,0 +1,59 @@
+/*Mobile first style*/
+
+/*Local page style*************************************************************/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#biography-container {
+    max-height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #biography {
+        /*Dimensions settings*/        
+        min-height: 66%;
+        height: auto;
+	}
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+    #biography {
+        /*Dimensions settings*/        
+        width: calc(100% - 316.8px);
+        height: 100%;
+        /*Position settings*/
+        position: relative;
+        left: 316.8px;
+	}
+
+    /*Think to change it into .content-container*/
+    #biography-container {
+        /*Dimensions settings*/
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 981px) {
+    #biography {
+        /*Dimensions settings*/      
+        height: 100%;
+        /*Position settings*/
+	}
+
+    /*Think to change it into .content-container*/
+    #biography-container {
+        /*Dimensions settings*/
+        width: 100%;
+    }
+}
+

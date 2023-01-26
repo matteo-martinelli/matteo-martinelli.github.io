@@ -36,6 +36,48 @@ body {
   line-height: 1.65;  
 }
 
+.section {
+  /*Debug*/
+  border: 1px solid red;
+  /*Dimensions settings*/
+  width: 100%;
+  /*test*/
+  padding: 30px 25px;
+  scroll-behavior: smooth;    /*Scroll behavior*/
+}
+
+.menu {
+  width: 100%;
+  max-width: 380px;
+  height: fit-content;
+  border-top: 1px rgb(89, 88, 88) solid;
+  /*border-left: 1px black solid;
+  border-right: 1px black solid;*/
+  background-color: darkgray;
+  box-shadow: 0 -3px 2px bisque;
+  box-shadow: 0 -3px 5px rgb(255 255 255 / 11%);
+  /*border-top-left-radius: 20px;
+  border-top-right-radius: 20px;*/
+  padding: 8px 0;
+  text-align: center;     /*To be deleted*/
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+  padding: 5px;
+  left: 50%;                    /*For absolute positioned flex centering*/
+  transform: translateX(-50%);  /*For absolute positioned flex centering*/
+}
+
+.menu-button img {
+  height: 35px;
+  margin: auto auto;
+}
+
+.spacer {
+  height: 60px;
+}
+
 .icon-buttons-box {
   /*Flexbox settings*/
   display: flex;

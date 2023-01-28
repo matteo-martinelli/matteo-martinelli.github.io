@@ -8,7 +8,6 @@
                               external box size*/
 }
 
-
 /*Semantic settings for legacy browsers*/
 section, article, aside, footer, header, nav {
   display: block;
@@ -41,6 +40,7 @@ body {
   border: 1px solid red;
   /*Dimensions settings*/
   width: 100%;
+  height: calc(100% - 60px);
   /*test*/
   padding: 30px 25px;
   scroll-behavior: smooth;    /*Scroll behavior*/
@@ -53,7 +53,7 @@ body {
   border-top: 1px rgb(89, 88, 88) solid;
   /*border-left: 1px black solid;
   border-right: 1px black solid;*/
-  background-color: darkgray;
+  background-color: #848692;
   box-shadow: 0 -3px 2px bisque;
   box-shadow: 0 -3px 5px rgb(255 255 255 / 11%);
   /*border-top-left-radius: 20px;
@@ -76,6 +76,7 @@ body {
 
 .spacer {
   height: 60px;
+  min-height: 60px;
 }
 
 .icon-buttons-box {

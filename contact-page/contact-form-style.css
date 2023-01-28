@@ -1,31 +1,18 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
-#presentation {
-    display: none;
-}
-
-#contact {
-    display: flex;
-    justify-content: center;
-}
-
-#contact-form-container {
-    /*Background settings*/
-    background-color: #36373c;
-    border: 1px solid black;
-    border-radius: 30px;
-    /*Position settings*/
-    margin: 0 0px;
-    padding: 15px;
-    /*Dimensions settings*/
-    width: 100%;
-    height: 100%;
-    /*Flexbox settings*/
+.body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+}
+
+#contact-form-container {
+    /*background-color: #36373c;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
 }
 
 #contact-form-header {
@@ -37,6 +24,7 @@
 
 #message-form {
     height: auto;
+    text-align: center;
     border: 1px solid forestgreen;
 }
 

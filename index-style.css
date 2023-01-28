@@ -1,58 +1,72 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
-
-#biography {
-    /*Dimensions settings*/
-    display: flex;
-    align-items: center;
+.body {
+  display: flex;
+  flex-direction: column;
 }
 
-#biography-container {
-    padding: 10px;
-    max-height: 100%;
+.icon-buttons-box {
+  margin: 10px;
+  height: 55px;
+  min-width: 150px;
+  max-width: 240px;
 }
 
+#presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
 
-/* Tablet Style ***************************************************************/
+#profile-image {
+  margin: 10px;    /*Consider padding 10px margin 10px*/
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-image img {
+  width: min(65vw, 100%);
+  height: auto;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#profile-name {
+  text-align: center;
+  white-space: nowrap;
+}
+
+#homepage {
+  margin: 10px 10px;
+  font-size: min(5vw, 16.17px);
+  color: white;
+  text-decoration: none;
+}
+
+#presentation-container article {
+  text-align: center;
+  max-width: 500px;   /*Put in tablet version*/
+}
+
+/* Small Tablet Style *********************************************************/
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    #biography {
-        /*Dimensions settings*/        
-        min-height: 66%;
-        height: auto;
-	}
+
+}
+
+
+/* Big Tablet, Small Desktop Style ********************************************/
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+
 }
 
 
 /* Desktop Style **************************************************************/
-@media only screen and (min-width: 769px) and (max-width: 980px) {
-    #biography {
-        /*Dimensions settings*/        
-        width: calc(100% - 316.8px);
-        height: 100%;
-        /*Position settings*/
-        position: relative;
-        left: 316.8px;
-	}
-
-    /*Think to change it into .content-container*/
-    #biography-container {
-        /*Dimensions settings*/
-        width: 100%;
-    }
-}
-
 @media only screen and (min-width: 981px) {
-    #biography {
-        /*Dimensions settings*/      
-        height: 100%;
-        /*Position settings*/
-	}
 
-    /*Think to change it into .content-container*/
-    #biography-container {
-        /*Dimensions settings*/
-        width: 100%;
-    }
 }
 

@@ -21,7 +21,7 @@ html, body {
 /*Merge with the lower code*/
 body {
   /*Background settings*/
-  background-color: #282935; 
+  background-color: #222831; /*Old color: #282935;*/ 
   /*Flexbox settings
   display: flex;
   flex-wrap: wrap;*/
@@ -36,8 +36,8 @@ body {
 }
 
 .section {
-  /*Debug*/
-  border: 1px solid red;
+  /*Debug
+  border: 1px solid red;*/
   /*Dimensions settings*/
   width: 100%;
   height: calc(100% - 60px);
@@ -53,13 +53,12 @@ body {
   border-top: 1px rgb(89, 88, 88) solid;
   /*border-left: 1px black solid;
   border-right: 1px black solid;*/
-  background-color: #848692;
+  background-color: #2D4059; /*Old color: #848692;*/
   box-shadow: 0 -3px 2px bisque;
-  box-shadow: 0 -3px 5px rgb(255 255 255 / 11%);
-  /*border-top-left-radius: 20px;
-  border-top-right-radius: 20px;*/
+  box-shadow: 0 -2px  15px 0px rgb(255, 87, 34, 0.8); /*#FF5722*/
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   padding: 8px 0;
-  text-align: center;     /*To be deleted*/
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -70,6 +69,7 @@ body {
 }
 
 .menu-button img {
+  height: 35px;
   height: 35px;
   margin: auto auto;
 }
@@ -209,7 +209,7 @@ body {
   font-weight: bold;
   color: #FFFFFF;
   /*Background settings*/
-  background-color: rgb(106, 106, 200);
+  background-color: #FF5722;  /*Old: rgb(106, 106, 200)*/
   border: 1px solid black;
   border-radius: 6px;
   /*Dimensions settings*/;

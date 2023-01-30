@@ -311,6 +311,10 @@ body {
     height: fit-content;
     border: 1px red solid;
   }
+
+  .text-form textarea {
+    height: 250px;
+  }
 }
 
 
@@ -356,5 +360,9 @@ body {
     max-width: 980px;
     height: fit-content;
     border: 1px red solid;
+  }
+
+  .text-form textarea {
+    height: 250px;
   }
 }

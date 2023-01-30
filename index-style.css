@@ -1,7 +1,7 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
-.body {
+body {
   display: flex;
   flex-direction: column;
 }

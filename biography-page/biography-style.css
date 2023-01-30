@@ -35,6 +35,10 @@ body {
         /*Dimensions settings*/
     /*    width: 100%;
     }*/
+
+    #biography-container {
+        overflow-y: hidden;
+    }
 }
 
 
@@ -51,5 +55,9 @@ body {
         /*Dimensions settings*/
     /*    width: 100%;
     }*/
+
+    #biography-container {
+        overflow-y: hidden;
+    }
 }
 

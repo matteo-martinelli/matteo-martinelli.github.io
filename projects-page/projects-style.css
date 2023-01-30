@@ -35,41 +35,48 @@ body {
 
 /* Big Tabelt, small Desktop Style ********************************************/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    #presentation{
+    /*#presentation{
         display: inherit;
     }
 
     #projects {
         /*Dimensions settings*/        
-        width: calc(100% - 316.8px);
+    /*    width: calc(100% - 316.8px);
         height: 100%;
         /*Position settings*/
-        position: relative;
+    /*    position: relative;
         left: 316.8px;
 	}
 
     /*Think to change it into .content-container*/
-    #projects-container {
+    /*#projects-container {
         /*Dimensions settings*/
-        width: 100%;
+    /*    width: 100%;
+    }*/
+
+    #projects-container {
+        overflow-y: hidden;
     }
 }
 
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
-    #presentation {
+    /*#presentation {
         display: inherit;
     }
     
     #projects {
         /*Dimensions settings*/        
-        height: 100%;
-	}
+        /*height: 100%;
+	/*}
 
     /*Think to change it into .content-container*/
-    #projects-container {
+    /*#projects-container {
         /*Dimensions settings*/
-        width: 100%;
+    /*    width: 100%;
+    }*/
+    #projects-container {
+        overflow-y: hidden;
     }
 }

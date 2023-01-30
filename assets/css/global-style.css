@@ -44,9 +44,7 @@ body {
   /*Fonts settings*/
   font-family: 'Roboto', sans-serif; 
   font-size: 16.17px;
-  color: #FFFFFF;                    /*Font color*/
-  font-family: 'Roboto',sans-serif;
-  font-size: 16.17px;
+  color: #FFFFFF;           /*Font color*/
   /*line-height: 1.8em;*/
   line-height: 1.65;  
 }

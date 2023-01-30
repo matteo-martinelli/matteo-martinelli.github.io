@@ -14,15 +14,15 @@ body {
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 
 }
 
 
 /* Big Table, small Desktop Style *********************************************/
-@media only screen and (min-width: 769px) and (max-width: 980px) {
+@media only screen and (min-width: 768px) and (max-width: 980px) {
     #biography-container {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 }
 
@@ -30,7 +30,7 @@ body {
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
     #biography-container {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 }
 

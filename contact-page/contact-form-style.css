@@ -31,20 +31,8 @@
 
 /* Tablet Style ***************************************************************/
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    #presentation{
-        display: inherit;
-    }
     
-    #contact {
-        min-height: 66%;
-        height: auto;
-    }
     
-    #contact-form-container {
-        border: 1px solid red;
-        height: 100%;
-        max-width: 550px;
-    }
 }
 
 

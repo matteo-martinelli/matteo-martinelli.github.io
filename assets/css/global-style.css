@@ -251,7 +251,7 @@ body {
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .menu {
     width: 100%;
     max-width: 480px;
@@ -268,7 +268,19 @@ body {
 
 
 /* Big Tablet, Small Desktop Style ********************************************/
-@media only screen and (min-width: 769px) and (max-width: 980px) {
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  body {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+
   .icon-button:hover {
     /*Transform settings*/
     transform: scale(1.15);
@@ -282,9 +294,14 @@ body {
     color: #36373C;
   }  
 
+  .spacer {
+    height: 75px;
+    min-height: 75px;
+  }
+
   .menu {
     width: 100%;
-    max-width: 768px;
+    max-width: 740px;
     height: 50px;
     border: 1px rgb(89, 88, 88) solid;
     border-radius: 10px;
@@ -294,10 +311,6 @@ body {
     position: fixed;
     bottom: 20px;
   }  
-
-  .menu-button img {
-    vertical-align: middle;
-  }
 
   .section {
     margin: auto;
@@ -314,6 +327,23 @@ body {
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
+  body {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  
+  .spacer {
+    height: 75px;
+    min-height: 75px;
+  }
+
   .icon-button:hover {
     /*Transform settings*/
     transform: scale(1.15);
@@ -339,10 +369,6 @@ body {
     position: fixed;
     bottom: 20px;
   }  
-
-  .menu-button img {
-    vertical-align: middle;
-  }
 
   .section {
     margin: auto;

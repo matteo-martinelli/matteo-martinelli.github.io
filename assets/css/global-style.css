@@ -184,16 +184,16 @@ body {
   /*Dimensions settings*/
   width: 100%;
   padding: 5px;
+  /*Fonts settings*/
+  font-family: "Courier New", "Arial", sans-serif;
   font-size: 14px;
 }
 
 .text-form textarea {
-  /*Fonts settings*/
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
   /*Dimensions settings*/
   min-height: 140px;    /*How to make it responsive?*/
   min-width: 260px;     /*How to make it responsive?*/
+  max-width: 530px;
   margin-bottom: 1px;
   padding: 7px;
   resize: none;
@@ -263,7 +263,6 @@ body {
   margin: auto;
   width: 100%;
   max-width: 480px;
-  border: 1px red solid;
   }
 }
 
@@ -309,7 +308,6 @@ body {
     width: 100%;
     max-width: 768px;
     height: fit-content;
-    border: 1px red solid;
   }
 
   .text-form textarea {
@@ -359,7 +357,6 @@ body {
     width: 100%;
     max-width: 980px;
     height: fit-content;
-    border: 1px red solid;
   }
 
   .text-form textarea {

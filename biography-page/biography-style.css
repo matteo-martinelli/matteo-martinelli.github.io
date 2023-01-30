@@ -21,21 +21,6 @@ body {
 
 /* Big Table, small Desktop Style *********************************************/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    /*#biography {
-        /*Dimensions settings*/        
-    /*    width: calc(100% - 316.8px);
-        height: 100%;
-        /*Position settings*/
-    /*    position: relative;
-        left: 316.8px;
-	}
-
-    /*Think to change it into .content-container*/
-    /*#biography-container {
-        /*Dimensions settings*/
-    /*    width: 100%;
-    }*/
-
     #biography-container {
         overflow-y: hidden;
     }
@@ -44,18 +29,6 @@ body {
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
-    /*#biography {
-        /*Dimensions settings*/      
-    /*    height: 100%;
-        /*Position settings*/
-	/*}
-
-    /*Think to change it into .content-container*/
-    /*#biography-container {
-        /*Dimensions settings*/
-    /*    width: 100%;
-    }*/
-
     #biography-container {
         overflow-y: hidden;
     }

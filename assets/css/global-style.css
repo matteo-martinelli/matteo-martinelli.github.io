@@ -275,15 +275,11 @@ body {
   }
     
   .link:hover {
-    /*Fonts settings*/
     color: rgb(202, 53, 53);
   }
 
   .sub-button button:hover {
-    /*Fonts settings*/
     color: #36373C;
-    /*Background settings
-    background-color: rgb(9, 255, 0);*/
   }  
 
   .menu {
@@ -324,15 +320,11 @@ body {
   }
     
   .link:hover {
-    /*Fonts settings*/
     color: rgb(202, 53, 53);
   }
 
   .sub-button button:hover {
-    /*Fonts settings*/
     color: #36373C;
-    /*Background settings
-    background-color: rgb(9, 255, 0);*/
   }  
 
   .menu {

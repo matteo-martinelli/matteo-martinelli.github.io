@@ -38,40 +38,12 @@ body {
 
 /* Big tablet, small Desktop Style ********************************************/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    /*#contact {
-        /*Dimensions settings*/
-    /*    width: calc(100% - 316.8px);
-        height: 100%;
-        /*Position settings*/
-    /*    position: relative;
-        left: 316.8px;
-    }
-
-    /*Think to change it into .content-container*/
-    /*#contact-form-container {
-        /*Dimensions settings*/
-    /*    width: 100%;
-    }
-
-    #submit-button button {
-        width: 100%;
-    }*/
     #contact-form-container {
         overflow-y: hidden;
     }
 }
 
 @media only screen and (min-width: 981px) {
-    /*#contact {
-        /*Dimensions settings*/        
-    /*    height: 100%;
-	}
-
-    /*Think to change it into .content-container*/
-    /*#contact-form-container {
-        /*Dimensions settings*/
-    /*    padding: 0;
-    }*/
     #contact-form-container {
         overflow-y: hidden;
     }

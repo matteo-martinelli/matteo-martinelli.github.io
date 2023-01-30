@@ -14,44 +14,42 @@ body {
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-    #biography {
-        /*Dimensions settings*/        
-        min-height: 66%;
-        height: auto;
-	}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
 }
 
 
-/* Desktop Style **************************************************************/
+/* Big Table, small Desktop Style *********************************************/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    #biography {
+    /*#biography {
         /*Dimensions settings*/        
-        width: calc(100% - 316.8px);
+    /*    width: calc(100% - 316.8px);
         height: 100%;
         /*Position settings*/
-        position: relative;
+    /*    position: relative;
         left: 316.8px;
 	}
 
     /*Think to change it into .content-container*/
-    #biography-container {
+    /*#biography-container {
         /*Dimensions settings*/
-        width: 100%;
-    }
+    /*    width: 100%;
+    }*/
 }
 
+
+/* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
-    #biography {
+    /*#biography {
         /*Dimensions settings*/      
-        height: 100%;
+    /*    height: 100%;
         /*Position settings*/
-	}
+	/*}
 
     /*Think to change it into .content-container*/
-    #biography-container {
+    /*#biography-container {
         /*Dimensions settings*/
-        width: 100%;
-    }
+    /*    width: 100%;
+    }*/
 }
 

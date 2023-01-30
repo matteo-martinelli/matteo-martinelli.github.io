@@ -1,5 +1,21 @@
 /*Mobile first style*/
 
+/*Color palette****************************************************************/
+:root {
+  --color-palette-dark-background: #222831;
+  --color-palette-dark-foreground: #2D4059;
+  --color-palette-dark-accent-orange: #FF5722;
+  --color-palette-dark-accent-red: #F30A49;
+  --color-palette-dark-accent-yellow: #FFD700;
+  --color-palette-dark-accent-blue: #2666CF;
+  --color-palette-dark-contrast:  #EEEEEE;
+
+  --color-palette-link-color: rgb(9, 255, 0);
+  --color-palette-link-active-color: rgb(241, 206, 3);
+  --color-palette-link-visited-color: rgb(79, 79, 147);
+}
+
+
 /*Global site style************************************************************/
 * {
     margin: 0;
@@ -53,9 +69,8 @@ body {
   border-top: 1px rgb(89, 88, 88) solid;
   /*border-left: 1px black solid;
   border-right: 1px black solid;*/
-  background-color: #2D4059; /*Old color: #848692;*/
-  box-shadow: 0 -3px 2px bisque;
-  box-shadow: 0 -2px  15px 0px rgb(255, 87, 34, 0.8); /*#FF5722*/
+  background-color: var(--color-palette-dark-foreground); /*Old color: #848692;*/
+  box-shadow: 0 -2px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding: 8px 0;
@@ -107,19 +122,19 @@ body {
 
 .link:link {
   /*Fonts settings*/
-  color: rgb(9, 255, 0);
+  color: var(--color-palette-link-color);
   text-decoration: none;
 }
 
 .link:active {
   /*Fonts settings*/
-  color: rgb(241, 206, 3);
+  color: var(--color-palette-link-active-color);
   text-decoration: none;
 }
 
 .link:visited {
   /*Fonts settings*/
-  color: rgb(79, 79, 147);
+  color: var(--color-palette-link-visited-color);
   text-decoration: none;
 }
 
@@ -209,7 +224,7 @@ body {
   font-weight: bold;
   color: #FFFFFF;
   /*Background settings*/
-  background-color: #FF5722;  /*Old: rgb(106, 106, 200)*/
+  background-color: var(--color-palette-dark-accent-orange);  /*Old: rgb(106, 106, 200)*/
   border: 1px solid black;
   border-radius: 6px;
   /*Dimensions settings*/;
@@ -221,8 +236,8 @@ body {
   /*Font settings*/
   color: #FFFFFF;
   /*Background settings*/
-  background-color: #407FC7;
-  border: 2px solid blue;
+  background-color: var(--color-palette-dark-accent-yellow);  /*Old: #407FC7*/
+  border: 2px solid black;
   /*Transform settings
   transform: scale(1.15);*/
 }

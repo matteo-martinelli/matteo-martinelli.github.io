@@ -30,13 +30,13 @@
 
 
 /* Tablet Style ***************************************************************/
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     
     
 }
 
 
-/* Desktop Style **************************************************************/
+/* Big tablet, small Desktop Style ********************************************/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
     #presentation{
         display: inherit;

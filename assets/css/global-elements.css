@@ -121,6 +121,7 @@
 .text-form input[type='text'],
 .text-form input[type='email'] {
   max-width: 200px;
+  text-align: center;
 }
 
 .text-form input[type='text'],

@@ -1,20 +1,17 @@
 /*Mobile first style*/
 
 /*Local page style*************************************************************/
-#presentation {
-    display: none;
-}
-
-/*Keep in the actual page*/
-#projects {
-    /*Dimensions settings*/
-    padding: 0 10px;
-    margin: 0 0px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #projects-container {
-    padding: 10px 10px;
-    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #projects-table, .separator {
@@ -23,25 +20,30 @@
 }
 
 
-/* Desktop Style **************************************************************/
-@media only screen and (min-width: 451px) {
-    #presentation{
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #presentation {
         display: inherit;
     }
-    
-    #projects {
-        /*Dimensions settings*/        
-        width: 633.6px;
-        height: 100%;
-        /*Position settings*/
-        position: relative;
-        left: 326.8px;
-	}
 
-    /*Think to change it into .content-container*/
+    #projects {
+        min-height: 66%;
+        height: auto;
+    }
+}
+
+
+/* Big Tabelt, small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
     #projects-container {
-        /*Dimensions settings*/
-        width: 100%;
-        margin: 25px;
+        overflow-y: auto;
+    }
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+    #projects-container {
+        overflow-y: auto;
     }
 }

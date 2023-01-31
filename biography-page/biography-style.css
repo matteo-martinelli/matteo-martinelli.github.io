@@ -4,52 +4,33 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#contact-form-container {
-    /*background-color: #36373c;*/
+#biography-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-#contact-form-header {
-    /*Fonts settings*/
-    text-align: center;
-    /*Dimensions settings*/
-    width: 100%;
-}
-
-#message-form {
-    height: auto;
-    text-align: center;
 }
 
 
 /* Tablet Style ***************************************************************/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    
-    
+
 }
 
 
-/* Big tablet, small Desktop Style ********************************************/
+/* Big Table, small Desktop Style *********************************************/
 @media only screen and (min-width: 768px) and (max-width: 980px) {
-    #contact-form-container {
+    #biography-container {
         overflow-y: auto;
     }
 }
 
+
+/* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
-    #contact-form-container {
+    #biography-container {
         overflow-y: auto;
     }
-    
-    #message-form {
-        height: auto;
-        text-align: center;
-    }
 }
+

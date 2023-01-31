@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    
     <head>
-        <meta charset="UTF-8" content="width=device-width, 
-        initial-scale=1" name="viewport" />
         <!--Setting card title-->
         <title>Matteo Martinelli's personal website</title>
         <!--Setting favicon-->
@@ -11,7 +8,13 @@
         <!--Importing stylesheets-->
         <link rel='stylesheet' href='../assets/css/global-fonts.css'/>
         <link rel='stylesheet' href='../assets/css/global-style.css'/>
-        <link rel='stylesheet' href='contact-form-style.css'/>
+        <link rel='stylesheet' href='biography-style.css'/>
+        <!--Meta tags-->
+        <!--Setting charset-->
+        <meta charset="UTF-8"/>
+        <!--Disabling zooming capabilities-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        maximum-scale=1.0, user-scalable=no" />
         <!--Properties for website sharing and preview-->
         <meta property="og:title" content="Matteo Martinelli Bio"/>
         <meta property="og:type" content="website"/>
@@ -29,7 +32,7 @@
             <h2>Matteo Martinelli</h2>
             <h3>Management Engineer</h3>
         </header>
-
+        
         <nav class="menu" id="landing-page-menu">
             <a class="menu-button" id="home-page" href="../index.html">
                 <img src="../assets/images/icons/menu/light/home-light.svg" 
@@ -64,53 +67,44 @@
             </a>
         </nav>
 
-        <!-- Contact page - start -->
-        <form class ="section" action='' method='get' id='contact-form-container'>
-            <div id='contact-form-header'>
-                <h2>Contact form</h2>
-                <p>Do you want to contact me? <em>Complete the form!</em></p>
-            </div>
-
-            <fieldset class='radio-selector' id='legacy-title-form'>
-                <legend>Title:</legend>
-                
-                <input id='mr-radio'name='title' type='radio' value='mr'/>
-                <label for='mr-radio' class='radio-label'>Mr.</label>
-                
-                <input id='ms-radio' name='title' type='radio' value='ms'/>
-                <label for='ms-radio' class='radio-label'>Ms.</label>
-
-                <input id='mrs-radio' name='title' type='radio'
-                value='mrs'/>
-                <label for='mrs-radio' class='radio-label'>Mrs.</label>
-            </fieldset>
-
-            <div class='text-form' id='name-form'>
-                <label for='name-field'>Name</label>
-                <input id='name-field' name='name' type='text'/>
-
-                <label for='surname-field'>Surname</label>
-                <input id='surname-field' name='surname' type='text'/>
-            </div>
-            
-            <div class='text-form' id='email-form'>
-                <label for='email-field'>E-mail</label>
-                <input id='email-field' name='email' type='email' 
-                placeholder='your@email.net'/>
-            </div>
-
-            <div class="text-form" id='message-form'>
-                <label for='message'>Message</label>
-                <textarea id='message' name='message'></textarea>
-                <div class='instruction'>Write here your message!</div>
-            </div>
-
-            <div class='sub-button' id="submit-button">
-                <button>Send!</button>
-            </div>
-            
-        </form>
-            <!-- Contact page - end -->
+        <!-- Biography - start -->
+        <article class="section" id="biography-container">
+            <h2>Biography</h2>
+            <section>
+                <p>
+                    What people say about me: loyal, precise, always ready and 
+                    present for a friend or colleague. 🙂 
+                    </br></br>    
+                    I know the importance of 💬 communication 💬 and the role 
+                    it plays in human relationships, from sharing to solving 
+                    problems moments.
+                    </br></br>
+                    I love having things under 🎛️ control 🎛️, I'm curious and 
+                    this leads me to explore and know even the things I don't 
+                    know, if I think they can be useful to me. 🔍🦝 
+                    I think every problem has at least one solution, but no 
+                    solution can be achieved alone.
+                    </br></br>
+                    🔧 Are you curious to know what my skills are? Or what 
+                    projects have I managed? 🖱️ Click <a class="link" 
+                    href="/projects-page/index.html"
+                    id="projects-link">here!</a>
+                    </br></br>
+                    
+                    Do you want to know more about me? <a class="link" 
+                    id="cv-download" 
+                    href="../assets/docs/cv/CV&CB 3.9 ENG-Web - Matteo Martinelli_November 2022.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    Download my CV!</a> 📜
+                    </br></br>
+                    Do you want to contact me by email? Use the
+                    <a class="link" id="contact-form-link" 
+                    href="/contact-page/index.html">
+                    form!</a>
+                </p>
+            </section>
+        </article>
+        <!-- Biography - end -->
         <div class="spacer"></div>
     </body>
 </html>

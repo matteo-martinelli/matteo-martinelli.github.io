@@ -1,35 +1,28 @@
 /*Mobile first style*/
 
-/*FONT-FACES*******************************************************************/
-@font-face {
-  font-family: 'Roboto';
-  src: url('typography/Roboto-Regular-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 300;
+/*Color palette****************************************************************/
+:root {
+  --color-palette-dark-background: #222831;
+  --color-palette-dark-foreground: #2D4059;
+  --color-palette-dark-accent-orange: #FF5722;
+  --color-palette-dark-accent-red: #F30A49;
+  --color-palette-dark-accent-yellow: #FFD700;
+  --color-palette-dark-accent-blue: #2666CF;
+  --color-palette-dark-contrast:  #EEEEEE;
+
+  --color-palette-link-color: rgb(9, 255, 0);
+  --color-palette-link-active-color: rgb(241, 206, 3);
+  --color-palette-link-visited-color: rgb(79, 79, 147);
 }
 
-@font-face {
-  font-family: 'Roboto Light Italic';
-  src: url('typography/Roboto-LightItalic-webfont.woff') format('woff');
-  font-style: italic;
-  font-weight: 300;
-}
 
-@font-face {
-  font-family: 'Roboto Bold';
-  src: url('typography/Roboto-Bold-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 700;
-}
-
-/*Global site style************************************************************/
+/*Global site layout***********************************************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;   /*To set dimensions rendering based on the actual 
                               external box size*/
 }
-
 
 /*Semantic settings for legacy browsers*/
 section, article, aside, footer, header, nav {
@@ -44,52 +37,78 @@ html, body {
 /*Merge with the lower code*/
 body {
   /*Background settings*/
-  background-color: #282935; 
-  /*Flexbox settings*/
+  background-color: #222831; /*Old color: #282935;*/ 
+  /*Flexbox settings
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
   /*Fonts settings*/
   font-family: 'Roboto', sans-serif; 
   font-size: 16.17px;
-  color: #FFFFFF;                    /*Font color*/
-  font-family: 'Roboto',sans-serif;
-  font-size: 16.17px;
+  color: #FFFFFF;           /*Font color*/
   /*line-height: 1.8em;*/
   line-height: 1.65;  
 }
 
 .section {
-    /*Dimensions settings*/
+  /*Debug
+  border: 1px solid red;*/
+  /*Dimensions settings*/
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
   /*test*/
-  margin: 0;
-  padding: 10px 10px;
-  /*Flexbox settings*/
+  padding: 30px 25px;
+  scroll-behavior: smooth;    /*Scroll behavior*/
+}
+
+.spacer {
+  height: 60px;
+  min-height: 60px;
+}
+
+
+/*Global site interaction elements*********************************************/
+
+.menu {
+  width: 100%;
+  max-width: 380px;
+  height: fit-content;
+  border-top: 1px rgb(89, 88, 88) solid;
+  background-color: var(--color-palette-dark-foreground); /*Old color: #848692;*/
+  box-shadow: 0 -2px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;                /*For managing flexbox overflow*/
-  justify-content: center;
-  align-content: space-around;    /*For spacing flexboxes alongside 
-                                  the main axis*/
-  /*Scroll behavior*/
-  scroll-behavior: smooth;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+  padding: 5px;
+  left: 50%;                    /*For absolute positioned flex centering*/
+  transform: translateX(-50%);  /*For absolute positioned flex centering*/
+}
+
+.menu-button img {
+  height: 35px;
+  height: 35px;
+  margin: auto auto;
 }
 
 .icon-buttons-box {
   /*Flexbox settings*/
   display: flex;
-  align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .icon-button {
   /*Dimensions settings*/
   margin: 0 5px 0 5px;
-  height: 80px;
-  width: 80px;
   /*Flexbox settings*/
   display: flex;
+  justify-content: center;
+}
+
+.icon-button img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  object-fit: scale-down;
 }
 
 .icon-button:active {
@@ -99,19 +118,19 @@ body {
 
 .link:link {
   /*Fonts settings*/
-  color: rgb(9, 255, 0);
+  color: var(--color-palette-link-color);
   text-decoration: none;
 }
 
 .link:active {
   /*Fonts settings*/
-  color: rgb(241, 206, 3);
+  color: var(--color-palette-link-active-color);
   text-decoration: none;
 }
 
 .link:visited {
   /*Fonts settings*/
-  color: rgb(79, 79, 147);
+  color: var(--color-palette-link-visited-color);
   text-decoration: none;
 }
 
@@ -120,11 +139,6 @@ body {
   border: none;
   /*Dimensions settings*/
   padding-bottom: 10px;
-}
-
-.radio-selector legend{
-  /*Dimensions settings*/
-  margin: 5px 0 0 0;
 }
 
 .radio-selector .radio-label{
@@ -141,7 +155,8 @@ body {
 
 .radio-selector legend{
   /*Dimensions settings*/
-  padding-right: 10px;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .text-form {
@@ -149,8 +164,14 @@ body {
   padding-bottom: 10px;
   /*Flexbox settings*/
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.text-form input[type='text'],
+.text-form input[type='email'] {
+  max-width: 200px;
 }
 
 .text-form input[type='text'],
@@ -163,16 +184,16 @@ body {
   /*Dimensions settings*/
   width: 100%;
   padding: 5px;
+  /*Fonts settings*/
+  font-family: "Courier New", "Arial", sans-serif;
   font-size: 14px;
 }
 
 .text-form textarea {
-  /*Fonts settings*/
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
   /*Dimensions settings*/
-  min-height: 200px;    /*How to make it responsive?*/
-  min-width: 270px;     /*How to make it responsive?*/
+  min-height: 140px;    /*How to make it responsive?*/
+  min-width: 260px;     /*How to make it responsive?*/
+  max-width: 530px;
   margin-bottom: 1px;
   padding: 7px;
   resize: none;
@@ -199,7 +220,7 @@ body {
   font-weight: bold;
   color: #FFFFFF;
   /*Background settings*/
-  background-color: rgb(106, 106, 200);
+  background-color: var(--color-palette-dark-accent-orange);  /*Old: rgb(106, 106, 200)*/
   border: 1px solid black;
   border-radius: 6px;
   /*Dimensions settings*/;
@@ -211,82 +232,76 @@ body {
   /*Font settings*/
   color: #FFFFFF;
   /*Background settings*/
-  background-color: #407FC7;
-  border: 2px solid blue;
+  background-color: var(--color-palette-dark-accent-yellow);  /*Old: #407FC7*/
+  border: 2px solid black;
   /*Transform settings
   transform: scale(1.15);*/
 }
 
-/*Presenation card global setting*/
-#presentation {
-  /*Background settings*/
-  background-color: #36373c;
-  /*border: 1px solid black;*/
-  border-radius: 30px;
-  /*Dimensions settings*/
-  height: 97.7%;
-  width: 97%;
-  /*Position settings*/
-  margin: 10px 10px;
-}
-
-#profile-image {
-  /*Dimensions settings*/
-  margin-top: 10%;
-  padding: 0 0;
+header {
   width: 100%;
-  /*Flexbox settings*/
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  font-size: min(5vw, 16.17px);
 }
 
-#me {
-  /*Dimensions settings*/
-  width: 250px;
-  height: 250px;
-  /*Rendering settings*/
+header figure {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+header figure img {
+  width: min(25vw, 80px);
+  height: auto;
   object-fit: cover;
   border: 1px solid black;
   border-radius: 50%;
 }
 
-#profile-name {
-  /*Dimensions settings*/
+
+/*Nav bar dim changes*/
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  .menu {
+    width: 100%;
+    max-width: 380px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}
+
+
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .menu {
+    width: 100%;
+    max-width: 480px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .section {
+  margin: auto;
   width: 100%;
-  /*Flexbox settings*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#profile-name h1, #profile-name h2, #profile-name h3 {
-  /*Dimensions settings*/
-  width: 100%;    
-  text-align: center;
-}
-
-#homepage {
-  color: white;
-  text-decoration: none;
-}
-
-.section {
-  /*Debug*/
-  border: 1px solid red;
+  max-width: 480px;
+  }
 }
 
 
-/* Desktop Style **************************************************************/
-@media only screen and (min-width: 451px) {
-	body {
-    /*Dimensions settings*/
-    width: 960px;
-    margin: 0 auto; /*Deletes margins on the upper and lower side, and 
-                    distributes the space evenly on the left and on the 
-                    right*/
+/* Big Tablet, Small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  body {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
   }
 
   .icon-button:hover {
@@ -295,22 +310,127 @@ body {
   }
     
   .link:hover {
-    /*Fonts settings*/
     color: rgb(202, 53, 53);
   }
 
   .sub-button button:hover {
-    /*Fonts settings*/
     color: #36373C;
-    /*Background settings
-    background-color: rgb(9, 255, 0);*/
+  }  
+
+  .spacer {
+    height: 75px;
+    min-height: 75px;
   }
 
-  /*Presentation card global setting*/
-  #presentation {
-    /*Dimensions settings*/
-    width: 316.8px;
-    /*Position settings*/
-    position: fixed;    /*Removes the flexbox from the flow*/  
+  .menu {
+    width: 100%;
+    max-width: 740px;
+    height: 50px;
+    border: 1px rgb(89, 88, 88) solid;
+    border-radius: 10px;
+    box-shadow: 0 0px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    bottom: 20px;
+  }  
+
+  .section {
+    margin: auto;
+    width: 100%;
+    max-width: 768px;
+    height: fit-content;
+  }
+
+  .text-form textarea {
+    height: 250px;
+  }
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+  body {
+    font-size: 20px;
+    width: 980px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  
+  .spacer {
+    height: 75px;
+    min-height: 75px;
+  }
+
+  .icon-button:hover {
+    /*Transform settings*/
+    transform: scale(1.15);
+  }
+    
+  .link:hover {
+    color: rgb(202, 53, 53);
+  }
+
+  .sub-button button:hover {
+    color: #36373C;
+  }  
+
+  .menu {
+    width: 100%;
+    max-width: 980px;
+    height: 50px;
+    border: 1px rgb(89, 88, 88) solid;
+    border-radius: 10px;
+    box-shadow: 0 0px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    bottom: 20px;
+  }  
+
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .text-form textarea {
+    height: 250px;
+  }
+
+  header {
+    height: 120px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header figure {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header figure img {
+    width: min(25vw, 120px);
+    height: auto;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
   }
 }

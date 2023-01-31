@@ -146,6 +146,21 @@ header figure img {
     height: fit-content;
   }
 
+  .section::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--color-palette-dark-background);
+    border-radius: 5px;
+    border: 1px solid #4f4e4e;
+  }
+
+  .section::-webkit-scrollbar-thumb {
+    background: var(--color-palette-dark-foreground);
+  }
+
+  .section::-webkit-scrollbar-thumb:hover {
+    background: var(--color-palette-dark-accent-orange);
+  }
+
   header {
     height: 120px;
     width: 50%;

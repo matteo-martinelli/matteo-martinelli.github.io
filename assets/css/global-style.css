@@ -1,21 +1,5 @@
 /*Mobile first style*/
 
-/*Color palette****************************************************************/
-:root {
-  --color-palette-dark-background: #222831;
-  --color-palette-dark-foreground: #2D4059;
-  --color-palette-dark-accent-orange: #FF5722;
-  --color-palette-dark-accent-red: #F30A49;
-  --color-palette-dark-accent-yellow: #FFD700;
-  --color-palette-dark-accent-blue: #2666CF;
-  --color-palette-dark-contrast:  #EEEEEE;
-
-  --color-palette-link-color: rgb(9, 255, 0);
-  --color-palette-link-active-color: rgb(241, 206, 3);
-  --color-palette-link-visited-color: rgb(79, 79, 147);
-}
-
-
 /*Global site layout***********************************************************/
 * {
     margin: 0;
@@ -65,179 +49,6 @@ body {
   min-height: 60px;
 }
 
-
-/*Global site interaction elements*********************************************/
-
-.menu {
-  width: 100%;
-  max-width: 380px;
-  height: fit-content;
-  border-top: 1px rgb(89, 88, 88) solid;
-  background-color: var(--color-palette-dark-foreground); /*Old color: #848692;*/
-  box-shadow: 0 -2px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0px;
-  padding: 5px;
-  left: 50%;                    /*For absolute positioned flex centering*/
-  transform: translateX(-50%);  /*For absolute positioned flex centering*/
-}
-
-.menu-button img {
-  height: 35px;
-  height: 35px;
-  margin: auto auto;
-}
-
-.icon-buttons-box {
-  /*Flexbox settings*/
-  display: flex;
-  justify-content: center;
-}
-
-.icon-button {
-  /*Dimensions settings*/
-  margin: 0 5px 0 5px;
-  /*Flexbox settings*/
-  display: flex;
-  justify-content: center;
-}
-
-.icon-button img {
-  width: 100%;
-  max-width: 80px;
-  height: auto;
-  object-fit: scale-down;
-}
-
-.icon-button:active {
-  /*Transform settings*/
-  transform: scale(1.15);
-}
-
-.link:link {
-  /*Fonts settings*/
-  color: var(--color-palette-link-color);
-  text-decoration: none;
-}
-
-.link:active {
-  /*Fonts settings*/
-  color: var(--color-palette-link-active-color);
-  text-decoration: none;
-}
-
-.link:visited {
-  /*Fonts settings*/
-  color: var(--color-palette-link-visited-color);
-  text-decoration: none;
-}
-
-.radio-selector {
-  /*Background settings*/
-  border: none;
-  /*Dimensions settings*/
-  padding-bottom: 10px;
-}
-
-.radio-selector .radio-label{
-  /*Fonts settings*/
-  font-size: 18px;
-  /*Dimensions settings*/
-  margin: 0 13px 0 2px;
-}
-
-.radio-selector input[type='radio']{
-  /*Dimensions settings*/
-  margin-top: 2px;
-}
-
-.radio-selector legend{
-  /*Dimensions settings*/
-  padding-top: 5px;
-  text-align: center;
-}
-
-.text-form {
-  /*Dimensions settings*/
-  padding-bottom: 10px;
-  /*Flexbox settings*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%;
-}
-
-.text-form input[type='text'],
-.text-form input[type='email'] {
-  max-width: 200px;
-}
-
-.text-form input[type='text'],
-.text-form input[type='email'],
-.text-form textarea {
-  /*Background settings*/
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 6px;
-  /*Dimensions settings*/
-  width: 100%;
-  padding: 5px;
-  /*Fonts settings*/
-  font-family: "Courier New", "Arial", sans-serif;
-  font-size: 14px;
-}
-
-.text-form textarea {
-  /*Dimensions settings*/
-  min-height: 140px;    /*How to make it responsive?*/
-  min-width: 260px;     /*How to make it responsive?*/
-  max-width: 530px;
-  margin-bottom: 1px;
-  padding: 7px;
-  resize: none;
-  overflow: auto;
-}
-
-.text-form label {
-  /*Dimensions settings*/
-  margin-top: 5px;
-}
-
-.text-form .instruction {
-  /*Font settings*/
-  color: #999999;
-  font-size: 12px;
-  text-align: center;
-  /*Dimensions settings*/
-  margin-bottom: 10px;
-}
-
-.sub-button button {
-  /*Font settings*/
-  font-size: 16px;
-  font-weight: bold;
-  color: #FFFFFF;
-  /*Background settings*/
-  background-color: var(--color-palette-dark-accent-orange);  /*Old: rgb(106, 106, 200)*/
-  border: 1px solid black;
-  border-radius: 6px;
-  /*Dimensions settings*/;
-  padding: 10px 40px;
-  cursor: pointer;
-}
-
-.sub-button button:active {
-  /*Font settings*/
-  color: #FFFFFF;
-  /*Background settings*/
-  background-color: var(--color-palette-dark-accent-yellow);  /*Old: #407FC7*/
-  border: 2px solid black;
-  /*Transform settings
-  transform: scale(1.15);*/
-}
-
 header {
   width: 100%;
   display: flex;
@@ -264,24 +75,12 @@ header figure img {
 
 /*Nav bar dim changes*/
 @media only screen and (min-width: 381px) and (max-width: 480px) {
-  .menu {
-    width: 100%;
-    max-width: 380px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
+
 }
 
 
 /* Tablet Style ***************************************************************/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  .menu {
-    width: 100%;
-    max-width: 480px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-
   .section {
   margin: auto;
   width: 100%;
@@ -304,46 +103,16 @@ header figure img {
     font-size: 22px;
   }
 
-  .icon-button:hover {
-    /*Transform settings*/
-    transform: scale(1.15);
-  }
-    
-  .link:hover {
-    color: rgb(202, 53, 53);
-  }
-
-  .sub-button button:hover {
-    color: #36373C;
-  }  
-
   .spacer {
     height: 75px;
     min-height: 75px;
   }
-
-  .menu {
-    width: 100%;
-    max-width: 740px;
-    height: 50px;
-    border: 1px rgb(89, 88, 88) solid;
-    border-radius: 10px;
-    box-shadow: 0 0px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
-    justify-content: center;
-    gap: 50px;
-    position: fixed;
-    bottom: 20px;
-  }  
 
   .section {
     margin: auto;
     width: 100%;
     max-width: 768px;
     height: fit-content;
-  }
-
-  .text-form textarea {
-    height: 250px;
   }
 }
 
@@ -369,32 +138,6 @@ header figure img {
     min-height: 75px;
   }
 
-  .icon-button:hover {
-    /*Transform settings*/
-    transform: scale(1.15);
-  }
-    
-  .link:hover {
-    color: rgb(202, 53, 53);
-  }
-
-  .sub-button button:hover {
-    color: #36373C;
-  }  
-
-  .menu {
-    width: 100%;
-    max-width: 980px;
-    height: 50px;
-    border: 1px rgb(89, 88, 88) solid;
-    border-radius: 10px;
-    box-shadow: 0 0px  15px 0px rgb(255, 87, 34, 0.8);   /*#FF5722*/
-    justify-content: center;
-    gap: 50px;
-    position: fixed;
-    bottom: 20px;
-  }  
-
   .section {
     margin-left: auto;
     margin-right: auto;
@@ -403,13 +146,9 @@ header figure img {
     height: fit-content;
   }
 
-  .text-form textarea {
-    height: 250px;
-  }
-
   header {
     height: 120px;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;

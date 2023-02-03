@@ -9,7 +9,7 @@
         <link rel='stylesheet' href='../assets/css/global-fonts.css'/>
         <link rel='stylesheet' href='../assets/css/global-elements.css'/>
         <link rel='stylesheet' href='../assets/css/global-style.css'/>
-        <link rel='stylesheet' href='biography-style.css'/>
+        <link rel='stylesheet' href='s2i-style.css'/>
         <!--Meta tags-->
         <!--Setting charset-->
         <meta charset="UTF-8"/>
@@ -17,23 +17,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, 
         maximum-scale=1.0, user-scalable=no" />
         <!--Properties for website sharing and preview-->
-        <meta property="og:title" content="Eng. Matteo Martinellis"/>
+        <meta property="og:title" content="Eng. Matteo Martinelli"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://wmex91.github.io/" />
         <meta property="og:image" content="https://media.licdn.com/dms/image/C4D16AQG9fN5tgxIp4g/profile-displaybackgroundimage-shrink_350_1400/0/1623667752796?e=1679529600&v=beta&t=E0eWIUUChYfg9do9yaedYfihKlNDDBbFUNhj0lrxysA"/>
     </head>
 
     <body>
-        <header>
-            <figure id="header-image">
-                <img src="../assets/images/personal/personal-pic-resized.svg" 
-                alt="Mr. Matteo Martinelli"/>
-            </figure>
-
-            <h2>Matteo Martinelli</h2>
-            <h3>Management Engineer</h3>
-        </header>
-        
         <nav class="menu" id="landing-page-menu">
             <a class="menu-button" id="home-page" href="../index.html">
                 <img src="../assets/images/icons/menu/light/home-light.svg" 
@@ -68,46 +58,15 @@
             </a>
         </nav>
 
-        <!-- Biography - start -->
-        <article class="section" id="biography-container">
-            <h2>Biography</h2>
-            <section>
-                <p>
-                    What people say about me: loyal, precise, always ready and 
-                    present for a friend or colleague. 🙂 
-                    </br></br>    
-                    I am aknowledged about the importance of 💬 communication 💬 and the role 
-                    it plays in human relationships, from sharing to solving 
-                    problems moments.
-                    </br></br>
-                    I love having things under 🎛️ control 🎛️, I'm curious and 
-                    this leads me to explore and discover new things, if I 
-                    think they can be useful to me. 🔍🦝 
-                    In my opinion every problem has at least one solution, but 
-                    the best solutions are most of the times achieved as a 
-                    group.
-                    </br></br>
-                    🔧 Are you curious to know what my skills are? Or what 
-                    projects have I managed? 🖱️ Click <a class="link" 
-                    href="../projects"
-                    id="projects-link">here!</a>
-                    </br></br>
-                    
-                    Do you want to know more about me? <a class="link" 
-                    id="cv-download" 
-                    href="../assets/docs/cv/CV&CB 3.9 ENG-Web - Matteo Martinelli_November 2022.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    Download my CV!</a> 📜
-                    </br></br>
-                    Do you want to get in touch? Use the
-                    <a class="link" id="contact-form-link" 
-                    href="../contact">
-                    form!</a>
-                </p>
-            </section>
-        </article>
-        <!-- Biography - end -->
-        <div class="spacer"></div>
+        <div class="section" id="exercise">
+            <div class='number-form' id='number-form'>
+                <label for='number-field'>Number</label>
+                <input id='number-field' name='number' type='number'/>
+            </div>
+
+            <button id="calculate">Calculate!</button>
+        </div>
+
+        <script src="index.js"></script>
+
     </body>
-</html>
-    

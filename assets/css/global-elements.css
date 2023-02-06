@@ -164,7 +164,8 @@
   margin-bottom: 10px;
 }
 
-.sub-button button {
+/*.sub-button button {*/
+button {
   /*Font settings*/
   font-size: 16px;
   font-weight: bold;
@@ -178,14 +179,14 @@
   cursor: pointer;
 }
 
-.sub-button button:active {
+button:active {
   /*Font settings*/
   color: #FFFFFF;
   /*Background settings*/
   background-color: var(--color-palette-dark-accent-yellow);  /*Old: #407FC7*/
   border: 2px solid black;
-  /*Transform settings
-  transform: scale(1.15);*/
+  /*Transform settings*/
+  transform: scale(1.15);
 }
 
 
@@ -222,7 +223,7 @@
     color: rgb(202, 53, 53);
   }
 
-  .sub-button button:hover {
+  button:hover {
     color: #36373C;
   }  
 
@@ -256,7 +257,7 @@
     color: rgb(202, 53, 53);
   }
 
-  .sub-button button:hover {
+  button:hover {
     color: #36373C;
   }  
 

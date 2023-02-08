@@ -1,0 +1,63 @@
+/*Mobile first*/
+
+.section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incremental-control {
+    scale: 80%;
+}
+
+/*Nav bar dim changes*/
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+    .incremental-control {
+        scale: 90%;
+    }
+
+    #show-number {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .incremental-control {
+        scale: 90%;
+    }
+
+    #show-number {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+
+/* Big Tablet, Small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .incremental-control {
+        scale: 95%;
+    }
+    
+    #show-number {
+        font-size: 40px;
+        padding: 20px;
+    }
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+    .incremental-control {
+        scale: 100%;
+    }
+
+    #show-number {
+        font-size: 40px;
+        padding: 20px;
+    }
+}

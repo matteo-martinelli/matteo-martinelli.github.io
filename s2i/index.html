@@ -6,10 +6,10 @@
         <!--Setting favicon-->
         <link rel="icon" href="../assets/images/favicon/favicon_smile.ico">
         <!--Importing stylesheets-->
-        <link rel='stylesheet' href='../assets/css/global-fonts.css'/>
-        <link rel='stylesheet' href='../assets/css/global-elements.css'/>
-        <link rel='stylesheet' href='../assets/css/global-style.css'/>
-        <link rel='stylesheet' href='s2i-style.css'/>
+        <link rel='stylesheet' href='../assets/css/global/global-fonts.css'/>
+        <link rel='stylesheet' href='../assets/css/global/global-elements.css'/>
+        <link rel='stylesheet' href='../assets/css/global/global-style.css'/>
+        <link rel='stylesheet' href='../assets/css/pages/s2i/s2i-style.css'/>
         <!--Meta tags-->
         <!--Setting charset-->
         <meta charset="UTF-8"/>
@@ -24,6 +24,16 @@
     </head>
 
     <body>
+        <header>
+            <figure id="header-image">
+                <img src="../assets/images/personal/personal-pic-resized.svg" 
+                alt="Mr. Matteo Martinelli"/>
+            </figure>
+
+            <h2>Matteo Martinelli</h2>
+            <h3>Management Engineer</h3>
+        </header>
+
         <nav class="menu" id="landing-page-menu">
             <a class="menu-button" id="home-page" href="../index.html">
                 <img src="../assets/images/icons/menu/light/home-light.svg" 
@@ -57,33 +67,21 @@
                 <!-- Contacts -->
             </a>
         </nav>
-
-        <div class="section" id="exercise">
-            <div class='number-form' id='number-form'>
-                <label for='number-field'>Number</label>
-                <input id='number-field' name='number' type='number'/>
-            </div>
-
-            <button id="calculate">Calculate!</button>
-            
-            <p id="even-uneven-response"></p>
-        </div>
-
         
         <div class="section" id="project">
-            <div class="js-basics-project">
-                <p class="show-number">0</p>
-                <div id="button-decrement">
-                    <button class="button incremental-control" 
-                    id="decrement">-</button>
-                </div>
-                <div id="button-increment">
-                    <button class="button incremental-control" 
-                    id="increment">+</button>
-                </div>
+            <div id="button-decrement">
+                <button class="button incremental-control" 
+                id="decrement">-</button>
+            </div>
+
+            <p id="show-number">0</p>
+            
+            <div id="button-increment">
+                <button class="button incremental-control" 
+                id="increment">+</button>
             </div>
         </div>
 
-        <script src="index.js"></script>
+        <script src="../assets/js/s2i/index.js"></script>
 
     </body>

@@ -13,6 +13,8 @@
         <link rel='stylesheet' href='../assets/css/global/global-elements.css'/>
         <link rel='stylesheet' href='../assets/css/global/global-style.css'/>
         <link rel='stylesheet' href='../assets/css/pages/contact/contact-form-style.css'/>
+        <!--Importing JS external components-->
+        <!--<script src="https://google.com/recaptcha/api.js" async defer></script>-->
         <!--Properties for website sharing and preview-->
         <meta property="og:title" content="Eng. Matteo Martinelli"/>
         <meta property="og:type" content="website"/>
@@ -66,7 +68,8 @@
         </nav>
 
         <!-- Contact page - start -->
-        <form class ="section" action='' method='get' id='contact-form-container'>
+        <form class="section" id="contact-form-container" name="emailForm" 
+        action="" method="get" onsubmit="return validate();">
             <div id='contact-form-header'>
                 <h2>Contact form</h2>
                 <p>Do you want to contact me? <em>Complete the form!</em></p>
@@ -109,10 +112,15 @@
             <div class='sub-button' id="submit-button">
                 <button>Send!</button>
             </div>
+
+            <div class="g-recaptcha" data-sitekey=""></div>
             
         </form>
             <!-- Contact page - end -->
         <div class="spacer"></div>
+
+        <script src="../assets/js/config.js"></script>
+        <script src="../assets/js/contact/index.js"></script>
     </body>
 </html>
     

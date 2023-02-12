@@ -1,8 +1,8 @@
 // Index js file
 
-let mail = config.MY_MAIL;
+const MAIL = "matteo.martinelli.1991@gmail.com";
 const contactMenuButton = document.querySelector("#contacts-page");
 
 contactMenuButton.addEventListener('click', function(event){
-    alert('Write me at ' + mail + "!");
+    alert('Write me at ' + MAIL + "!");
 })

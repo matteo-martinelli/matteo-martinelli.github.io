@@ -1,0 +1,55 @@
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+    /*Presentation card global setting*/
+    #presentation {
+      /*Dimensions settings*/
+      height: 33%;
+      /*Position settings*/
+      position: static;    /*Removes the flexbox from the flow*/  
+      /*Flexbox settings*/
+      flex-direction: row;
+      flex-wrap: nowrap;  /*TO DECIDE*/
+    }
+
+    #profile-image {
+      /*Dimensions settings*/
+      margin: 0;
+      padding: 0;
+      /*Flexbox settings*/
+      display: flex;
+      flex: 1;
+    }
+
+    #me {
+      /*Dimensions settings*/
+      width: 150px;
+      height: 150px;
+      /*Rendering settings*/
+      object-fit: cover;
+    }
+
+    #homepage {
+      /*Layout settings*/
+      margin: 0 10px;
+      /*Flexbox child settings*/
+      display: flex;
+      flex: 2;
+    }
+
+    .icon-buttons-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icon-button {
+      /*Dimensions settings*/
+      margin: 5px 0 5px 0;
+      /*Flexnox child settings*/
+      flex-direction: column;
+      justify-content: center;
+      scale: 75%;
+    }
+}
+
+

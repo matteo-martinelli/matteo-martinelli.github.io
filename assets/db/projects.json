@@ -1,0 +1,53 @@
+{
+    "website-section": "projects",
+    "industrial-projects": {
+        "dxf2plc-coordinates-extractor": {
+            "presentation-link": "assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
+            "essay-link": "/assets/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
+        },
+        "assembly-line-redesign": {
+            "presentation-link": "/assets/docs/assembly_line_redesign/assembly_line_redesign-presentation-website_version.pdf"
+        },
+        "intelligent-poka-yoke": {
+            "presentation-link": "/assets/docs/intelligent-poka-yoke/intelligent_poka_yoke-presentation-website_version.pdf",
+            "scientific-article-link": "https://www.mdpi.com/2076-3417/12/21/11071"
+        },
+        "smed-robotic-workcenter": {
+            "presentation-link": "/assets/docs/smed/smed_IF90-presentation-website_version.pdf"
+        },
+        "smart-digital-twins-for-industry-4.0": {
+            "presentation-link": "assets/docs/phd-thesis/smart-digital-twins-for-industry-40-web-version.pdf", 
+            "thesis-link": "https://iris.unimore.it/handle/11380/1339389"
+        }
+    },
+
+    "scientific-articles": {
+        "article-a-link": {
+            "type":"preprint/journal/proceedings",
+            "title":"populate",
+            "authors":"populate",
+            "publisher":"populate",
+            "journal-issue-conference":"populate",
+            "year":"populate",
+            "reference-doi-link":"populate"
+        }
+    },
+    
+    "conference-articles": {
+        "article-a-link": {
+            "type":"preprint/journal/proceedings",
+            "title":"populate",
+            "authors":"populate",
+            "publisher":"populate",
+            "journal-issue-conference":"populate",
+            "year":"populate",
+            "reference-doi-link":"populate"
+        }
+    },
+
+    "university-thesis": {
+        "bachelor-thesis-link": "populate",
+        "masters-thesis-link": "populate",
+        "phd-thesis-link": "populate"
+    }
+}

@@ -17,6 +17,14 @@ body {
 #projects-table, .separator {
     /*Dimensions settings*/
     padding: 10px;
+    border: 1px solid red;
+}
+
+#projects-table2, .separator {
+    /*Dimensions settings*/
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
 }
 
 

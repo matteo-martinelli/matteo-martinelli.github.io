@@ -2,22 +2,37 @@
     "website-section": "projects",
     "industrial-projects": {
         "dxf2plc-coordinates-extractor": {
-            "presentation-link": "assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
-            "essay-link": "/assets/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
+            "title": "DXF2PLC Coordinates Extractor 🤖",
+            "links": {
+                "presentation-link": "assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
+                "essay-link": "/assets/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
+            }
         },
         "assembly-line-redesign": {
-            "presentation-link": "/assets/docs/assembly_line_redesign/assembly_line_redesign-presentation-website_version.pdf"
+            "title": "Assembly Line Redesign 🧑🏽‍🏭",
+            "links": {
+                "presentation-link": "/assets/docs/assembly_line_redesign/assembly_line_redesign-presentation-website_version.pdf"
+            }
         },
         "intelligent-poka-yoke": {
-            "presentation-link": "/assets/docs/intelligent-poka-yoke/intelligent_poka_yoke-presentation-website_version.pdf",
-            "scientific-article-link": "https://www.mdpi.com/2076-3417/12/21/11071"
+            "title": "Intelligent Poka Yoke 📹",
+            "links":{
+                "presentation-link": "/assets/docs/intelligent-poka-yoke/intelligent_poka_yoke-presentation-website_version.pdf",
+                "scientific-article-link": "https://www.mdpi.com/2076-3417/12/21/11071"
+            }
         },
         "smed-robotic-workcenter": {
-            "presentation-link": "/assets/docs/smed/smed_IF90-presentation-website_version.pdf"
+            "title": "SMED Robotic Workcenter 🦾",
+            "links": {
+                "presentation-link": "/assets/docs/smed/smed_IF90-presentation-website_version.pdf"
+            }
         },
         "smart-digital-twins-for-industry-4.0": {
-            "presentation-link": "assets/docs/phd-thesis/smart-digital-twins-for-industry-40-web-version.pdf", 
-            "thesis-link": "https://iris.unimore.it/handle/11380/1339389"
+            "title": "Smart Digital Twins for Industry 4.0 🏭",
+            "links": {
+                "presentation-link": "assets/docs/phd-thesis/smart-digital-twins-for-industry-40-web-version.pdf", 
+                "thesis-link": "https://iris.unimore.it/handle/11380/1339389"
+            }
         }
     },
 

@@ -58,7 +58,7 @@ fetch('/assets/db/projects.json').then(
                         li.textContent = description;
                         ul.appendChild(li);
                         table_entry.appendChild(ul);
-                        table_separator.innerText = '=>';
+                        table_separator.textContent = '=>';
                         table_row.appendChild(table_entry);
                         table_row.appendChild(table_separator);
                         table_row.appendChild(table_value);
@@ -77,6 +77,52 @@ fetch('/assets/db/projects.json').then(
                     scientific_articles_title.textContent = 'Scientific Articles:'; 
                     scientific_articles_div.id = 'scientific-articles';
                     scientific_articles_div.appendChild(scientific_articles_title);
+                    var counter = 0;
+                    for (var key_industrial in values[key]) {
+                        counter = counter + 1;
+                        console.log(counter);
+                        var content = values[key][key_industrial];
+                        //console.log(content);
+                        var type = content['type'];
+                        var title = content['title'];
+                        var authors = content['authors'];
+                        var publisher = content['publisher'];
+                        var journal_issue_conference = content['journal-issue-conference'];
+                        var year = content['year'];
+                        var doi_link = content['reference-doi-link'];
+
+                        const table_row = document.createElement('tr');
+                        table_row.className = 'scientific-article-row';
+                        const table_type = document.createElement('td');
+                        const table_title = document.createElement('td');
+                        const table_authors = document.createElement('td');
+                        const table_publisher = document.createElement('td');
+                        const table_journal_issue_conference = document.createElement('td');
+                        const table_year = document.createElement('td');
+                        const table_doi_link = document.createElement('td');
+                        const ul = document.createElement('ul');
+                        const li = document.createElement('li');
+
+                        li.textContent = type;
+                        ul.appendChild(li);
+                        table_type.appendChild(ul);
+                        table_title.textContent = title;
+                        table_authors.textContent = authors;
+                        table_publisher.textContent = publisher;
+                        table_journal_issue_conference.textContent = journal_issue_conference;
+                        table_year.textContent = year;
+                        table_doi_link.textContent = doi_link;
+                        //table_type.textContent = type; 
+                        table_row.appendChild(table_type);
+                        table_row.appendChild(table_title);
+                        table_row.appendChild(table_authors);
+                        table_row.appendChild(table_publisher);
+                        table_row.appendChild(table_journal_issue_conference);
+                        table_row.appendChild(table_year);
+                        table_row.appendChild(table_doi_link);
+                        scientific_articles_table.appendChild(table_row);
+                    }
+                    scientific_articles_div.appendChild(scientific_articles_table);
                     section.appendChild(scientific_articles_div);
                     break;
             }

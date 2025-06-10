@@ -22,7 +22,7 @@
             }
         },
         "smed-robotic-workcenter": {
-            "title": "SMED Robotic Workcenter 🦾",
+            "title": "SMED applied to a Robotic Workcenter 🦾",
             "links": {
                 "presentation-link": "/assets/docs/smed/smed_IF90-presentation-website_version.pdf"
             }
@@ -37,14 +37,24 @@
     },
 
     "scientific-articles": {
-        "article-a-link": {
-            "type":"preprint/journal/proceedings",
-            "title":"populate",
-            "authors":"populate",
-            "publisher":"populate",
-            "journal-issue-conference":"populate",
-            "year":"populate",
-            "reference-doi-link":"populate"
+        "poka-yoke-meets-deep-learning": {
+            "progressive-number": 1,
+            "type":"journal",
+            "title":"Poka yoke meets deep learning: a proof of concept for an assembly line application",
+            "authors":"M. Martinelli, M. Lippi, R. Gamberini",
+            "publisher":"MDPI",
+            "journal-issue-conference":"Applied Sciences, Volume 12, Issue 21 ",
+            "year":"2022",
+            "reference-doi-link":"https://doi.org/10.3390/app122111071"
+        }, 
+        "enabling-causality-learning-with-digital-twins": {
+            "type":"journal",
+            "title":"Enabling causality learning in smart factories with hierarchical digital twins",
+            "authors":"M. Lippi, M. Martinelli, M. Picone, F. Zambonelli",
+            "publisher":"Elsevier",
+            "journal-issue-conference":"Computers in Industry, Volume 148, Special issue on Autonomous, Context-Aware, Adaptive Digital Twins",
+            "year":"2023",
+            "reference-doi-link":"https://doi.org/10.1016/j.compind.2023.103892"
         }
     },
     

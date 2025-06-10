@@ -27,6 +27,25 @@ body {
     border: 1px solid red;
 }
 
+/*For test purposes: to be refined*/
+#db-content-test-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#scientific-articles-table2 {
+    /*Dimensions settings*/
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
+}
+
+#scientific-articles-table2, .scientific-article-row {
+    /*Dimensions settings*/
+    border: 1px solid blue;
+    margin: 10px 0;
+    display: block;
+}
 
 /* Tablet Style ***************************************************************/
 @media only screen and (min-width: 481px) and (max-width: 767px) {

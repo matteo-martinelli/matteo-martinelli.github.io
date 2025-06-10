@@ -164,6 +164,32 @@
   margin-bottom: 10px;
 }
 
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #6c757d; /* default grey */
+  white-space: nowrap;
+}
+
+.badge.journal {
+   background-color: #28a745; } /* green */
+.badge.research {      /* TODO: to refine */
+   background-color: #6f42c1; } /* purple */
+.badge.optimization {  /* TODO: to refine */
+   background-color: #17a2b8; } /* cyan */ 
+.badge.video {         /* TODO: to refine */
+   background-color: #e83e8c; } /* pink */
+.badge.ergonomics {    /* TODO: to refine */
+   background-color: #fd7e14; } /* orange */
+
 /*.sub-button button {*/
 button {
   /*Font settings*/

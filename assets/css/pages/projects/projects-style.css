@@ -7,44 +7,16 @@ body {
     align-items: center;
 }
 
-#projects-container {
+#content-container {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-#projects-table, .separator {
-    /*Dimensions settings*/
-    padding: 10px;
-    border: 1px solid red;
-}
-
-#projects-table2, .separator {
-    /*Dimensions settings*/
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid red;
-}
-
-/*For test purposes: to be refined*/
-#db-content-test-section {
-    display: flex;
-    flex-direction: column;
-}
-
-#scientific-articles-table2 {
-    /*Dimensions settings*/
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid red;
-}
-
-#scientific-articles-table2, .scientific-article-row {
-    /*Dimensions settings*/
-    border: 1px solid blue;
-    margin: 10px 0;
-    display: block;
+hr {
+    margin: 16px 0px;
+    border: 1px solid #3C3C3C;
 }
 
 /* Tablet Style ***************************************************************/
@@ -53,16 +25,16 @@ body {
         display: inherit;
     }
 
-    #projects {
+    /* #projects {
         min-height: 66%;
         height: auto;
-    }
+    } */
 }
 
 
 /* Big Tabelt, small Desktop Style ********************************************/
 @media only screen and (min-width: 768px) and (max-width: 980px) {
-    #projects-container {
+    #content-container {
         overflow-y: auto;
     }
 }
@@ -70,7 +42,7 @@ body {
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
-    #projects-container {
+    #content-container {
         overflow-y: auto;
     }
 }

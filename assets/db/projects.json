@@ -1,5 +1,4 @@
 {
-    "website-section": "projects",
     "industrial-projects": {
         "dxf2plc-coordinates-extractor": {
             "title": "DXF2PLC Coordinates Extractor 🤖",

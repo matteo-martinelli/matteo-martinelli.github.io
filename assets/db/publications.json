@@ -1,0 +1,150 @@
+{
+    "scientific-articles": {
+        "a-multi-simulation-bridge-for-iot-digital-twins": {
+            "type":"preprint",
+            "title":"A multi simulation bridge for IoT Digital Twins",
+            "authors":"M. Picone, S. Burattini, M. Melloni, P. Talasila, D. Ziglioli, M. Martinelli, N. Bicocchi, A. Ricci, P. G. Larsen",
+            "publisher":"Arxiv",
+            "journal-issue-conference":"Arxiv Preprint",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.48550/arXiv.2510.08164"
+        },
+        "on-device-ai-and-digital-twins-a-synergistic-approach-towards-cps": {
+            "type":"journal",
+            "title":"On-device AI and Digital Twins: a synergistic approach towards Cyber-Physical Systems",
+            "authors":"A. Barbone, N. Bicocchi, M. Martinelli, R. Morandi, M. Picone",
+            "publisher":"Elsevier",
+            "journal-issue-conference":"Future Generation Computers Systems",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.1016/j.future.2025.108068"
+        },
+        "the-two-faces-of-interoperability-bridging-cyber-and-phyisical-spaces-with-digital-twins": {
+            "type":"conference",
+            "title":"The two faces of Interoperability: bridging Cyber and Phyisical Spaces with Digital Twins",
+            "authors":"M. Picone, M. Martinelli, S. Burattini, A. Giulianelli, A. Ricci",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2025 21st International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT)",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.1109/DCOSS-IoT65416.2025.00078"
+        },
+        "modular-engineering-of-industrial-digital-twins-the-wldt-approach": {
+            "type":"conference",
+            "title":"Modular engineering of Industrial Digital Twins: the WLDT approach",
+            "authors":"M. Martinelli, A. Barbone, R. Morandi, M. Picone, S. Burattini, A. Ricci",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2025 21st International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT)",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.1109/DCOSS-IoT65416.2025.00077"
+        },
+        "towards-intelligent-monitoring-and-control-of-iiot-deployments-with-causality-aware-digital-twins": {
+            "type":"conference",
+            "title":"Towards intelligent monitoring and control of Industrial IoT deployments with causality-aware Digital Twins",
+            "authors":"S. Mariani, M. Martinelli, R. Morandi, A. Barbone, M. Picone",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2025 21st International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT)",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.1109/DCOSS-IoT65416.2025.00089"
+        },
+        "autonomous-mental-development-at-the-individual-and-collective-levels-concept-and-challenges": {
+            "type":"journal",
+            "title":"Autonomous mental development at the individual and collective levels: concept and challenges",
+            "authors":"M. Lippi, S. Mariani, M. Martinelli, F. Zambonelli",
+            "publisher":"IEEE",
+            "journal-issue-conference":"IEEE Access",
+            "year":"2025",
+            "reference-doi-link":"https://doi.org/10.1109/ACCESS.2024.3522362"
+        },
+        "hierarchical-digital-twin-ecosystem-for-industrial-manufacturing-scenarios": {
+            "type":"conference",
+            "title":"Hierarchical Digital Twin Ecosystem for Industrial Manufacturing scenarios",
+            "authors":"M. Martinelli, J. Zhang, A. K. Splettstoßer, M. Picone, M. Lippi, A. Wortmann",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2024 50th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)",
+            "year":"2024",
+            "reference-doi-link":"https://doi.org/10.1109/SEAA64295.2024.00018"
+        },
+        "digital-twin-continuum-a-key-enabler-for-pervasive-cyber-physical-environments": {
+            "type":"conference",
+            "title":"Digital Twin continuum: a key enabler for pervasive Cyber-Physical environments",
+            "authors":"A. Barbone, S. Burattini, M. Martinelli, M. Picone, A. Ricci, A. Virdis",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2024 32nd International Conference on Enabling Technologies: Infrastructure for Collaborative Enterprises (WETICE)",
+            "year":"2024",
+            "reference-doi-link":"https://doi.org/10.1109/ICCCN61486.2024.10637565"
+        },
+        "digital-twin-driven-collaboration-in-industry-5.0": {
+            "type":"conference",
+            "title":"Digital Twin driven collaboration in Industry 5.0",
+            "authors":"",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2024 50th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)",
+            "year":"2024",
+            "reference-doi-link":"https://doi.org/10.1109/WETICE64632.2024.00027"
+        },
+        "enabling-causality-learning-with-digital-twins": {
+            "type":"journal",
+            "title":"Enabling causality learning in smart factories with hierarchical digital twins",
+            "authors":"M. Lippi, M. Martinelli, M. Picone, F. Zambonelli",
+            "publisher":"Elsevier",
+            "journal-issue-conference":"Computers in Industry, Volume 148, Special issue on Autonomous, Context-Aware, Adaptive Digital Twins",
+            "year":"2023",
+            "reference-doi-link":"https://doi.org/10.1016/j.compind.2023.103892"
+        },
+        "poka-yoke-meets-deep-learning": {
+            "type":"journal",
+            "title":"Poka yoke meets deep learning: a proof of concept for an assembly line application",
+            "authors":"M. Martinelli, M. Lippi, R. Gamberini",
+            "publisher":"MDPI",
+            "journal-issue-conference":"Applied Sciences, Volume 12, Issue 21 ",
+            "year":"2022",
+            "reference-doi-link":"https://doi.org/10.3390/app122111071"
+        },
+        "individual-and-collective-self-development-concepts-and-challenges": {
+            "type":"conference",
+            "title":"Individual and collective Self-Development: Concepts and Challenges",
+            "authors":"M. Lippi, S. Mariani, M. Martinelli, F. Zambonelli",
+            "publisher":"IEEE",
+            "journal-issue-conference":"2022 17th Conference on Computer Science and Intelligence Systems (FedCSIS)",
+            "year":"2022",
+            "reference-doi-link":"https://doi.org/10.15439/2022F301"
+        },
+        "self-development-and-causality-in-intelligent-environments": {
+            "type":"conference",
+            "title":"Self-development and causality in intelligent environments",
+            "authors":"M. Martinelli, S. Mariani, M. Lippi, F. Zambonelli",
+            "publisher":"IOS Press",
+            "journal-issue-conference":"Workshops at 18th International Conference on Intelligent Environments (IE2022)",
+            "year":"2022",
+            "reference-doi-link":"https://doi.org/10.3233/AISE220050"
+        },
+        "individual-and-collective-autonomous-development": {
+            "type":"preprint",
+            "title":"Individual and Collective Autonomous Development",
+            "authors":"M. Lippi, S. Mariani, M. Martinelli, F. Zambonelli",
+            "publisher":"Arxiv",
+            "journal-issue-conference":"Arxiv Preprint",
+            "year":"2021",
+            "reference-doi-link":"https://doi.org/10.48550/arXiv.2109.11223"
+        }
+    },
+    "university-thesis": {
+        "phd-thesis": {
+            "degree": "PhD",
+            "course": "Industrial Innovation Engineering Program",
+            "title": "Smart Digital Twins in Industry 4.0",
+            "authors": "M. Martinelli",
+            "publisher": "University of Modena and Reggio Emilia",
+            "year": "2024", 
+            "reference-doi-link": "https://hdl.handle.net/20.500.14242/103358"
+        },
+        "masters-thesis": {
+            "degree": "Master's Degree",
+            "course": "Management Engineering",
+            "title": "Re-ingegnerizzazione di una linea di assemblaggio: il caso Dana Motion System",
+            "authors": "M. Martinelli",
+            "publisher": "University of Modena and Reggio Emilia",
+            "year": "2019", 
+            "reference-doi-link": "https://morethesis.unimore.it/theses/available/etd-09162019-181625/"
+        }
+    }
+}

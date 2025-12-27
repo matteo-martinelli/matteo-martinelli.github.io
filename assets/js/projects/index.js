@@ -8,6 +8,9 @@ function addDebuggingGraphhicalElements(debugging_value) {
     
         var projects_table = document.getElementById('projects-table');
         projects_table.style.border = '1px solid green';
+
+        var industrial_projects_section = document.getElementById('scientific-projects');
+        industrial_projects_section.style.border = '1px solid yellow';
     }
 }
 
@@ -22,6 +25,7 @@ function toTitleCase(str) {
 }
 
 
+// TODO: The logic must be the opposite: fetch the structure of the page, and then call the json files accordingly
 fetch('/assets/db/projects.json').then(
     response => {
         if (!response.ok) {
@@ -29,7 +33,7 @@ fetch('/assets/db/projects.json').then(
         } 
         return response.json();
     })
-    .then(values =>{
+    .then(values =>{        // TODO: make html elements const
         for (var key in values){
             switch (key){
                 case 'industrial-projects': {
@@ -101,6 +105,101 @@ fetch('/assets/db/projects.json').then(
 
                     break;
                 }
+
+                case 'scientific-projects': {
+                    const scientific_projects_section = document.getElementById('scientific-projects');
+                    console.log('scientific-projects section');
+
+                    var scientific_projects_title = document.createElement('h2');
+                    scientific_projects_title.textContent = 'Scientific Projects:'; 
+                    scientific_projects_section .appendChild(scientific_projects_title);
+                    
+                    var scientific_projects_ol = document.createElement('ol');
+
+                    for (var elem in values[key]) {
+                        var content = values[key][elem];
+                        
+                        console.log(content);
+
+                        // TODO: reorganize in a dictionary and build a brief algorithm
+                        var project_name = content.name;
+                        var project_full_name = content.full_name;
+                        var project_displayed_name = project_full_name + ' (' + project_name + ')';
+                        var project_role = content.role;
+                        var project_affiliation = content.affiliation;
+                        var project_type = content.type;
+                        var project_type = content.type;
+                        var project_duration = content.duration;
+                        var project_link = content.link;
+
+                        var project_title_h2 = document.createElement('h4');
+                        project_title_h2.textContent = project_displayed_name;
+                        var project_title_li = document.createElement('li');
+                        project_title_li.appendChild(project_title_h2);
+                        scientific_projects_ol.appendChild(project_title_li);
+
+                        var project_content_ul = document.createElement('ul');
+                        project_content_ul.style.marginLeft = '25px';
+                        project_content_ul.style.marginBottom = '0.4em';
+                        
+                        var project_role_li = document.createElement('li');
+                        var role_key = document.createElement('b');
+                        var role_value = document.createTextNode(project_role);
+                        role_key.textContent = 'Role: '; 
+                        project_role_li.appendChild(role_key);
+                        project_role_li.appendChild(role_value);
+                        project_content_ul.appendChild(project_role_li);
+
+                        var project_affiliation_li = document.createElement('li');
+                        var affiliation_key = document.createElement('b');
+                        var affiliation_value = document.createTextNode(project_affiliation);
+                        affiliation_key.textContent = 'Affiliation: '; 
+                        project_affiliation_li.appendChild(affiliation_key);
+                        project_affiliation_li.appendChild(affiliation_value);
+                        project_content_ul.appendChild(project_affiliation_li);
+
+                        var project_type_li = document.createElement('li');
+                        var type_key = document.createElement('b');
+                        var type_value = document.createTextNode(project_type);
+                        type_key.textContent = 'Type: '; 
+                        project_type_li.appendChild(type_key);
+                        project_type_li.appendChild(type_value);
+                        project_content_ul.appendChild(project_type_li);
+
+                        var project_duration_li = document.createElement('li');
+                        var duration_key = document.createElement('b');
+                        var duration_value = document.createTextNode(project_duration);
+                        duration_key.textContent = 'Duration: '; 
+                        project_duration_li.appendChild(duration_key);
+                        project_duration_li.appendChild(duration_value);
+                        project_content_ul.appendChild(project_duration_li);
+
+                        var project_link_li = document.createElement('li');
+                        var link_key = document.createElement('b');
+                        var link_value = document.createElement('a');
+                        link_value.textContent = project_link;
+                        link_value.href = project_link;
+                        link_value.target = '_blank';
+                        link_value.rel = 'noopener noreferrer';
+                        link_value.className = 'link';
+                        link_key.textContent = 'Link: '; 
+                        project_link_li.appendChild(link_key);
+                        project_link_li.appendChild(link_value);
+                        project_content_ul.appendChild(project_link_li);
+
+                        scientific_projects_ol.appendChild(project_content_ul);
+                        scientific_projects_ol.style.marginLeft = '25px';
+
+                        scientific_projects_section.appendChild(scientific_projects_ol);
+                    }
+
+                    scientific_projects_section.style.paddingTop = '10px';
+                    scientific_projects_section.style.paddingBottom = '10px';
+                    scientific_projects_section.style.paddingLeft = '25px';
+
+                    break; 
+                }
+
             }
         }
     })

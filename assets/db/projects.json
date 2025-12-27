@@ -33,5 +33,157 @@
                 "thesis-link": "https://iris.unimore.it/handle/11380/1339389"
             }
         }
-    }
+    }, 
+    "scientific-projects": [
+        {
+            "name": "NOUS",
+            "full_name": "A catalyst for EuropeaN ClOUd Services in the era of data spaces, high-performance and edge computing",
+            "role": "unit-researcher",
+            "affiliation": "University of Modena and Reggio Emilia",
+            "type": "Horizon Europe (HORIZON)",
+            "duration": "from 2025 to 2026",
+            "link": "https://nous-project.eu/"
+        },
+        {
+            "name": "TWINKLE",
+            "full_name": "digital TWIN continuum: a Key enabler for pervasive cyber-physicaL Environments",
+            "role": "unit-researcher",
+            "affiliation": "University of Modena and Reggio Emilia",
+            "type": "PRIN (Progetti di Ricerca di rilevante Interesse Nazionale)",
+            "duration": "from 2023 to 2025",
+            "link": "https://twinkle-project.github.io/"
+        },
+        {
+            "name": "COORSA",
+            "full_name": "COllaborazione tra Operatori e Robot manipolatori mobili Sicuri per la fAbbrica del futuro",
+            "role": "unit-researcher",
+            "affiliation": "University of Modena and Reggio Emilia",
+            "type": "POR FESR 2014 -2020",
+            "duration": "from 2022 to 2023",
+            "link": "https://coorsa.it/"
+        },
+        {
+            "name": "Fluidware",
+            "full_name": "FluidWare: A novel paradigm for Large-Scale IoT Systems",
+            "role": "unit-researcher",
+            "affiliation": "University of Modena and Reggio Emilia",
+            "type": "PRIN (Progetti di Ricerca di rilevante Interesse Nazionale)",
+            "duration": "from 2020 to 2022",
+            "link": "https://fluidware-project.github.io/"
+        }
+    ], 
+    "course-projects": [
+        {
+            "entity": "IFOA", 
+            "promoter": "", 
+            "role": "Trainer",
+            "modules": [
+                {
+                    "name": "Programming Logic and OOP Introduction", 
+                    "teaching_hours": "36h"
+                },
+                {
+                    "name": "Software with Python", 
+                    "teaching_hours": "48h"
+                }
+            ],
+            "program": "IFTS Software Development",
+            "from": "01/2026",
+            "to": "02/2025",
+            "total_teaching_load": "84h",
+            "notes": ""
+        },
+        {
+            "entity": "University of Modena and Reggio Emilia", 
+            "promoter": "", 
+            "role": "Contract Professor",
+            "modules": [
+                {
+                    "name": "Data Science and Management", 
+                    "teaching_hours": "18h"       
+                }
+            ],
+            "program": "Master's Degree in Management Engineering, ICT - Data Management major",
+            "from": "09/2024",
+            "to": "09/2025",
+            "total_teaching_load": "2 CFU",
+            "notes": "1CFU = 9 teaching hours"
+        },
+        {
+            "entity": "IFOA", 
+            "promoter": "", 
+            "role": "Trainer",
+            "modules": [
+                {
+                    "name": "DevOps, Containerization and Cloud Fundamentals",
+                    "teaching_hours": "28h" 
+                }
+            ],
+            "program": "",
+            "from": "05/2024",
+            "to": "05/2024",
+            "total_teaching_load": "28h",
+            "notes": ""
+        },
+        {
+            "entity": "Academy Adriano Olivetti", 
+            "promoter": "IFOA", 
+            "role": "Trainer",
+            "course_name": [
+                {
+                    "name": "Programming Logic", 
+                    "teaching_hours": "24h"
+                },
+                {
+                    "name": "Software Development with Python", 
+                    "teaching_hours": "48h"
+                },
+                {
+                    "name": "Data Analysis and Visualization with Python, Pandas and Matplotlib", 
+                    "teaching_hours": "36h"
+                }
+            ],
+            "program": "ITS DevSecOps",
+            "from": "09/2024",
+            "to": "04/2025",
+            "total_teaching_load": "108h",
+            "notes": ""
+        },
+        {
+            "entity": "IFOA", 
+            "promoter": "", 
+            "role": "Trainer",
+            "modules": [
+                {
+                    "name": "Applications Development with Python",
+                    "teaching_hours": "24h"
+                }
+            ],
+            "program": "",
+            "from": "05/2024",
+            "to": "05/2024",
+            "total_teaching_load": "24h",
+            "notes": ""
+        },
+        {
+            "entity": "Private Company", 
+            "promoter": "", 
+            "role": "Corporate Trainer",
+            "modules": [
+                {
+                    "name": "Introduction to development tools for AI: Numpy, Pandas and Matplotlib",
+                    "teaching_hours": "4h"
+                },
+                {
+                    "name": "Use case analysis for AI, ML and LLMs solutions",
+                    "teaching_hours": "4h"
+                }
+            ],
+            "program": "",
+            "from": "23/07/2024",
+            "to": "27/07/2024",
+            "total_teaching_load": "8h",
+            "notes": "custom course"
+        }
+    ]
 }

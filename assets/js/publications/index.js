@@ -44,6 +44,7 @@ fetch('/assets/db/publications.json').then(
                     scientific_articles_section.appendChild(sa_ol);
                                         
                     for (var key_industrial in values[key]) {
+                        // TODO: reorganize in a dictionary and build a brief algorithm
                         // Retrieve data to present
                         var content = values[key][key_industrial];
                         var type = content['type'];

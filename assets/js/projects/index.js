@@ -25,8 +25,9 @@ function toTitleCase(str) {
 }
 
 
+// Industrial projects
 // TODO: The logic must be the opposite: fetch the structure of the page, and then call the json files accordingly
-fetch('/assets/db/projects.json').then(
+fetch('/assets/db/industrial-projects.json').then(
     response => {
         if (!response.ok) {
             throw new Error('There was an error reading the file!');
@@ -105,10 +106,28 @@ fetch('/assets/db/projects.json').then(
 
                     break;
                 }
+            }
+        }
+    })
+    .then(values => {
+        addDebuggingGraphhicalElements(false);
+    })
 
+// Scientific projects
+// TODO: The logic must be the opposite: fetch the structure of the page, and then call the json files accordingly
+fetch('/assets/db/scientific-projects.json').then(
+    response => {
+        if (!response.ok) {
+            throw new Error('There was an error reading the file!');
+        } 
+        return response.json();
+    })
+    .then(values =>{        // TODO: make html elements const
+        for (var key in values){
+            switch (key){
                 case 'scientific-projects': {
                     const scientific_projects_section = document.getElementById('scientific-projects');
-                    console.log('scientific-projects section');
+                    //console.log('scientific-projects section');
 
                     var scientific_projects_title = document.createElement('h2');
                     scientific_projects_title.textContent = 'Scientific Projects:'; 
@@ -119,7 +138,7 @@ fetch('/assets/db/projects.json').then(
                     for (var elem in values[key]) {
                         var content = values[key][elem];
                         
-                        console.log(content);
+                        //console.log(content);
 
                         // TODO: reorganize in a dictionary and build a brief algorithm
                         var project_name = content.name;
@@ -207,3 +226,5 @@ fetch('/assets/db/projects.json').then(
         addDebuggingGraphhicalElements(false);
     })
 
+// Course projects
+// TODO: The logic must be the opposite: fetch the structure of the page, and then call the json files accordingly

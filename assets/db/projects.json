@@ -75,15 +75,19 @@
     "course-projects": [
         {
             "course_id": "ifts-sw-dev-with-ai",
-            "course_title": "IFTS Software Developer con strumenti AI",
+            "course_title": "IFTS Software Developer with AI Tools",
             "provider": "IFOA", 
-            "promoter": null, 
+            "promoter": null,
+            "languange": "Italian",
             "description": null,
             "link": "https://www.ifoa.it/corsi/pd-digitale-tecnico-progettazione-e-lo-sviluppo-di-applicazioni-informatiche-software-developer-con-strumenti-ai/",
             "role": "Trainer",
             "from": "2026-01",
             "to": "2026-03",
-            "total_taught_hours": 84,
+            "total_taught_hours": {
+                "value": 84,
+                "unit": "hours"
+            },
             "notes": null,
             "editions": [
                 {
@@ -92,25 +96,31 @@
                     "end_date": "2026-02-17",
                     "delivery_mode": "in-person",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": 84,
+                    "total_hours": {
+                        "value": 84,
+                        "unit": "hours"
+                    },
                     "participants_count": 25,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Logiche di Programmazione e Basi di Programmazione ad Oggetti",
+                            "title": "Programming Logics and Object-Oriented Programming Basics",
                             "topics": [
                                 "programming languages overview", 
                                 "uml diagrams", 
                                 "oop principles", 
                                 "Java basics"
                             ],
-                            "hours_taught": 36,
+                            "hours_taught": {
+                                "value": 36,
+                                "unit": "hours"
+                            },
                             "start_date": "2026-01-07",
                             "end_date": "2026-01-21"
                         },
                         {
-                            "name": "Sviluppo Applicazioni ed Analisi Dati con Python", 
+                            "title": "Application Development and Data Analysis with Python", 
                             "topics": [
                                 "Python basic types", 
                                 "Python built-ins",
@@ -119,7 +129,10 @@
                                 "Python OOP",
                                 "Python Dunder Methods"
                             ],
-                            "hours_taught": 48,
+                            "hours_taught": {
+                                "value": 48,
+                                "unit": "hours"
+                            },
                             "start_date": "2026-01-21",
                             "end_date": "2026-02-17"
                         }
@@ -135,13 +148,17 @@
             "course_id": "unimore-management-engineering",
             "course_title": "Master's Degree in Management Engineering, ICT - Data Management major",
             "provider": "University of Modena and Reggio Emilia", 
-            "promoter": null, 
+            "promoter": null,
+            "languange": "Italian",
             "description": null,
-            "link": null, 
+            "link": "https://www.unimore.it/it/didattica/corsi-di-studio/ingegneria-gestionale-0", 
             "role": "Contract Professor",
             "from": "2024-09",
             "to": "2025-09",
-            "total_taught_hours": 18,
+            "total_taught_hours": {
+                "value": 18,
+                "unit": "hours"
+            },
             "notes": "2CFUs, 1CFU = 9 teaching hours",
             "editions": [
                 {
@@ -150,13 +167,16 @@
                     "end_date": "2024-09-12",
                     "delivery_mode": "in-person",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": 18,
+                    "total_hours": {
+                        "value": 18,
+                        "unit": "hours"
+                    },
                     "participants_count": 66,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Data Science and Management", 
+                            "title": "Data Science and Management", 
                             "topics": [
                                 "Python", 
                                 "Numpy",
@@ -165,29 +185,36 @@
                                 "Big Data",
                                 "ERPs"
                             ],
-                            "hours_taught": 18,
+                            "hours_taught": {
+                                "value": 18,
+                                "unit": "hours"
+                            },
                             "start_date": "2024-09-19",
                             "end_date": "2024-12-12"
                         }
-                    ]
+                    ],
+                    "feedback": {
+                        "averageRating": null,
+                        "reviewsCount": null
+                    }
                 }
-            ],
-            "feedback": {
-                "averageRating": null,
-                "reviewsCount": null
-            }
+            ]
         },
         {   
             "course_id": "full-stack-dev",
-            "course_title": "Tecnico per la progettazione e lo sviluppo di applicazioni informatiche - Full Stack Developer",
+            "course_title": "Full Stack Developer - Application Design and Development Technician",
             "provider": "IFOA", 
             "promoter": null,
+            "languange": "Italian",
             "description": null,
             "link": null,
             "from": "2025-01",
             "to": "2025-11",
             "role": "Trainer",
-            "total_taught_hours": 28,
+            "total_taught_hours": {
+                "value": 28,
+                "unit": "hours"
+            },
             "notes": null,
             "editions":[
                 {
@@ -196,43 +223,53 @@
                     "end_date": "2025-05-29",
                     "delivery_mode": "in-person",
                     "location": "Modena",
-                    "total_hours": 28,
+                    "total_hours": {
+                        "value": 28,
+                        "unit": "hours"
+                    },
                     "participants_count": 8,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Fondamenti di DevOps, Containerizzazione e Cloud",
+                            "title": "Fundamentals of DevOps, Containerization, and Cloud Computing",
                             "topics": [
-                                "cloud computing",
+                                "Cloud Computing",
                                 "Docker",
                                 "Google Cloud Platform basics",
                                 "CI/CD",
                                 "GitHub Actions"
                             ],
-                            "hours_taught": 28,
+                            "hours_taught": {
+                                "value": 28,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-05-14",
                             "end_date": "2025-05-29"
                         }
-                    ]
+                    ],
+                    "feedback": {
+                        "averageRating": null,
+                        "reviewsCount": null
+                    }
                 }
-            ], 
-            "feedback": {
-                "averageRating": null,
-                "reviewsCount": null
-            }
+            ]
         },
         {   
             "course_id": "its-dev-sec-ops-ifoa-olivetty-academy",
-            "course_title": "ITS SecDevOps Sicurezza ed Integrazione dei Sistemi Informativi",
+            "course_title": "ITS SecDevOps Security and Integration of Information Systems",
             "provider": "Adacademt Adriano Olivetti",
-            "promoter": "IFOA", 
+            "promoter": "IFOA",
+            "languange": "Italian",
             "description": null,
             "link": "https://www.ifoa.it/landing/its-academy-olivetti-secdevops/",
             "role": "Trainer",
             "from": "2024-11",
             "to": "2027-12",
-            "total_taught_hours": null,
+            "total_taught_hours": {
+                "value": null,
+                "unit": "hours"
+            },
             "notes": null,
             "editions": [
                 {
@@ -241,43 +278,61 @@
                     "end_date": "2026-02-17",
                     "delivery_mode": "in-person",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": 156,
+                    "total_hours": {
+                        "value": 156,
+                        "unit": "hours"
+                    },
                     "participants_count": 25,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Logiche di Programmazione",
+                            "title": "Programming Logics",
                             "topics": [],
-                            "taught_hours": 24,
+                            "taught_hours": {
+                                "value": 24,
+                                "unit": "hours"
+                            },
                             "start_date": "2024-11-27",
                             "end_date": "2024-12-18"
                         },
                         {
-                            "name": "Software Development with Python 1", 
+                            "title": "Software Development with Python 1", 
                             "topics": [],
-                            "taught_hours": 48,
+                            "taught_hours": {
+                                "value": 48,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-01-07",
                             "end_date": "2025-02-25"
                         },
                         {
-                            "name": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
+                            "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
                             "topics": [],
-                            "taught_hours": 28,
+                            "taught_hours": {
+                                "value": 28,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-02-26",
                             "end_date": "2025-04-15"
                         },
                         {
-                            "name": "Software Development with Python 2", 
+                            "title": "Software Development with Python 2", 
                             "topics": [],
-                            "taught_hours": 32,
+                            "taught_hours": {
+                                "value": 32,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-09-29",
                             "end_date": "2025-10-21"
                         },
                         {
-                            "name": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
+                            "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
                             "topics": [],
-                            "taught_hours": 24,
+                            "taught_hours": {
+                                "value": 24,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-10-27",
                             "end_date": "2025-11-20"
                         }
@@ -293,43 +348,61 @@
                     "end_date": "2027-02-28",
                     "delivery_mode": "in-person",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": null,
+                    "total_hours": {
+                        "value": null,
+                        "unit": "hours"
+                    },
                     "participants_count": 25,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Logiche di Programmazione",
+                            "title": "Programming Logics",
                             "topics": [],
-                            "taught_hours": 24,
+                            "taught_hours": {
+                                "value": 24,
+                                "unit": "hours"
+                            },
                             "start_date": "2025-12-01",
                             "end_date": "2026-01-13"
                         },
                         {
-                            "name": "Software Development with Python 1", 
+                            "title": "Software Development with Python 1", 
                             "topics": [],
-                            "taught_hours": 48,
+                            "taught_hours": {
+                                "value": 48,
+                                "unit": "hours"
+                            },
                             "start_date": "2026-01-19",
                             "end_date": "2026-02-23"
                         },
                         {
-                            "name": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
+                            "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
                             "topics": [],
-                            "taught_hours": 28,
+                            "taught_hours": {
+                                "value": 28,
+                                "unit": "hours"
+                            },
                             "start_date": "2026-02-24",
                             "end_date": "2025-03-31"
                         },
                         {
-                            "name": "Software Development with Python 2", 
+                            "title": "Software Development with Python 2", 
                             "topics": [],
-                            "taught_hours": 32,
+                            "taught_hours": {
+                                "value": 32,
+                                "unit": "hours"
+                            },
                             "start_date": "tbd",
                             "end_date": "tbd"
                         },
                         {
-                            "name": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
+                            "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
                             "topics": [],
-                            "taught_hours": 24,
+                            "taught_hours": {
+                                "value": 24,
+                                "unit": "hours"
+                            },
                             "start_date": "tbd",
                             "end_date": "tbd"
                         }
@@ -342,35 +415,94 @@
             ]
         },
         {   
-            "course_id": "app-dev-python",
-            "course_title": null,
+            "course_id": "python-app-dev-women-and-digital",
+            "course_title": "Python App Development",
             "provider": "IFOA", 
-            "promoter": null, 
+            "promoter": null,
+            "languange": "Italian",
             "description": null, 
-            "link": null, 
+            "link": "https://www.ifoa.it/servizi/corsi-di-formazione/corsi-a-catalogo/corsi-brevi-finanziati/donne-e-digitale-competenze-per-linserimento-e-lo-sviluppo-professionale/", 
             "role": "Trainer",
             "from": "2024-05",
-            "to": "2024-05",
-            "total_taught_hours": 24,
+            "to": "2024-06",
+            "total_taught_hours": {
+                "value": 24,
+                "unit": "hours"
+            },
             "notes": null,
             "editions": [
                 {
                     "edition_id": "2024-reggio-emilia",
-                    "start_date": null,
-                    "end_date": null,
+                    "start_date": "2024-05-06",
+                    "end_date": "2024-06-06",
                     "delivery_mode": "remote",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": 24,
+                    "total_hours": {
+                        "value": 24,
+                        "unit": "hours"
+                    },
                     "participants_count": 9,
                     "client_type": "individuals",
                     "client_name": null,
                     "modules": [
                         {
-                            "name": "Applications Development with Python",
+                            "title": "Applications Development with Python",
                             "topics": [],
-                            "taught_hours": 24,
-                            "start_date": null,
-                            "end_date": null
+                            "taught_hours": {
+                                "value": 24,
+                                "unit": "hours"
+                            },
+                            "start_date": "2024-05-06",
+                            "end_date": "2024-06-06"
+                        }
+                    ],
+                    "feedback": {
+                        "averageRating": null,
+                        "reviewsCount": null
+                    }
+                }
+            ]
+        },
+        {   
+            "course_id": "machine-learning-and-data-science-python",
+            "course_title": "Machine Learning and Data Science with Python",
+            "provider": "IFOA", 
+            "promoter": null,
+            "languange": "Italian",
+            "description": null, 
+            "link": "https://www.ifoa.it/corsi/ca-digitale-corso-machine-learning-e-data-science-con-python/", 
+            "role": "Trainer",
+            "from": "2024-02",
+            "to": "2024-05",
+            "total_taught_hours": {
+                "value": 40,
+                "unit": "hours"
+            },
+            "notes": null,
+            "editions": [
+                {
+                    "edition_id": "2024-reggio-emilia",
+                    "start_date": "2024-02-12",
+                    "end_date": "2024-05-13",
+                    "delivery_mode": "remote",
+                    "location": "Reggio nell'Emilia",
+                    "total_hours": {
+                        "value": 40,
+                        "unit": "hours"
+                    },
+                    "participants_count": 9,
+                    "client_type": "individuals",
+                    "client_name": null,
+                    "modules": [
+                        {
+                            "title": "Machine Learning and Data Science with Python",
+                            "topics": [],
+                            "taught_hours": {
+                                "value": 40,
+                                "unit": "hours"
+                            },
+                            "start_date": "2024-02-12",
+                            "end_date": "2024-05-13"
                         }
                     ],
                     "feedback": {
@@ -384,13 +516,17 @@
             "course_id": "honu-ai-llm-company",
             "course_title": null,
             "provider": "Freelance", 
-            "promoter": null, 
+            "promoter": null,
+            "languange": "Italian",
             "description": null, 
             "link": null, 
             "from": "2024-07",
             "to": "2024-07",
             "role": "Company Trainer",
-            "total_teaching_load": 8,
+            "total_taught_hours": {
+                "value": 8,
+                "unit": "hours"
+            },
             "notes": null,
             "editions": [
                 {
@@ -399,22 +535,31 @@
                     "end_date": "2024-07-27",
                     "delivery_mode": "remote",
                     "location": "Reggio nell'Emilia",
-                    "total_hours": 8,
+                    "total_hours": {
+                        "value": 8,
+                        "unit": "hours"
+                    },
                     "participants_count": 6,
                     "client_type": "company",
                     "client_name": "Honu",
                     "modules": [
                         {
-                            "name": "Introduction to development tools for AI: Numpy, Pandas and Matplotlib",
+                            "title": "Introduction to development tools for AI: Numpy, Pandas and Matplotlib",
                             "topics": [],
-                            "hours_taught": 4,
+                            "hours_taught": {
+                                "value": 4,
+                                "unit": "hours"
+                            },
                             "start_date": null,
                             "end_date": null
                         },
                         {
-                            "name": "Use case analysis for AI, ML and LLMs solutions",
+                            "title": "Use case analysis for AI, ML and LLMs solutions",
                             "topics": [],
-                            "hours_taught": 4,
+                            "hours_taught": {
+                                "value": 4,
+                                "unit": "hours"
+                            },
                             "start_date": null,
                             "end_date": null
                         }

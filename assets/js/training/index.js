@@ -221,7 +221,7 @@ function moduleDescriptionUnorderedListBuilder(topics_list, hours_value, hours_u
     module_description_li.textContent = 'From ' + formatted_start_date + ' to ' + formatted_end_date;
     module_description_ul.appendChild(module_description_li);
 
-    module_description_ul.style.marginLeft = '3vw';
+    module_description_ul.style.marginLeft = '1.5em';
     module_description_ul.style.marginBottom = '0.4em';
     
     return module_description_ul;
@@ -255,7 +255,7 @@ fetch('/assets/db/course-projects.json').then(
                     var course_projects_section = document.getElementById('course-projects');
                     course_projects_section.style.paddingTop = '10px';
                     course_projects_section.style.paddingBottom = '10px';
-                    course_projects_section.style.paddingLeft = '25px';
+                    // course_projects_section.style.paddingLeft = '25px';
                     
                     var intro_par = document.createElement('p');
                     intro_par.textContent = "Since 2024, I have been providing training as a professional instructor. Below are the courses I have participated in as a trainer."
@@ -263,7 +263,7 @@ fetch('/assets/db/course-projects.json').then(
                     course_projects_section.appendChild(intro_par);
 
                     var course_projects_ol = document.createElement('ol');
-                    course_projects_ol.style.marginLeft = '25px';
+                    course_projects_ol.style.marginLeft = '0.5em';
                     
                     // Creating and appendig section title
                     // var course_projects_title = document.createElement('h2');
@@ -274,7 +274,7 @@ fetch('/assets/db/course-projects.json').then(
                     // Cycling over courses
                     for (var course_elem in values[key]) {
                         // Getting variables
-                        var content = values[key][course_elem   ];
+                        var content = values[key][course_elem];
                         
                         //console.log(content);
 
@@ -309,15 +309,15 @@ fetch('/assets/db/course-projects.json').then(
                         // Creating Edition structure and setting the style
                         var editions_ul = document.createElement('ul');
                         editions_ul.id = 'editions_ul';
-                        editions_ul.style.paddingLeft = '25px';
+                        editions_ul.style.paddingLeft = '10px';
                         editions_ul.style.marginBottom = '0.4em'; // TODO: to confirm
                                                 
                         var editions_list = content.editions;
                         for (var edition_elem in editions_list) {
                             // Creating the list collecting the each edition detail
-                            var edition_content_ul = document.createElement('ul');
-                            edition_content_ul.style.paddingLeft = '25px';
-                            edition_content_ul.id = 'edition_content_ul';
+                            // var edition_content_ul = document.createElement('ul');
+                            // edition_content_ul.style.paddingLeft = '25px';
+                            // edition_content_ul.id = 'edition_content_ul';
                             
                             // Fetching variables
                             var edition_content = editions_list[edition_elem];

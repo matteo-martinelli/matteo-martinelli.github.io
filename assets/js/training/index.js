@@ -257,18 +257,24 @@ fetch('/assets/db/course-projects.json').then(
                     course_projects_section.style.paddingBottom = '10px';
                     course_projects_section.style.paddingLeft = '25px';
                     
+                    var intro_par = document.createElement('p');
+                    intro_par.textContent = "Since 2024, I have been providing training as a professional instructor. Below are the courses I have participated in as a trainer."
+                    intro_par.style.paddingBottom = '0.5em';
+                    course_projects_section.appendChild(intro_par);
+
                     var course_projects_ol = document.createElement('ol');
                     course_projects_ol.style.marginLeft = '25px';
                     
                     // Creating and appendig section title
-                    var course_projects_title = document.createElement('h2');
-                    course_projects_title.textContent = 'Course Projects:'; 
-                    course_projects_section .appendChild(course_projects_title);
-                    
+                    // var course_projects_title = document.createElement('h2');
+                    // course_projects_title.style.color = '#ffaf53ff';
+                    // course_projects_title.textContent = 'Training Programs:'; 
+                    // course_projects_section .appendChild(course_projects_title);
+
                     // Cycling over courses
-                    for (var elem in values[key]) {
+                    for (var course_elem in values[key]) {
                         // Getting variables
-                        var content = values[key][elem];
+                        var content = values[key][course_elem   ];
                         
                         //console.log(content);
 
@@ -290,6 +296,7 @@ fetch('/assets/db/course-projects.json').then(
                         var course_li = document.createElement('li');
                         var edition_li = document.createElement('li');
                         var course_title_h3 = document.createElement('h3');
+                        // course_title_h3.style.color = '#ffaf53ff';
                         course_title_h3.textContent = course_title;
                         course_li.appendChild(course_title_h3);
                         
@@ -306,14 +313,14 @@ fetch('/assets/db/course-projects.json').then(
                         editions_ul.style.marginBottom = '0.4em'; // TODO: to confirm
                                                 
                         var editions_list = content.editions;
-                        for (var elem in editions_list) {
+                        for (var edition_elem in editions_list) {
                             // Creating the list collecting the each edition detail
                             var edition_content_ul = document.createElement('ul');
                             edition_content_ul.style.paddingLeft = '25px';
                             edition_content_ul.id = 'edition_content_ul';
                             
                             // Fetching variables
-                            var edition_content = editions_list[elem];
+                            var edition_content = editions_list[edition_elem];
                             var ed_id = edition_content['edition_id'];
                             var ed_start_date = new Date(edition_content.start_date);
                             var ed_end_date = new Date(edition_content.end_date);
@@ -364,22 +371,37 @@ fetch('/assets/db/course-projects.json').then(
                                 modules_details_summary.textContent = module_title;
                                 modules_details_summary.style.fontStyle = 'italic';
                                 modules_details_summary.style.fontWeight = 'bold';
+                                // modules_details_summary.style.color = '#ffaf53ff';
+                                modules_details_summary.style.backgroundColor = '#314058';
+                                modules_details_summary.style.borderRadius = '10px';
+                                modules_details_summary.style.lineHeight = '1.8em';
+                                modules_details_summary.style.gap = '50rem';
+                                modules_details_summary.style.paddingLeft = '10px';
+                                //modules_details_summary.style.width= '1.8em';
                                 modules_details.appendChild(modules_details_summary);
+                                modules_details.style.marginBottom = '0.5em';
                                 edition_li.appendChild(modules_details);
-                                                                
+
                                 var module_description_ul = moduleDescriptionUnorderedListBuilder(module_topics, module_taught_hours.value, module_taught_hours.unit, module_start_date, module_end_date);
                                 modules_details.appendChild(module_description_ul);
                             }
                         }
                         course_li.appendChild(editions_ul);
+                        
+                        // If the course_elem is not the last                         
+                        var course_cycle_length = values[key].length - 1;
+                        if (course_cycle_length != course_elem) {
+                            // Adding a separator at the end of each course_li
+                            var section_separator = document.createElement('hr');
+                            section_separator.id = 'sections-separator';
+                            course_li.appendChild(section_separator);
+                        }
+
                         course_projects_ol.appendChild(course_li);
-
                         course_projects_section.appendChild(course_projects_ol);
-                    }
-
+                    }                    
                     break; 
                 }
-
             }
         }
     })

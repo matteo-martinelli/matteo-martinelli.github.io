@@ -36,8 +36,8 @@
                             "title": "Programming Logics and Object-Oriented Programming Basics",
                             "topics": [
                                 "programming languages overview", 
-                                "uml diagrams", 
-                                "oop principles", 
+                                "UML diagrams",
+                                "OOP principles",
                                 "Java basics"
                             ],
                             "hours_taught": {
@@ -55,7 +55,10 @@
                                 "Python I/O",
                                 "Python error handling",
                                 "Python OOP",
-                                "Python Dunder Methods"
+                                "Python Dunder Methods",
+                                "Pandas Series",
+                                "Pandas Dataframes",
+                                "Matplotlib plots"
                             ],
                             "hours_taught": {
                                 "value": 48,
@@ -216,7 +219,12 @@
                     "modules": [
                         {
                             "title": "Programming Logics",
-                            "topics": [],
+                            "topics": [
+                                "programming languages overview", 
+                                "UML diagrams",
+                                "data structures and flow controls",
+                                "functions"
+                            ],
                             "hours_taught": {
                                 "value": 24,
                                 "unit": "hours"
@@ -226,7 +234,13 @@
                         },
                         {
                             "title": "Software Development with Python 1", 
-                            "topics": [],
+                            "topics": [
+                                "Python basics",
+                                "primitives and data structures",
+                                "error handling",
+                                "Python I/O",
+                                "functions"
+                            ],
                             "hours_taught": {
                                 "value": 48,
                                 "unit": "hours"
@@ -236,7 +250,11 @@
                         },
                         {
                             "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
-                            "topics": [],
+                            "topics": [
+                                "Pandas Series",
+                                "Pandas Dataframes",
+                                "Matplotlib plots"
+                            ],
                             "hours_taught": {
                                 "value": 28,
                                 "unit": "hours"
@@ -246,7 +264,12 @@
                         },
                         {
                             "title": "Software Development with Python 2", 
-                            "topics": [],
+                            "topics": [
+                                "Python built-ins",
+                                "OOP in Python",
+                                "Dunder Methods",
+                                "Hands-on lab"
+                            ],
                             "hours_taught": {
                                 "value": 32,
                                 "unit": "hours"
@@ -256,7 +279,11 @@
                         },
                         {
                             "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
-                            "topics": [],
+                            "topics": [
+                                "Pandas recall",
+                                "Matplotlib plots",
+                                "Hands-on lab"
+                            ],
                             "hours_taught": {
                                 "value": 24,
                                 "unit": "hours"
@@ -286,7 +313,12 @@
                     "modules": [
                         {
                             "title": "Programming Logics",
-                            "topics": [],
+                            "topics": [
+                                "programming languages overview", 
+                                "UML diagrams",
+                                "data structures and flow controls",
+                                "functions"
+                            ],
                             "hours_taught": {
                                 "value": 24,
                                 "unit": "hours"
@@ -296,7 +328,13 @@
                         },
                         {
                             "title": "Software Development with Python 1", 
-                            "topics": [],
+                            "topics": [
+                                "Python basics",
+                                "primitives and data structures",
+                                "error handling",
+                                "Python I/O",
+                                "functions"
+                            ],
                             "hours_taught": {
                                 "value": 48,
                                 "unit": "hours"
@@ -306,7 +344,11 @@
                         },
                         {
                             "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 1", 
-                            "topics": [],
+                            "topics": [
+                                "Pandas Series",
+                                "Pandas Dataframes",
+                                "Matplotlib plots"
+                            ],
                             "hours_taught": {
                                 "value": 28,
                                 "unit": "hours"
@@ -316,7 +358,12 @@
                         },
                         {
                             "title": "Software Development with Python 2", 
-                            "topics": [],
+                            "topics": [
+                                "Python built-ins",
+                                "OOP in Python",
+                                "Dunder Methods",
+                                "Hands-on lab"
+                            ],
                             "hours_taught": {
                                 "value": 32,
                                 "unit": "hours"
@@ -326,7 +373,11 @@
                         },
                         {
                             "title": "Data Analysis and Visualization with Python, Pandas and Matplotlib 2", 
-                            "topics": [],
+                            "topics": [
+                                "Pandas recall",
+                                "Matplotlib plots",
+                                "Hands-on lab"
+                            ],
                             "hours_taught": {
                                 "value": 24,
                                 "unit": "hours"
@@ -442,7 +493,7 @@
         },
         {
             "course_id": "ai-and-llm-honu-company",
-            "course_title": null,
+            "course_title": "AI and LLM for the Future of Finance",
             "provider": "Freelance", 
             "promoter": null,
             "language": "Italian",
@@ -478,8 +529,8 @@
                                 "value": 4,
                                 "unit": "hours"
                             },
-                            "start_date": null,
-                            "end_date": null
+                            "start_date": "2024-04-23",
+                            "end_date": "2024-04-24"
                         },
                         {
                             "title": "Use case analysis for AI, ML and LLMs solutions",
@@ -488,8 +539,8 @@
                                 "value": 4,
                                 "unit": "hours"
                             },
-                            "start_date": null,
-                            "end_date": null
+                            "start_date": "2024-05-06",
+                            "end_date": "2024-05-07"
                         }
                     ]
                 }

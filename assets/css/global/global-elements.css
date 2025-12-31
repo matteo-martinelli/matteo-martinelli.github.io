@@ -164,6 +164,32 @@
   margin-bottom: 10px;
 }
 
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 0.25em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #6c757d; /* default grey */
+  white-space: nowrap;
+}
+
+.badge.journal {
+   background-color: #28a745; } /* green */
+.badge.conference {      /* TODO: to refine */
+   background-color: #6f42c1; } /* purple */
+.badge.preprint {         /* TODO: to refine */
+   background-color: #e83e8c; } /* pink */
+.badge.phd-thesis {       /* TODO: to refine */
+   background-color: #F5A65B; } /* green */
+.badge.masters-thesis {      /* TODO: to refine */
+   background-color: #AB4E68; } /* purple */
+
 /*.sub-button button {*/
 button {
   /*Font settings*/

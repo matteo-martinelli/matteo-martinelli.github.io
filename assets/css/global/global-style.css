@@ -73,6 +73,11 @@ header figure img {
   border-radius: 50%;
 }
 
+hr {
+    margin: 16px 0px;
+    border: 1px solid #3C3C3C;
+}
+
 
 /*Nav bar dim changes*/
 @media only screen and (min-width: 381px) and (max-width: 480px) {

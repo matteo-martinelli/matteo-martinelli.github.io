@@ -426,7 +426,14 @@
                     "modules": [
                         {
                             "title": "Applications Development with Python",
-                            "topics": [],
+                            "topics": [
+                                "Python basics",
+                                "data structures and flow controls",
+                                "Python I/O",
+                                "Pandas data structures",
+                                "Matplotlib plots", 
+                                "introduction to ML"
+                            ],
                             "hours_taught": {
                                 "value": 24,
                                 "unit": "hours"
@@ -475,7 +482,16 @@
                     "modules": [
                         {
                             "title": "Machine Learning and Data Science with Python",
-                            "topics": [],
+                            "topics": [
+                                "Python basics",
+                                "data structures and flow controls",
+                                "Python I/O",
+                                "Python OOP",
+                                "NumPy data structures",
+                                "Pandas data structures",
+                                "Matplotlib plots", 
+                                "introduction to ML"
+                            ],
                             "hours_taught": {
                                 "value": 40,
                                 "unit": "hours"
@@ -524,7 +540,11 @@
                     "modules": [
                         {
                             "title": "Introduction to development tools for AI: Numpy, Pandas and Matplotlib",
-                            "topics": [],
+                            "topics": [
+                                "NumPy data structures", 
+                                "Pandas data structures", 
+                                "Matplotlib plots"
+                            ],
                             "hours_taught": {
                                 "value": 4,
                                 "unit": "hours"
@@ -534,7 +554,13 @@
                         },
                         {
                             "title": "Use case analysis for AI, ML and LLMs solutions",
-                            "topics": [],
+                            "topics": [
+                                "introduction to ML", 
+                                "features selection methods",
+                                "text modeling for ML applications", 
+                                "fine-tuning approaches for LLM",
+                                "open source tools for local-LLM"
+                            ],
                             "hours_taught": {
                                 "value": 4,
                                 "unit": "hours"

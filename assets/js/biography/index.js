@@ -68,9 +68,3 @@ biography_par_5.appendChild(text_content_6);
 biography_par_5.appendChild(break_line);
 biography_par_5.appendChild(text_content_7);
 biography_par_5.appendChild(email_link);
-
-// biography_par_1.style.border = '1px solid red';
-// biography_par_2.style.border = '1px solid red';
-// biography_par_3.style.border = '1px solid red';
-// biography_par_4.style.border = '1px solid red';
-// biography_par_5.style.border = '1px solid red';

@@ -1,0 +1,28 @@
+# Allow only main resarch engines
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: Googlebot-News
+Disallow:
+
+User-agent: Googlebot-Video
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: Yahoo! Slurp
+Disallow:
+
+User-agent: Yandex
+Disallow:
+
+# Block all other bots
+User-agent: *
+Disallow: /

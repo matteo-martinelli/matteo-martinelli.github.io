@@ -12,7 +12,7 @@
 
   --color-palette-link-color: rgb(9, 255, 0);
   --color-palette-link-active-color: rgb(241, 206, 3);
-  --color-palette-link-visited-color: rgb(79, 79, 147);
+  --color-palette-link-visited-color: #456882;
 }
 
 /*Global site interaction elements*********************************************/
@@ -20,6 +20,7 @@
 .menu {
   width: 100%;
   max-width: 380px;
+  z-index: 1;
   height: fit-content;
   border-top: 1px rgb(89, 88, 88) solid;
   background-color: var(--color-palette-dark-foreground); /*Old color: #848692;*/

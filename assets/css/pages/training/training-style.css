@@ -1,0 +1,48 @@
+/*Mobile first style*/
+#course-projects {
+    padding-bottom: 0.3em;
+}
+
+#training-intro {
+    padding-bottom: 0.5em;
+}
+
+#course-projects-list {
+    margin-left: 0.5em;
+}
+
+.editions-list {
+    padding-left: 1em;
+    margin-bottom: 0.4em;
+}
+
+.modules-dropdown-list {
+    margin-bottom: 0.5em;
+}
+
+.modules-dropdown-list > summary {
+    padding-left: 10px;
+    line-height: 1.8em;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #314058;
+    border-radius: 10px;
+}
+
+.module-description-list {
+    margin-left: 1.7em;
+    margin-bottom: 0.4em
+}
+
+
+/*Local page style*************************************************************/
+
+
+/* Tablet Style ***************************************************************/
+
+
+/* Big Tablet, small Desktop Style ********************************************/
+
+
+/* Desktop Style **************************************************************/
+

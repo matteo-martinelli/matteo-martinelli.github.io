@@ -1,10 +1,30 @@
 /*Mobile first style*/
 
+
 /*Local page style*************************************************************/
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.separator {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.scientific-projects {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.scientific-projects-list > ul {
+    margin-left: 25px;
+    margin-bottom: 0.4em;
+}
+
+#industrial-projects {
+    padding-left: 25px;     /* Eventually delete */
 }
 
 #content-container {
@@ -14,10 +34,14 @@ body {
     overflow-x: hidden;
 }
 
-hr {
-    margin: 16px 0px;
-    border: 1px solid #3C3C3C;
+#projects-table > tr > td {
+    padding-bottom: 0.4em;
 }
+
+#projects-table > tr > td > ul {
+    padding-left: 1em;
+}
+
 
 /* Tablet Style ***************************************************************/
 @media only screen and (min-width: 481px) and (max-width: 767px) {

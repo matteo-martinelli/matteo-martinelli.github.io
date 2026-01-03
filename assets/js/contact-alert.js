@@ -1,16 +1,8 @@
 // Index js file
 
-const MAIL = "matteo.martinelli.1991@gmail.com";
+// console.log('Contact alert script loaded. Waiting for the click to display the alert.')
 
-try {
-    const contactMenuButton = document.querySelector("#contact-form-link");
-    contactMenuButton.addEventListener('click', function(event){
-        alert('Write me at ' + MAIL + "!");
-    })
-} catch(error) {
-    console.log('An error occured at the selection of the "contact-form-link" id.');
-    console.log(error);
-}
+const MAIL = "matteo.martinelli.1991@gmail.com";
 
 try {
     const contactNavButton = document.querySelector("#contacts-page");

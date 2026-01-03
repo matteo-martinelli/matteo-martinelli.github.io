@@ -6,10 +6,15 @@ body {
     flex-direction: column;
 }
 
-#biography-container {
-    display: flex;
+#content-container {
+    padding-bottom: 80px;
+    /* display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: scroll; */
+}
+
+#bio-par-sec {
+    padding-bottom: 0.75em;
 }
 
 

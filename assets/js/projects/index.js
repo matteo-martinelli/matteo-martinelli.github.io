@@ -59,10 +59,13 @@ fetch('/assets/db/industrial-projects.json').then(
                     for (var key_industrial in values[key]) {
                         var content = values[key][key_industrial];
                         var description = content['title'];
+                        
                         var table_row = document.createElement('tr');
                         var table_entry = document.createElement('td');
+                        
                         var table_separator = document.createElement('td');
                         table_separator.className = 'separator';
+                        
                         var table_value = document.createElement('td');
                         var ul = document.createElement('ul');
                         var li = document.createElement('li');
@@ -79,8 +82,6 @@ fetch('/assets/db/industrial-projects.json').then(
                         }
                         table_value.removeChild(table_value.lastChild);
 
-                        ul.style.paddingLeft = '1em';
-
                         li.textContent = description;
                         ul.appendChild(li);
                         table_entry.appendChild(ul);
@@ -93,25 +94,6 @@ fetch('/assets/db/industrial-projects.json').then(
                     industrial_projects_div.appendChild(industrial_projects_table);                        
                     industrial_projects_section.appendChild(industrial_projects_div);
                     
-                    var industrial_projects_table_tr = industrial_projects_table.getElementsByTagName('tr');
-                    for (var i = 0; i < industrial_projects_table_tr.length; i++) {
-                        var industrial_projects_table_td = industrial_projects_table_tr[i].getElementsByTagName('td');
-                        for (var j = 0; j < industrial_projects_table_td.length; j++) {
-                            industrial_projects_table_td[j].style.paddingBottom = '0.4em';
-                            if (industrial_projects_table_td[j].className == 'separator') {
-                                industrial_projects_table_td[j].style.paddingLeft = '15px';
-                                industrial_projects_table_td[j].style.paddingRight = '15px';
-                            }
-                        }
-                        industrial_projects_table_tr[i].style.border = '1px solid green';
-                    }
-
-                    var table_separator = document.querySelector('#projects-table, .separator');
-                    
-                    industrial_projects_section.style.paddingTop = '10px';
-                    industrial_projects_section.style.paddingBottom = '10px';
-                    industrial_projects_section.style.paddingLeft = '25px';
-
                     break;
                 }
             }
@@ -142,6 +124,7 @@ fetch('/assets/db/scientific-projects.json').then(
                     scientific_projects_section .appendChild(scientific_projects_title);
                     
                     var scientific_projects_ol = document.createElement('ol');
+                    scientific_projects_ol.className = 'scientific-projects-list';
 
                     for (var elem in values[key]) {
                         var content = values[key][elem];
@@ -166,10 +149,8 @@ fetch('/assets/db/scientific-projects.json').then(
                         scientific_projects_ol.appendChild(project_title_li);
 
                         var project_content_ul = document.createElement('ul');
-                        project_content_ul.style.marginLeft = '25px';
-                        project_content_ul.style.marginBottom = '0.4em';
-                        
                         var project_role_li = document.createElement('li');
+                        
                         var role_key = document.createElement('b');
                         var role_value = document.createTextNode(project_role);
                         role_key.textContent = 'Role: '; 
@@ -215,15 +196,8 @@ fetch('/assets/db/scientific-projects.json').then(
                         project_content_ul.appendChild(project_link_li);
 
                         scientific_projects_ol.appendChild(project_content_ul);
-                        scientific_projects_ol.style.marginLeft = '25px';
-
                         scientific_projects_section.appendChild(scientific_projects_ol);
                     }
-
-                    scientific_projects_section.style.paddingTop = '10px';
-                    scientific_projects_section.style.paddingBottom = '10px';
-                    scientific_projects_section.style.paddingLeft = '25px';
-
                     break; 
                 }
 

@@ -1,0 +1,47 @@
+/*Mobile first style*/
+
+
+/*Local page style*************************************************************/
+
+.scientific-publications-list {
+   padding-left: 1.1em;
+}
+
+.scientific-publications-list > li {
+   padding-bottom: 0.4em;
+}
+
+.scientific-publication-details {
+   margin-left: 0.9em;
+}
+
+#publication-link {
+   text-decoration: underline;
+   color: orange;
+}
+
+#university-thesis-link {
+   text-decoration: underline;
+   color: orange;
+}
+
+.badge.journal {
+   background-color: #28a745; } /* green */
+.badge.conference {
+   background-color: #6f42c1; } /* purple */
+.badge.preprint {
+   background-color: #e83e8c; } /* pink 1 */
+.badge.phd-thesis {
+   background-color: #F5A65B; } /* orange */
+.badge.masters-thesis {
+   background-color: #AB4E68; } /* pink 2 */
+
+
+/* Tablet Style ***************************************************************/
+
+
+/* Big Tabelt, small Desktop Style ********************************************/
+
+
+/* Desktop Style **************************************************************/
+

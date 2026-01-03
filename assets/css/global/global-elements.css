@@ -20,6 +20,7 @@
 .menu {
   width: 100%;
   max-width: 380px;
+  z-index: 1;
   height: fit-content;
   border-top: 1px rgb(89, 88, 88) solid;
   background-color: var(--color-palette-dark-foreground); /*Old color: #848692;*/

@@ -15,6 +15,16 @@
    margin-left: 0.9em;
 }
 
+#publication-link {
+   text-decoration: underline;
+   color: orange;
+}
+
+#university-thesis-link {
+   text-decoration: underline;
+   color: orange;
+}
+
 .badge.journal {
    background-color: #28a745; } /* green */
 .badge.conference {

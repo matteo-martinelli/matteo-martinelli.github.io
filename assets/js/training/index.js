@@ -167,8 +167,6 @@ function moduleDescriptionBuilder(topics_list, hours_value, hours_unit, start_da
     module_description.append(period_text_node);
     module_description.appendChild(document.createElement('br'));
 
-    module_description.style.paddingLeft = '25px';
-
     return module_description;
 }
 
@@ -220,9 +218,6 @@ function moduleDescriptionUnorderedListBuilder(topics_list, hours_value, hours_u
     }
     module_description_li.textContent = 'From ' + formatted_start_date + ' to ' + formatted_end_date;
     module_description_ul.appendChild(module_description_li);
-
-    module_description_ul.style.marginLeft = '1.5em';
-    module_description_ul.style.marginBottom = '0.4em';
     
     return module_description_ul;
 }
@@ -295,9 +290,9 @@ fetch('/assets/db/course-projects.json').then(
                         var course_description = courseDescriptionBuilder(provider, promoter, course_set_from, course_set_to, language, role, total_taught_hours.value, total_taught_hours.unit, link);
                         course_li.appendChild(course_description);
 
-                        // Creating Edition structure and setting the style
+                        // Creating Edition structure
                         var editions_ul = document.createElement('ul');
-                        editions_ul.id = 'editions-list';
+                        editions_ul.className = 'editions-list';
                                                 
                         var editions_list = content.editions;
                         for (var edition_elem in editions_list) {
@@ -349,7 +344,7 @@ fetch('/assets/db/course-projects.json').then(
                                 
                                 // Creating and appending the module collapsible element
                                 var modules_details = document.createElement('details');
-                                modules_details.id = 'modules-dropdown-list';
+                                modules_details.className = 'modules-dropdown-list';
 
                                 var modules_details_summary = document.createElement('summary');
                                 modules_details_summary.textContent = module_title;
@@ -358,6 +353,8 @@ fetch('/assets/db/course-projects.json').then(
                                 edition_ul_li.appendChild(modules_details);
 
                                 var module_description_ul = moduleDescriptionUnorderedListBuilder(module_topics, module_taught_hours.value, module_taught_hours.unit, module_start_date, module_end_date);
+                                module_description_ul.className = 'module-description-list';
+                                    
                                 modules_details.appendChild(module_description_ul);
                             }
                         }

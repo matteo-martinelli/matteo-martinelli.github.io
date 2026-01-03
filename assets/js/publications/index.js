@@ -105,11 +105,12 @@ fetch('/assets/db/publications.json').then(
                         var research_pub_description_ul_li = document.createElement('li');
                         research_pub_description_ul_li.textContent = 'DOI: ';
                         var doi_link_a = document.createElement('a');
+                        doi_link_a.className = 'link'; 
+                        doi_link_a.id = 'publication-link'; 
                         doi_link_a.textContent = doi_link; 
                         doi_link_a.href = doi_link;
                         doi_link_a.target = '_blank';
                         doi_link_a.rel = 'noopener noreferrer';
-                        doi_link_a.style.color = 'orange';
                         research_pub_description_ul_li.appendChild(doi_link_a); 
                         research_pub_description_ul.appendChild(research_pub_description_ul_li);
                         
@@ -183,11 +184,12 @@ fetch('/assets/db/publications.json').then(
                         var university_publication_description_ul_li = document.createElement('li');
                         university_publication_description_ul_li.textContent = 'Link: ';
                         var link_a = document.createElement('a');
-                        link_a.textContent = doi_link; 
+                        link_a.className = 'link';
+                        link_a.id = 'university-thesis-link';
+                        link_a.textContent = doi_link;
                         link_a.href = doi_link;
                         link_a.target = '_blank';
                         link_a.rel = 'noopener noreferrer';
-                        link_a.style.color = 'orange';
                         university_publication_description_ul_li.appendChild(link_a);
 
                         // Append the built li to the university_publication_description_ul

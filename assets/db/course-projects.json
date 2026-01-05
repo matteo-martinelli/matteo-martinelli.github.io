@@ -75,53 +75,52 @@
                 }
             ]
         },
-        {
-            "course_id": "unimore-management-engineering",
-            "course_title": "Master's Degree in Management Engineering, ICT - Data Management major",
-            "provider": "University of Modena and Reggio Emilia", 
+        {   
+            "course_id": "mecfuture-transition-pro-w-training",
+            "course_title": "Information Systems Innovation: IoT, Machine Learning, and Artificial Intelligence",
+            "provider": "W-Training", 
             "promoter": null,
             "language": "Italian",
-            "description": null,
-            "link": "https://www.unimore.it/it/didattica/corsi-di-studio/ingegneria-gestionale-0", 
-            "role": "Contract Professor",
-            "from": "2024-09",
-            "to": "2025-09",
+            "description": null, 
+            "link": "https://www.wtraining.it/corsi/mechanical-future-competence-professional-growth/", 
+            "role": "Trainer",
+            "from": "2025-12",
+            "to": "2025-12",
             "total_taught_hours": {
-                "value": 18,
+                "value": 24,
                 "unit": "hours"
             },
-            "notes": "2CFUs, 1CFU = 9 teaching hours",
+            "notes": null,
             "editions": [
                 {
-                    "edition_id": "2024-dsm-dismi-re",
-                    "start_date": "2024-09-16",
-                    "end_date": "2024-09-12",
-                    "delivery_mode": "in-person",
+                    "edition_id": "2025-mecfuture-...-re",
+                    "start_date": "2025-12-02",
+                    "end_date": "2025-12-10",
+                    "delivery_mode": "remote",
                     "location": "Reggio nell'Emilia",
                     "total_hours": {
-                        "value": 18,
+                        "value": 24,
                         "unit": "hours"
                     },
-                    "participants_count": 66,
-                    "client_type": "individuals",
+                    "participants_count": 8,
+                    "client_type": "professionals",
                     "client_name": null,
                     "modules": [
                         {
-                            "title": "Data Science and Management", 
+                            "title": "Machine Learning and Artificial Intelligence for ERP, MES, CRM, and WMS Optimization",
                             "topics": [
-                                "Python", 
-                                "Numpy",
-                                "Pandas", 
-                                "Matplotlib",
-                                "Big Data",
-                                "ERPs"
+                                "intro to AI",
+                                "supervised and unsupervised learning",
+                                "performance evaluation",
+                                "linear and non-linear models",
+                                "hands-on examples"
                             ],
                             "hours_taught": {
-                                "value": 18,
+                                "value": 12,
                                 "unit": "hours"
                             },
-                            "start_date": "2024-09-19",
-                            "end_date": "2024-12-12"
+                            "start_date": "2025-12-02",
+                            "end_date": "2025-12-10"
                         }
                     ],
                     "feedback": {
@@ -131,7 +130,7 @@
                 }
             ]
         },
-        {   
+        {
             "course_id": "full-stack-dev",
             "course_title": "Full Stack Developer - Application Design and Development Technician",
             "provider": "IFOA", 
@@ -393,9 +392,65 @@
                 }
             ]
         },
+        {
+            "course_id": "unimore-management-engineering",
+            "course_title": "Master's Degree in Management Engineering, ICT - Data Management major",
+            "provider": "University of Modena and Reggio Emilia", 
+            "promoter": null,
+            "language": "Italian",
+            "description": null,
+            "link": "https://www.unimore.it/it/didattica/corsi-di-studio/ingegneria-gestionale-0", 
+            "role": "Contract Professor",
+            "from": "2024-09",
+            "to": "2025-09",
+            "total_taught_hours": {
+                "value": 18,
+                "unit": "hours"
+            },
+            "notes": "2CFUs, 1CFU = 9 teaching hours",
+            "editions": [
+                {
+                    "edition_id": "2024-dsm-dismi-re",
+                    "start_date": "2024-09-16",
+                    "end_date": "2024-09-12",
+                    "delivery_mode": "in-person",
+                    "location": "Reggio nell'Emilia",
+                    "total_hours": {
+                        "value": 18,
+                        "unit": "hours"
+                    },
+                    "participants_count": 66,
+                    "client_type": "individuals",
+                    "client_name": null,
+                    "modules": [
+                        {
+                            "title": "Data Science and Management", 
+                            "topics": [
+                                "Python", 
+                                "Numpy",
+                                "Pandas", 
+                                "Matplotlib",
+                                "Big Data",
+                                "ERPs"
+                            ],
+                            "hours_taught": {
+                                "value": 18,
+                                "unit": "hours"
+                            },
+                            "start_date": "2024-09-19",
+                            "end_date": "2024-12-12"
+                        }
+                    ],
+                    "feedback": {
+                        "averageRating": null,
+                        "reviewsCount": null
+                    }
+                }
+            ]
+        },
         {   
             "course_id": "women-and-digital-ifoa",
-            "course_title": "Python App Development",
+            "course_title": "Womend and Digital",
             "provider": "IFOA", 
             "promoter": null,
             "language": "Italian",
@@ -411,7 +466,7 @@
             "notes": null,
             "editions": [
                 {
-                    "edition_id": "2024-python-app-dev-women-and-digital-re",
+                    "edition_id": "2024-women-and-digital-re",
                     "start_date": "2024-05-06",
                     "end_date": "2024-06-06",
                     "delivery_mode": "remote",
@@ -450,8 +505,8 @@
             ]
         },
         {   
-            "course_id": "machine-learning-and-data-science-ifoa",
-            "course_title": "Machine Learning and Data Science with Python",
+            "course_id": "ict-skills-employment-inclusion-sustainability-ifoa",
+            "course_title": "ICT Skills for Employment, Inclusion and Sustainability",
             "provider": "IFOA", 
             "promoter": null,
             "language": "Italian",
@@ -467,7 +522,7 @@
             "notes": null,
             "editions": [
                 {
-                    "edition_id": "2024-ml-and-data-science-with-python-re",
+                    "edition_id": "2024-ict-skills-re",
                     "start_date": "2024-02-12",
                     "end_date": "2024-05-13",
                     "delivery_mode": "remote",
@@ -525,7 +580,7 @@
             "notes": null,
             "editions": [
                 {
-                    "edition_id": "2024-company-ai-llm-honu-remote",
+                    "edition_id": "2024-ai-llm-honu-company-remote",
                     "start_date": "2024-07-23",
                     "end_date": "2024-07-27",
                     "delivery_mode": "remote",

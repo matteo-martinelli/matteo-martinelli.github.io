@@ -18,13 +18,17 @@ body {
     padding-left: 10px;
 }
 
+.scientific-projects-list {
+    margin-left: 25px;
+}
+
 .scientific-projects-list > ul {
     margin-left: 25px;
     margin-bottom: 0.4em;
 }
 
 #industrial-projects {
-    padding-left: 25px;     /* Eventually delete */
+    padding-left: 0px;     /* Eventually delete */
 }
 
 #content-container {

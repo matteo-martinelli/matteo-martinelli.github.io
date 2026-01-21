@@ -72,13 +72,14 @@ fetch('/assets/db/industrial-projects.json').then(
                         for (var elem in values[key][key_industrial]["links"]) {
                             var link_elem = document.createElement('a');
                             link_elem.className = 'link';
-                            link_elem.href = values[key][key_industrial][elem];
+                            link_elem.href = values[key][key_industrial]["links"][elem];
                             link_elem.target = '_blank';
                             link_elem.rel = 'noopener noreferrer';
                             link_elem.textContent = elem.replace('-link', '').replaceAll('-', ' ');
                             table_value.appendChild(link_elem);
                             var separator = document.createTextNode(', ');
                             table_value.appendChild(separator);
+                            console.log(values[key][key_industrial]["links"][elem]);
                         }
                         table_value.removeChild(table_value.lastChild);
 

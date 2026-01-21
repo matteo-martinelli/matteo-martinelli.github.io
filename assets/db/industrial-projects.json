@@ -3,7 +3,7 @@
         "dxf2plc-coordinates-extractor": {
             "title": "DXF2PLC Coordinates Extractor 🤖",
             "links": {
-                "presentation-link": "assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
+                "presentation-link": "/assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
                 "essay-link": "/assets/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
             }
         },
@@ -29,7 +29,7 @@
         "smart-digital-twins-for-industry-4.0": {
             "title": "Smart Digital Twins for Industry 4.0 🏭",
             "links": {
-                "presentation-link": "assets/docs/phd-thesis/smart-digital-twins-for-industry-40-web-version.pdf", 
+                "presentation-link": "/assets/docs/phd-thesis/smart-digital-twins-for-industry-40-web-version.pdf", 
                 "thesis-link": "https://iris.unimore.it/handle/11380/1339389"
             }
         }

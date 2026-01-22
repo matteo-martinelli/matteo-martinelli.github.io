@@ -3,6 +3,13 @@
 
 /*Local page style*************************************************************/
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
 .scientific-publications-list {
    padding-left: 1.1em;
 }
@@ -13,6 +20,12 @@
 
 .scientific-publication-details {
    margin-left: 0.9em;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 #publication-link {
@@ -38,10 +51,24 @@
 
 
 /* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #presentation {
+        display: inherit;
+    }
+}
 
 
 /* Big Tabelt, small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}
 
 
 /* Desktop Style **************************************************************/
-
+@media only screen and (min-width: 981px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}

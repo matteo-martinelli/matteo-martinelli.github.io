@@ -1,14 +1,12 @@
 /*Mobile first style*/
-#course-projects {
-    padding-bottom: 0.3em;
-}
 
-#training-intro {
-    padding-bottom: 0.5em;
-}
+/*Local page style*************************************************************/
 
-#course-projects-list {
-    margin-left: 0.5em;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .editions-list {
@@ -34,15 +32,44 @@
     margin-bottom: 0.4em
 }
 
+#content-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
 
-/*Local page style*************************************************************/
+#course-projects {
+    padding-bottom: 0.3em;
+}
+
+#training-intro {
+    padding-bottom: 0.5em;
+}
+
+#course-projects-list {
+    margin-left: 0.5em;
+}
 
 
 /* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #presentation {
+        display: inherit;
+    }
+}
 
 
-/* Big Tablet, small Desktop Style ********************************************/
+/* Big Tabelt, small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}
 
 
 /* Desktop Style **************************************************************/
-
+@media only screen and (min-width: 981px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}

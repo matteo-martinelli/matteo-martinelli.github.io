@@ -1,11 +1,12 @@
 /*Mobile first style*/
 
-
 /*Local page style*************************************************************/
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .separator {
@@ -35,7 +36,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 #projects-table > tr > td {
@@ -52,11 +52,6 @@ body {
     #presentation {
         display: inherit;
     }
-
-    /* #projects {
-        min-height: 66%;
-        height: auto;
-    } */
 }
 
 

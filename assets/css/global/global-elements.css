@@ -40,32 +40,6 @@
   margin: auto auto;
 }
 
-.icon-buttons-box {
-  /*Flexbox settings*/
-  display: flex;
-  justify-content: center;
-}
-
-.icon-button {
-  /*Dimensions settings*/
-  margin: 0 5px 0 5px;
-  /*Flexbox settings*/
-  display: flex;
-  justify-content: center;
-}
-
-.icon-button img {
-  width: 100%;
-  max-width: 80px;
-  height: auto;
-  object-fit: scale-down;
-}
-
-.icon-button:active {
-  /*Transform settings*/
-  transform: scale(1.15);
-}
-
 .link:link {
   /*Fonts settings*/
   color: var(--color-palette-link-color);

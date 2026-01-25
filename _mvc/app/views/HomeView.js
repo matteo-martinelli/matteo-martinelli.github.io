@@ -5,12 +5,18 @@ export class HomeView {
     }
 
     renderWelcome() {
+        // Implemented for testing; to be deleted
         this.root.innerHTML = `
             <section>
                 <h1>Benvenuto</h1>
-                <a href="biography.html">Vai alla biografia</a>
+                <a href="/bio" data-link>Vai alla biografia</a>
             </section>
         `;
+    }
+
+    render() {
+        this.includePartial('#app', '/_mvc/templates/home-top-content.html');
+        this.includePartial('#layout-footer', '/_mvc/templates/spacer.html');
     }
 
     async includePartial(selector, url) {

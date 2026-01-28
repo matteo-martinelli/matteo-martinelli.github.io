@@ -1,4 +1,4 @@
-export class ProjectModel {
+export class ProjectsModel {
   constructor() {
     this.projects = [];
   }

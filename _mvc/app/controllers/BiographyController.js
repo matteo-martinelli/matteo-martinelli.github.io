@@ -1,4 +1,5 @@
-/* (BiographyController.js): 
+/* 
+BiographyController.js: 
 It acts as the orchestrator. 
 In its init() method, it:
     - Asks the View for the HTML content.
@@ -13,13 +14,15 @@ export class BiographyController {
     constructor(rootSelector, router) {
         // this.root = rootSelector;
         this.root = document.querySelector(rootSelector);
+        this.view = new BiographyView(rootSelector);
         this.router = router;
         this.styleElement = null; 
-        this.view = new BiographyView(rootSelector);
-        console.log('Into Bio Controller');
+        // console.log('Into Bio Controller');
     }
     
     async init() {
+        console.log('Bio Controller init triggered');
+        
         // Loading the page CSS
         this.styleElement = document.createElement('link');
         this.styleElement.rel = 'stylesheet';
@@ -35,15 +38,25 @@ export class BiographyController {
             const html = await res.text();
             headerContainer.innerHTML = html;
         }
+
+        // Check if the navbar is disappeard during navigation
+        const navbarContainer = document.getElementById('layout-navbar');
+        if (navbarContainer && navbarContainer.getHTML() === "") {
+            console.log('Navbar is empty, loading partial ...');
+            const res = await fetch('/_mvc/templates/low-navbar.html');
+            const navbarHTML = await res.text();
+            navbarContainer.innerHTML = navbarHTML;
+            console.log('Navbar after html insertion: ', navbarContainer);
+        }
     }
     
-    handleHomeMouseClick(event) {
-        // TODO: call here the router in the next iteration
-        alert("Ciao!");
-        console.log(event);
-        console.log('A click occured!');
-        event.preventDefault();
-    }
+    // handleHomeMouseClick(event) {
+    //     // TODO: call here the router in the next iteration
+    //     alert("Ciao!");
+    //     console.log(event);
+    //     console.log('A click occured!');
+    //     event.preventDefault();
+    // }
 
     destroy() {
         // Destroy style

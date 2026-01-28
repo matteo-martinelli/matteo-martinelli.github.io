@@ -1,4 +1,5 @@
-/* View (BiographyView.js): 
+/* 
+BiographyView.js: 
 Its only job is to be a "template provider." 
 It should have a method like getHtml() that simply returns the HTML string 
 for its content. 
@@ -12,14 +13,14 @@ export class BiographyView {
         // console.log(this.root);
     }
 
-    renderWelcome() {
-        this.root.innerHTML = `
-            <section>
-                <h1>Benvenuto alla Biography!</h1>
-                <a href="/_mvc/index" data-link id="back-home">Torna alla home</a>
-            </section>
-        `;
-    }
+    // renderWelcome() {
+    //     this.root.innerHTML = `
+    //         <section>
+    //             <h1>Benvenuto alla Biography!</h1>
+    //             <a href="/_mvc/index" data-link id="back-home">Torna alla home</a>
+    //         </section>
+    //     `;
+    // }
 
     // render() {
     //     this.getBody();

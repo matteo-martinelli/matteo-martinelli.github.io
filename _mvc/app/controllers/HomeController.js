@@ -22,18 +22,24 @@ export class HomeController {
         document.head.appendChild(this.styleElement);
     }
 
-    destroy() {
-        // Destroy style
-        if (this.styleElement) {
-            this.styleElement.remove();
-            this.styleElement = null;
-        }
-
+    destroyHeader() {
         const headerContainer = document.getElementById('header');
 
         if (headerContainer) {
             headerContainer.innerHTML = '';
         }
+    }
+
+    destroyStyle() {
+        if (this.styleElement) {
+            this.styleElement.remove();
+            this.styleElement = null;
+        }
+    }
+
+    destroy() {
+        this.destroyStyle();
+        this.destroyHeader();        
     }
 
 }

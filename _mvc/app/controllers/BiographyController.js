@@ -32,7 +32,7 @@ export class BiographyController {
         // Injecting page content
         this.root.innerHTML = this.view.getHtml();
 
-        const headerContainer = document.getElementById('header');
+        const headerContainer = document.querySelector('header');
         if (headerContainer) {
             const res = await fetch('/_mvc/templates/pic-title-header.html');
             const html = await res.text();
@@ -58,17 +58,23 @@ export class BiographyController {
     //     event.preventDefault();
     // }
 
-    destroy() {
-        // Destroy style
+    destroyStyle() {
         if (this.styleElement) {
             this.styleElement.remove();
             this.styleElement = null;
         }
+    }
 
-        const headerContainer = document.getElementById('header');
+    destroyHeader() {
+        const headerContainer = document.querySelector('header');
 
         if (headerContainer) {
             headerContainer.innerHTML = '';
         }
+    }
+
+    destroy() {
+        this.destroyStyle();
+        this.destroyHeader();
     }
 }

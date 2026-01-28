@@ -49,11 +49,12 @@ export class PublicationsController {
         //     headerContainer.innerHTML = html;
         // }
 
-        const bodyContainer = document.getElementsByTagName('body');
-        if (bodyContainer) {
+        const headerContainer = document.querySelector('header');
+        if (headerContainer) {
             const res = await fetch('/_mvc/templates/pic-title-header.html');
             const html = await res.text();
-            bodyContainer.innerHTML = html;
+            console.log(html);
+            headerContainer.innerHTML = html;
         }
 
         this.view.getPopulatedHtml(this.model.publications);
@@ -69,19 +70,23 @@ export class PublicationsController {
         }
     }
 
-
-
-    destroy() {
-        // Destroy style
-        if (this.styleElement) {
-            this.styleElement.remove();
-            this.styleElement = null;
-        }
-
-        const headerContainer = document.getElementById('header');
+    destroyHeader() {
+        const headerContainer = document.querySelector('header');
 
         if (headerContainer) {
             headerContainer.innerHTML = '';
         }
+    }
+
+    destroyStyle() {
+        if (this.styleElement) {
+            this.styleElement.remove();
+            this.styleElement = null;
+        }
+    }
+
+    destroy() {
+        this.destroyHeader();
+        this.destroyStyle();
     }
 }

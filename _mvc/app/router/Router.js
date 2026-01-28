@@ -71,6 +71,7 @@ export class Router {
         // Deconstructs the eventual actual controller
         if (this.currentController?.destroy) {
             this.currentController.destroy();
+            console.log('Destroyed style of ', this.currentController);
         }
 
         // Cleans the content

@@ -22,6 +22,12 @@ body {
    margin-left: 0.9em;
 }
 
+.scientific-articles {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
 #content-container {
     display: flex;
     flex-direction: column;

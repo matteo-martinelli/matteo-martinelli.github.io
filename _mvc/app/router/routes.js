@@ -1,5 +1,7 @@
 import { HomeController } from '../controllers/HomeController.js';
 import { BiographyController } from '../controllers/BiographyController.js';
+import { PublicationsController } from '../controllers/PublicationsController.js';
+import { ProjectsController } from '../controllers/ProjectsController.js';
 
 // TODO: when updating paths, do the following: 
 // 1. Change routes.js paths (e.g., to /bio).
@@ -8,27 +10,27 @@ import { BiographyController } from '../controllers/BiographyController.js';
 
 export const routes = [
   // {
-  //   path: '/',          // home
+  //   path: '/',               // home
   //   controller: HomeController
   // },
   {
-    path: '/_mvc/index',  // home page
+    path: '/_mvc/index',        // home page
     controller: HomeController
   },
   {
-    path: '/_mvc/bio',     // biografia
+    path: '/_mvc/bio',          // biografia
     controller: BiographyController
   },
+  {
+    path: '/_mvc/publications', // scientific publications
+    controller: PublicationsController
+  }, 
+  {
+    path: '/_mvc/projects',     // industrial projects
+    controller: ProjectsController
+  },
   // {
-  //   path: '/publications',     // biografia
-  //   controller: PublicationsController
-  // }, 
-  // {
-  //   path: '/projects',     // biografia
-  //   controller: ProjectsController
-  // },
-  // {
-  //   path: '/training',     // biografia
+  //   path: '/_mvc/training',     // training activities
   //   controller: TrainingController
   // }
 ];

@@ -12,7 +12,7 @@ export class HomeController {
         await Promise.all([
             // this.view.renderWelcome();
             this.view.render(),
-            this.view.includePartial('#layout-navbar', '/_mvc/templates/low-navbar.html'),
+            // this.view.includePartial('#layout-navbar', '/_mvc/templates/low-navbar.html'),
         ]);
 
         // Loading the page CSS

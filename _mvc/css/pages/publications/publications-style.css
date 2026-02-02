@@ -1,0 +1,85 @@
+/*Mobile first style*/
+
+
+/*Local page style*************************************************************/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.scientific-publications-list {
+   padding-left: 1.6em;
+}
+
+.scientific-publications-list > li {
+   padding-bottom: 0.4em;
+}
+
+.scientific-publication-details {
+   margin-left: 0.9em;
+}
+
+.spacer {
+   height: 100px;
+   min-height: 100px;
+}
+
+#app {
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+}
+
+#publication-link {
+   text-decoration: underline;
+   color: orange;
+}
+
+#university-thesis-link {
+   text-decoration: underline;
+   color: orange;
+}
+
+#layout-footer {
+   height: 85px;
+   min-height: 85px;
+}
+
+
+.badge.journal {
+   background-color: #28a745; } /* green */
+.badge.conference {
+   background-color: #6f42c1; } /* purple */
+.badge.preprint {
+   background-color: #e83e8c; } /* pink 1 */
+.badge.phd-thesis {
+   background-color: #F5A65B; } /* orange */
+.badge.masters-thesis {
+   background-color: #AB4E68; } /* pink 2 */
+
+
+/* Tablet Style ***************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #presentation {
+        display: inherit;
+    }
+}
+
+
+/* Big Tabelt, small Desktop Style ********************************************/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}
+
+
+/* Desktop Style **************************************************************/
+@media only screen and (min-width: 981px) {
+    #content-container {
+        overflow-y: auto;
+    }
+}

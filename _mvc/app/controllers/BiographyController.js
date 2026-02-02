@@ -21,42 +21,41 @@ export class BiographyController {
     }
     
     async init() {
+        // TODO: add on top of the content a brief summary with some numbers in it.
         console.log('Bio Controller init triggered');
         
         // Loading the page CSS
         this.styleElement = document.createElement('link');
         this.styleElement.rel = 'stylesheet';
-        this.styleElement.href = '/assets/css/pages/biography/biography-style.css';
+        this.styleElement.href = '/_mvc/css/pages/biography/biography-style.css';
         document.head.appendChild(this.styleElement);
 
         // Injecting page content
-        this.root.innerHTML = this.view.getHtml();
-
+        this.root.innerHTML = this.view.getHtmlParagraph();
+        
         const headerContainer = document.querySelector('header');
         if (headerContainer) {
-            const res = await fetch('/_mvc/templates/pic-title-header.html');
-            const html = await res.text();
-            headerContainer.innerHTML = html;
+            headerContainer.innerHTML = await this.view.getHtml('/_mvc/templates/pic-title-header.html');
         }
 
         // Check if the navbar is disappeard during navigation
-        const navbarContainer = document.getElementById('layout-navbar');
+        const navbarContainer = document.querySelector('#landing-page-menu');
         if (navbarContainer && navbarContainer.getHTML() === "") {
-            console.log('Navbar is empty, loading partial ...');
-            const res = await fetch('/_mvc/templates/low-navbar.html');
-            const navbarHTML = await res.text();
-            navbarContainer.innerHTML = navbarHTML;
-            console.log('Navbar after html insertion: ', navbarContainer);
+            // console.log('Navbar is empty, loading partial ...');
+            navbarContainer.innerHTML = await this.view.getHtml('/_mvc/templates/low-navbar.html')
+            // console.log('Navbar after html insertion: ', navbarContainer);
         }
     }
     
-    // handleHomeMouseClick(event) {
-    //     // TODO: call here the router in the next iteration
-    //     alert("Ciao!");
-    //     console.log(event);
-    //     console.log('A click occured!');
-    //     event.preventDefault();
-    // }
+    // TODO: call this method in init()
+    async injectHtmlContent(selector, url) {
+        const container = document.querySelector(selector);
+        if (!container) return;
+
+        const res = await fetch(url);
+        const html = await res.text();
+        container.innerHTML = html;
+    }
 
     destroyStyle() {
         if (this.styleElement) {

@@ -13,25 +13,8 @@ export class BiographyView {
         // console.log(this.root);
     }
 
-    // renderWelcome() {
-    //     this.root.innerHTML = `
-    //         <section>
-    //             <h1>Benvenuto alla Biography!</h1>
-    //             <a href="/_mvc/index" data-link id="back-home">Torna alla home</a>
-    //         </section>
-    //     `;
-    // }
-
-    // render() {
-    //     this.getBody();
-    //     this.updateHeader();
-    // }
-
-    // updateHeader() {
-    //     console.log('Bio selector:\n', this.root);
-    // }
-
-    getHtml() {
+    getHtmlParagraph() {
+        // TODO: move the html content to a file
         // this.root.innerHTML = `
         return `
             <section id="content-container" class="section">
@@ -64,21 +47,16 @@ export class BiographyView {
                         Do you want to get in touch? Send me an 
                         <a class="link" id="contact-form-link" href="">email!</a>
                     </p>
-                    <br>
-                    <a id="back-home" href="/_mvc/index" data-link>Back to Home</a>
+                    <!--<br>
+                    <a id="back-home" href="/_mvc/index" data-link>Back to Home</a>-->
                 </div>
             </section>
         `;
     }
-    
-    async includePartial(selector, url) {
-        const container = document.querySelector(selector);
-        if (!container) return;
 
-        const res = await fetch(url);
+    async getHtml(path) {
+        const res = await fetch(path);
         const html = await res.text();
-        container.innerHTML = html;
-        // container.insertAdjacentHTML('beforeend', html);
+        return html;
     }
-
 }

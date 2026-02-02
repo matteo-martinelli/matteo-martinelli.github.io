@@ -9,17 +9,24 @@ export class HomeController {
     }
     
     async init() {
-        await Promise.all([
-            // this.view.renderWelcome();
-            this.view.render(),
-            // this.view.includePartial('#layout-navbar', '/_mvc/templates/low-navbar.html'),
-        ]);
-
         // Loading the page CSS
         this.styleElement = document.createElement('link');
         this.styleElement.rel = 'stylesheet';
-        this.styleElement.href = '/assets/css/pages/index-style.css';
+        this.styleElement.href = '/_mvc/css/pages/index-style.css';
         document.head.appendChild(this.styleElement);
+        
+        // Getting the content and injecting it
+        const appContainer = document.querySelector('#app');
+        if (appContainer) {
+            appContainer.innerHTML = await this.view.getHtml('/_mvc/templates/home-top-content.html');  
+            appContainer.insertAdjacentHTML('afterend', await this.view.getHtml('/_mvc/templates/spacer.html'));  
+        }
+        
+        // const layoutNavbarContainer = document.querySelector('#layout-navbar');
+        const layoutNavbarContainer = document.querySelector('#landing-page-menu');
+        if (layoutNavbarContainer) {
+            layoutNavbarContainer.innerHTML = await this.view.getHtml('/_mvc/templates/low-navbar.html');
+        }
     }
 
     destroyHeader() {
@@ -41,5 +48,4 @@ export class HomeController {
         this.destroyStyle();
         this.destroyHeader();        
     }
-
 }

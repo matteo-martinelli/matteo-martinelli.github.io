@@ -24,49 +24,46 @@ export class PublicationsController {
     }
     
     async init() {
-        console.log('Bio Controller init triggered');
+        console.log('Publications Controller init triggered');
 
         // Loading the page CSS
         this.styleElement = document.createElement('link');
         this.styleElement.rel = 'stylesheet';
-        this.styleElement.href = '/assets/css/pages/publications/publications-style.css';
+        this.styleElement.href = '/_mvc/css/pages/publications/publications-style.css';
         document.head.appendChild(this.styleElement);
-
-        const styles = document.head.getElementsByTagName('href');
-        console.log('styles href: ', styles);
 
         // Loading page information
         this.model.load();
-        console.log(this.model.publications);
 
         // Injecting page content
-        this.root.innerHTML = this.view.getHtml();
-
-        // const headerContainer = document.getElementById('header');
-        // if (headerContainer) {
-        //     const res = await fetch('/_mvc/templates/pic-title-header.html');
-        //     const html = await res.text();
-        //     headerContainer.innerHTML = html;
-        // }
+        this.root.innerHTML = this.view.getHtmlStructure();
 
         const headerContainer = document.querySelector('header');
         if (headerContainer) {
-            const res = await fetch('/_mvc/templates/pic-title-header.html');
-            const html = await res.text();
-            console.log(html);
-            headerContainer.innerHTML = html;
+            console.log('Loading header ...');
+            headerContainer.innerHTML = await this.view.getHtml('/_mvc/templates/pic-title-header.html');
+            console.log('Header loaded.')
         }
 
-        this.view.getPopulatedHtml(this.model.publications);
-
+        // Loading publications
+        this.view.renderScientificPublications(this.model.scientific_publications);
+        this.view.renderUniversityPubsHtml(this.model.university_thesis);
+        
+        const sec_separator = document.querySelector('#sections-separator-2');
+        // const footer_container = document.querySelector('#layout-footer');
+        if (sec_separator) {
+            console.log('Appending the footer ...');
+            // footer_container.innerHTML = await this.view.getHtml('/_mvc/templates/low-page-call-to-action.html');
+            sec_separator.insertAdjacentHTML('afterend', await this.view.getHtml('/_mvc/templates/low-page-call-to-action.html'));
+            console.log('Footer appended.');
+        }
+        
         // Check if the navbar is disappeard during navigation
-        const navbarContainer = document.getElementById('layout-navbar');
+        const navbarContainer = document.querySelector('#landing-page-menu');
         if (navbarContainer && navbarContainer.getHTML() === "") {
-            console.log('Navbar is empty, loading partial ...');
-            const res = await fetch('/_mvc/templates/low-navbar.html');
-            const navbarHTML = await res.text();
-            navbarContainer.innerHTML = navbarHTML;
-            console.log('Navbar after html insertion: ', navbarContainer);
+            console.log('Navbar is empty, loading it ...');
+            navbarContainer.innerHTML = await this.view.getHtml('/_mvc/templates/low-navbar.html');
+            console.log('Navbar loaded.');
         }
     }
 
@@ -75,6 +72,14 @@ export class PublicationsController {
 
         if (headerContainer) {
             headerContainer.innerHTML = '';
+        }
+    }
+
+    destroyFooter() {
+        const footerContainer = document.querySelector('#layout-footer');
+        
+        if (footerContainer) {
+            footerContainer.innerHTML = '';
         }
     }
 
@@ -87,6 +92,7 @@ export class PublicationsController {
 
     destroy() {
         this.destroyHeader();
+        this.destroyFooter();
         this.destroyStyle();
     }
 }

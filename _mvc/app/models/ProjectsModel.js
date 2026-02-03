@@ -4,8 +4,14 @@ export class ProjectsModel {
   }
 
   async load() {
-    const res = await fetch('/data/projects.json');
-    this.projects = await res.json();
+    const response = await fetch('/_mvc/data/db/industrial-projects.json');
+    console.log(response);
+    if (!response.ok) {
+      throw new Error('There was an error reading the file!');
+    }
+    const json_projects = await response.json();
+    const raw_projects = json_projects[0];
+    this.projects.push(raw_projects);
   }
 
   getAll() {

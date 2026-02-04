@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  height: 0px;
+  height: 2em;
 }
 
 .icon-buttons-box {
@@ -112,6 +112,10 @@ header {
 
 /* Desktop Style **************************************************************/
 @media only screen and (min-width: 981px) {
+  header {
+    height: 2em;
+  }
+  
   .icon-buttons-box {
     height: 72px;
     max-width: 280px;

@@ -17,7 +17,7 @@ export class PublicationsController {
         // this.root = rootSelector;
         this.root = document.querySelector(rootSelector);
         this.view = new PublicationsView(rootSelector);
-        this.model = new PublicationsModel()
+        this.model = new PublicationsModel();
         this.router = router;
         this.styleElement = null;
         console.log('Into Publications Controller');

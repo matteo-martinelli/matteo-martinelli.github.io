@@ -37,6 +37,14 @@ export class HomeController {
         }
     }
 
+    destroySpacer() {
+        const spacerContainer = document.getElementsByClassName('spacer');
+        
+        if (spacerContainer) {
+            spacerContainer[0].remove();
+        }
+    }
+
     destroyStyle() {
         if (this.styleElement) {
             this.styleElement.remove();
@@ -46,6 +54,7 @@ export class HomeController {
 
     destroy() {
         this.destroyStyle();
-        this.destroyHeader();        
+        this.destroyHeader();
+        this.destroySpacer();
     }
 }

@@ -1,7 +1,3 @@
-/*
-Unit Test: PublicationsModel.js
-*/
-
 import { PublicationsModel } from "../app/models/PublicationsModel.js";
 
 // Mocking a fetch function
@@ -21,7 +17,7 @@ global.fetch = async (url) => {
     if (url === '/assets/db/publications.json') {
         return {
             ok: true, 
-            json: async () => ([
+            json: async () => (
                 {
                     "scientific-articles": {
                         "a-multi-simulation-bridge-for-iot-digital-twins": {
@@ -53,7 +49,7 @@ global.fetch = async (url) => {
                         }
                     }
                 }
-            ]),
+            ),
         };
     }
 

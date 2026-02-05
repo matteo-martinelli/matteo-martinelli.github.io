@@ -21,7 +21,7 @@ global.fetch = async (url) => {
     if (url === '/_mvc/data/db/industrial-projects.json') {
         return {
             ok: true, 
-            json: async () => ([
+            json: async () => (
                 {
                     "dxf2plc-coordinates-extractor": {
                         "title": "DXF2PLC Coordinates Extractor 🤖",
@@ -44,7 +44,7 @@ global.fetch = async (url) => {
                         }
                     }
                 }
-            ]),
+            ),
         };
     }
 

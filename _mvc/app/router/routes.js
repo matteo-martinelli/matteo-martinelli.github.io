@@ -2,6 +2,7 @@ import { HomeController } from '../controllers/HomeController.js';
 import { BiographyController } from '../controllers/BiographyController.js';
 import { PublicationsController } from '../controllers/PublicationsController.js';
 import { ProjectsController } from '../controllers/ProjectsController.js';
+import { TrainingController } from '../controllers/TrainingController.js';
 
 // TODO: when updating paths, do the following: 
 // 1. Change routes.js paths (e.g., to /bio).
@@ -29,8 +30,8 @@ export const routes = [
     path: '/_mvc/projects',     // industrial projects
     controller: ProjectsController
   },
-  // {
-  //   path: '/_mvc/training',     // training activities
-  //   controller: TrainingController
-  // }
+  {
+    path: '/_mvc/training',     // training activities
+    controller: TrainingController
+  }
 ];

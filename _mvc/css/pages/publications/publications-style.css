@@ -22,15 +22,20 @@ body {
    margin-left: 0.9em;
 }
 
-.spacer {
+/* .spacer {
    height: 100px;
    min-height: 100px;
-}
+} */
 
 #app {
    display: flex;
    flex-direction: column;
    overflow-y: scroll;
+}
+
+#layout-footer {
+   height: 85px;
+   min-height: 85px;
 }
 
 #publication-link {
@@ -42,12 +47,6 @@ body {
    text-decoration: underline;
    color: orange;
 }
-
-#layout-footer {
-   height: 85px;
-   min-height: 85px;
-}
-
 
 .badge.journal {
    background-color: #28a745; } /* green */

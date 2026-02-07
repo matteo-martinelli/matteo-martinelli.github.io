@@ -4,6 +4,9 @@ Unit Test: TrainingModel.js
 
 import { TrainingModel } from "../app/models/TrainingModel.js";
 
+
+// TODO: Move the mocked data into a separated file; 
+// TODO: compute standard fields for the mocked data (i.e., for totalHoursTaught and totaStudentsTaught).
 // Mocking a fetch function
 global.fetch = async (url) => {
     console.log('[Mock fetch] Intercepted request to ${url}');

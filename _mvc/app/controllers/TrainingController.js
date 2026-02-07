@@ -1,5 +1,5 @@
 import { TrainingModel } from '../models/TrainingModel.js';
-import { TrainingViewView } from '../views/TrainingView.js';
+import { TrainingView } from '../views/TrainingView.js';
 
 export class TrainingController {
   constructor(rootSelector, router) {

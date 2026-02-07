@@ -177,7 +177,7 @@ async function runTest() {
     
     var testPassed = true;
 
-    // Inspecting fields
+    // ### Inspecting fields - START ###
     console.log('\n🔍 Inspecting fields', 
         '\n🔸 Inspecting model.trainingProjects; intial state:', model.trainingProjects, 
         '\n🔸 Inspecting model.totalHoursTaught; intial state:', model.totalHoursTaught, 
@@ -187,7 +187,7 @@ async function runTest() {
     // Testing load()
     await model.load();
     
-    // --- Inspecting model.trainingProjects - START ---
+    // Inspecting model.trainingProjects - START
     console.log(
         '🆗 model.trainingProjects has been loaded;',
         '\n💠 Checking model.trainingProjects after load: ',
@@ -212,11 +212,10 @@ async function runTest() {
     } else {
         console.log('❇️  No problems about the type so far!');
     }
-    // --- Inspecting model.trainingProjects - END ---
 
-    // --- Inspecting model.totalHoursTaught - START ---
+    // Inspecting model.totalHoursTaught
     console.log(
-        '\n💠 Checking model.totalHoursTaught after load: ', model.totalHoursTaught,
+        '\n💠 Checking model.totalHoursTaught after load: ',
         '\n🔹content is', model.totalHoursTaught,
         '\n🔹content type is', typeof(model.totalHoursTaught),
         '\n🔍 Check its correctness!'
@@ -238,9 +237,34 @@ async function runTest() {
     } else {
         console.log('❇️  No problems about the type so far!');
     }
-    // --- Inspecting model.totalHoursTaught - END ---
 
-    // --- Inspecting methods - START ---
+    // Inspecting model.totalStudentsTaught
+    console.log(
+        '\n💠 Checking model.totalStudentsTaught after load: ',
+        '\n🔹content is', model.totalStudentsTaught,
+        '\n🔹content type is', typeof(model.totalStudentsTaught),
+        '\n🔍 Check its correctness!'
+    );
+    // Field populated?
+    if (model.totalStudentsTaught == null) {
+        testPassed = false;
+        console.log('❗model.totalStudentsTaught is still empty❗');
+    } else {
+        console.log('❇️  No problems about the values so far!');
+    }
+    // Field of the correct type? 
+    if (typeof(model.totalStudentsTaught) != 'number') {
+        testPassed = false;
+        console.log(
+            '❗model.totalStudentsTaught is not a number!', 
+            'Received type is', typeof(model.totalStudentsTaught), '; check it out❗'
+        );
+    } else {
+        console.log('❇️  No problems about the type so far!');
+    }
+    // ### Inspecting fields - END ###
+
+    // ### Inspecting methods - START ###
     console.log('\n🔍Inspecting methods',
         '\n🔸 Inspecting model.getTotalTaughtHours();', 
         '\n🔸 Inspecting model.getAllTrainingProjects;'
@@ -273,9 +297,8 @@ async function runTest() {
     } else {
         console.log('❇️  No problems about the type so far!');
     }
-    // --- Inspecting methods - END ---
 
-    // --- Inspecting model.getTotalTaughtHours() - START ---
+    // Inspecting model.getTotalTaughtHours()
     console.log('\n➡️  Calling model.getAllTrainingProjects()');
 
     const allTrainingProjects = model.getAllTrainingProjects();
@@ -304,9 +327,38 @@ async function runTest() {
     } else {
         console.log('❇️  No problems about the type so far!');
     }
-    // --- Inspecting model.getTotalTaughtHours() - END ---
+    
+    // Inspecting model.getTotalTaughtStudents()
+    console.log('\n➡️  Calling model.getTotalTaughtStudents()');
 
+    const allTaughtStudents = model.getTotalTaughtStudents();
 
+    console.log(
+        '🆗 model.getTotalTaughtStudents() has been called;',
+        '\n💠 Checking model.getTotalTaughtStudents() after load: ',
+        '\n🔹Data from model.getTotalTaughtStudents(): ', allTaughtStudents,
+        '\n🔹Type of model.getTotalTaughtStudents(): ', typeof(allTaughtStudents)
+    );
+
+    if (allTaughtStudents === null)  {
+        testPassed = false;
+        console.log(
+            '❗Returned value of model.getTotalTaughtStudents() is', allTaughtStudents, 
+            '; check it out❗');
+    } else {
+        console.log('❇️  No problems about the value so far!');
+    }
+
+    if (typeof(allTaughtStudents) != 'number')  {
+        testPassed = false;
+        console.log(
+            '❗Returned type of model.getTotalTaughtStudents() is', typeof(allTaughtStudents), 
+            '; check it out❗');
+    } else {
+        console.log('❇️  No problems about the type so far!');
+    }
+    // ### Inspecting methods - END ###
+    
     // Global results
     console.log('\n🗒️  Test results:')
     if (testPassed) {

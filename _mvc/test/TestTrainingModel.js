@@ -168,41 +168,147 @@ global.fetch = async (url) => {
 async function runTest() {
     console.log('\n--- Starting test for TrainingModel ---');
 
+    const model = new TrainingModel();
+    console.log('Testing the class', model.constructor.name);
+    console.log('Fields under inspection are:');
+    Object.keys(model).forEach(field => console.log('🔹', field));
+    // console.log('Methods under inspection are:');
+    // Object.keys(model).forEach(field => console.log('🔹', field));
+    
     var testPassed = true;
 
-    const model = new TrainingModel();
-    console.log('Initial state of model.trainingProjects: ', model.trainingProjects);
-
+    // Inspecting fields
+    console.log('\n🔍 Inspecting fields', 
+        '\n🔸 Inspecting model.trainingProjects; intial state:', model.trainingProjects, 
+        '\n🔸 Inspecting model.totalHoursTaught; intial state:', model.totalHoursTaught, 
+        '\n➡️  Calling model.load() to fill model.trainingProjects'
+    );
+    
     // Testing load()
     await model.load();
-
-    console.log('Inspecting model.trainingProjects: ', model.trainingProjects);
-    console.log('Inspecting model.totalTaughtHours: ', model.totalHoursTaught);
-
-    if (model.trainingProjects == [] || model.totalHoursTaught === null) {
+    
+    // --- Inspecting model.trainingProjects - START ---
+    console.log(
+        '🆗 model.trainingProjects has been loaded;',
+        '\n💠 Checking model.trainingProjects after load: ',
+        '\n🔹content is', model.trainingProjects,
+        '\n🔹content type is', typeof(model.trainingProjects),
+        '\n🔍 Check its correctness!'
+    );
+    // Field populated?
+    if (model.trainingProjects == []) {
         testPassed = false;
-        console.log('model.totalTaughtHours is', model.totalHoursTaught);
+        console.log('❗model.trainingProjects is still empty❗');
+    } else {
+        console.log('❇️  No problems about the values so far!');
+    }
+    // Field of the correct type? 
+    if (typeof(model.trainingProjects) != 'object') {
+        testPassed = false;
+        console.log(
+            '❗model.trainingProjects is not an object!', 
+            'Received type is', typeof(model.trainingProjects), '; check it out❗'
+        );
+    } else {
+        console.log('❇️  No problems about the type so far!');
+    }
+    // --- Inspecting model.trainingProjects - END ---
+
+    // --- Inspecting model.totalHoursTaught - START ---
+    console.log(
+        '\n💠 Checking model.totalHoursTaught after load: ', model.totalHoursTaught,
+        '\n🔹content is', model.totalHoursTaught,
+        '\n🔹content type is', typeof(model.totalHoursTaught),
+        '\n🔍 Check its correctness!'
+    );
+    // Field populated?
+    if (model.totalHoursTaught == null) {
+        testPassed = false;
+        console.log('❗model.totalHoursTaught is still empty❗');
+    } else {
+        console.log('❇️  No problems about the values so far!');
+    }
+    // Field of the correct type? 
+    if (typeof(model.totalHoursTaught) != 'number') {
+        testPassed = false;
+        console.log(
+            '❗model.totalHoursTaught is not a number!', 
+            'Received type is', typeof(model.totalHoursTaught), '; check it out❗'
+        );
+    } else {
+        console.log('❇️  No problems about the type so far!');
+    }
+    // --- Inspecting model.totalHoursTaught - END ---
+
+    // --- Inspecting methods - START ---
+    console.log('\n🔍Inspecting methods',
+        '\n🔸 Inspecting model.getTotalTaughtHours();', 
+        '\n🔸 Inspecting model.getAllTrainingProjects;'
+    );
+
+    // Inspecting model.getTotalTaughtHours()
+    console.log('➡️  Calling model.getTotalTaughtHours()');
+
+    const totalTaughtHours = model.getTotalTaughtHours();
+    console.log(
+        '🆗 model.getTotalTaughtHours() has been called;',
+        '\n💠 Checking model.getTotalTaughtHours() after load: ',
+        '\n🔹Data from model.getTotalTaughtHours(): ', totalTaughtHours,
+        '\n🔹Type of model.getTotalTaughtHours(): ', typeof(totalTaughtHours)
+    );
+
+    if (totalTaughtHours === null)  {
+        testPassed = false;
+        console.log(
+            '❗Returned value of model.getTotalTaughtHours() is', totalTaughtHours, 
+            ', check it out!');
+    } else {
+        console.log('❇️  No problems about the value so far!');
     }
 
-    // Testing getAllTrainingProjects()
-    const allData = model.getAllTrainingProjects();
-    console.log('Data from model.getAll(): ', allData);
-
-    if (allData == []) {
+    if (typeof(totalTaughtHours) != 'number')  {
         testPassed = false;
-        console.log('model.getAll() is', allData);
+        console.log('❗Returned type of model.getTotalTaughtHours() is',
+             typeof(totalTaughtHours), '; check it out❗');
+    } else {
+        console.log('❇️  No problems about the type so far!');
+    }
+    // --- Inspecting methods - END ---
+
+    // --- Inspecting model.getTotalTaughtHours() - START ---
+    console.log('\n➡️  Calling model.getAllTrainingProjects()');
+
+    const allTrainingProjects = model.getAllTrainingProjects();
+
+    console.log(
+        '🆗 model.getAllTrainingProjects() has been called;',
+        '\n💠 Checking model.getAllTrainingProjects() after load: ',
+        '\n🔹Data from model.getAllTrainingProjects(): ', allTrainingProjects,
+        '\n🔹Type of model.getAllTrainingProjects(): ', typeof(allTrainingProjects)
+    );
+
+    if (allTrainingProjects === null)  {
+        testPassed = false;
+        console.log(
+            '❗Returned value of model.getAllTrainingProjects() is', totalTaughtHours, 
+            '; check it out❗');
+    } else {
+        console.log('❇️  No problems about the value so far!');
     }
 
-    // Testing getTotalTaughtHours
-    var totalTaughtHours = model.getTotalTaughtHours();
-    console.log('Data from model.getTotalTaughtHours(): ', totalTaughtHours);
-    console.log('Type of model.getTotalTaughtHours(): ', typeof(totalTaughtHours));
-
-    if (totalTaughtHours === null) {
+    if (typeof(allTrainingProjects) != 'object')  {
         testPassed = false;
-        console.log('model.getTotalTaughtHours() is', totalTaughtHours);
+        console.log(
+            '❗Returned type of model.getAllTrainingProjects() is', typeof(totalTaughtHours), 
+            '; check it out❗');
+    } else {
+        console.log('❇️  No problems about the type so far!');
     }
+    // --- Inspecting model.getTotalTaughtHours() - END ---
 
+
+    // Global results
+    console.log('\n🗒️  Test results:')
     if (testPassed) {
         console.log('✅ Test PASSED');
     } else {

@@ -35,16 +35,11 @@ export class TrainingModel {
 
   getTotalTaughtStudents() {
     var cumulated_students = 0;
-    console.log(' -> Taught students: first value:', cumulated_students);
     for (var course in this.trainingProjects) {
-      console.log(' -> Inspecting the following course:', this.trainingProjects[course]);
       for (var edition in this.trainingProjects[course]['editions']){
-        console.log(' -> Inspecting the following edition:', this.trainingProjects[course]['editions'][edition]);
         cumulated_students = cumulated_students + Number(this.trainingProjects[course]['editions'][edition].participants_count);
-        console.log(' -> Update:', cumulated_students);
       }
     }
-    console.log(' -> Final value:', cumulated_students);
     return cumulated_students;
   }
 

@@ -99,7 +99,7 @@ function editionTitleBuilder(ed_start, ed_end) {
 }
 
 
-    function editionDescriptionBuilder(ed_delivery, ed_location, ed_participants) {
+function editionDescriptionBuilder(ed_delivery, ed_location, ed_participants) {
     var edition_description_string = 'The edition had ' + ed_participants + ' participants';
     if (ed_delivery == 'remote') {
         edition_description_string = edition_description_string + ' and was delivered remotely. '

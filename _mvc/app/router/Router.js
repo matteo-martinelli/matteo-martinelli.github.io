@@ -32,10 +32,19 @@ export class Router {
             this.handleRoute(path);
         })
 
-        // Delegation of clicks on links <a data-link>...</a>: here is added a listener to all clicks performed
+        // TODO: move the click-listeners to specific pages, expection made for the global website navigation
+        // Delegation of clicks on links <a data-link>...</a> and others: here is added a listener to all clicks performed
         // in the page. It listens to click for navigation. It is possible to move this centralized approach to 
         // single Controllers in case of more granular-custom behaviour.
         document.addEventListener('click', (event) => {
+            // Handling the contact button click globally
+            const contactButton = event.target.closest('#contacts-page');
+            if (contactButton) {
+                event.preventDefault();
+                alert('Write me at matteo.martinelli.1991@gmail.com!');
+                return;
+            }
+
             // Getting the link element
             const link = event.target.closest('a[data-link]');
             // Checking its content; handled only if the event comes from a nav-bar button

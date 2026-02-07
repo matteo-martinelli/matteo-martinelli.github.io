@@ -5,8 +5,8 @@ export class TrainingController {
   constructor(rootSelector, router) {
     // this.root = rootSelector;
     this.root = document.querySelector(rootSelector);
-    this.view = new ProjectsView('#projects-list');
-    this.model = new ProjectsModel();
+    this.view = new TrainingView('#app');
+    this.model = new TrainingModel();
     this.router = router;
     this.styleElement = null;
     console.log('Into Training Controller');
@@ -22,10 +22,10 @@ export class TrainingController {
     document.head.appendChild(this.styleElement);
 
     // Loading page information
-    // await this.model.load();
+    await this.model.load();
     
     // Injecting page content
-    // this.root.innerHTML = this.view.getHtmlStructure();
+    this.root.innerHTML = this.view.getHtmlStructure();
 
     const headerContainer = document.querySelector('header');
     if (headerContainer) {
@@ -35,13 +35,11 @@ export class TrainingController {
     }
 
     // Loading projects
-    // this.view.renderIndustrialProjects(this.model.industrialProjects);
-    // this.view.renderUniversityProjects(this.model.scientificProjects);
+    this.view.renderCourseProjects(this.model.trainingProjects, this.model.totalStudentsTaught, this.model.totalHoursTaught);
 
-    const sec_separator = document.querySelector('#sections-separator-2');
+    const sec_separator = document.querySelector('#sections-separator');
     if (sec_separator) {
         console.log('Appending the footer ...');
-        // footer_container.innerHTML = await this.view.getHtml('/_mvc/templates/low-page-call-to-action.html');
         sec_separator.insertAdjacentHTML('afterend', await this.view.getHtml('/_mvc/templates/low-page-call-to-action.html'));
         console.log('Footer appended.');
     }

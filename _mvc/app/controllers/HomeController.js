@@ -1,10 +1,12 @@
 import { HomeView } from "../views/HomeView.js";
+import { HomeModel } from "../models/HomeModel.js";
 
 
 // TODO: move all the parts inserting HTML here and there in the view section.
 export class HomeController {
     constructor(rootSelector, router) {
         this.view = new HomeView(rootSelector);
+        this.model = new HomeModel();
         this.router = router;
         this.styleElement = null;
         console.log('Into Home Controller')
@@ -24,7 +26,6 @@ export class HomeController {
             appContainer.insertAdjacentHTML('afterend', await this.view.getHtml('/_mvc/templates/spacer.html'));  
         }
         
-        // const layoutNavbarContainer = document.querySelector('#layout-navbar');
         const layoutNavbarContainer = document.querySelector('#landing-page-menu');
         if (layoutNavbarContainer) {
             layoutNavbarContainer.innerHTML = await this.view.getHtml('/_mvc/templates/low-navbar.html');

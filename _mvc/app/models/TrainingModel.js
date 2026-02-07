@@ -7,7 +7,8 @@ export class TrainingModel {
 
   async load() {
     await this.loadTrainingProjects();
-    this.getTotalTaughtHours();
+    this.totalHoursTaught = this.getTotalTaughtHours();
+    this.totalStudentsTaught = this.getTotalTaughtStudents();
   }
 
 // TODO: move DB links at the top of the page as constants
@@ -18,23 +19,33 @@ export class TrainingModel {
       throw new Error('There was an error reading the file!');
     }
     const json_projects = await response.json();
-    // console.log('Extracted response:', json_projects);
     const raw_projects = json_projects['course-projects'];
-    // console.log('Training projects:', raw_projects);
     for (var elem in raw_projects) {
-        // console.log('Adding elem', raw_projects[elem], 'to the array ...');
         this.trainingProjects.push(raw_projects[elem]);
-        // console.log('Elem', raw_projects[elem], 'added!');
     }
-    // console.log('Populated field:', this.trainingProjects);
   }
 
   getTotalTaughtHours() {
     var cumulated_hours = 0;
     for (var course in this.trainingProjects) {
-        cumulated_hours = cumulated_hours + Number(this.trainingProjects[course].total_taught_hours.value);
+      cumulated_hours = cumulated_hours + Number(this.trainingProjects[course].total_taught_hours.value);
     }
     return cumulated_hours;
+  }
+
+  getTotalTaughtStudents() {
+    var cumulated_students = 0;
+    console.log(' -> Taught students: first value:', cumulated_students);
+    for (var course in this.trainingProjects) {
+      console.log(' -> Inspecting the following course:', this.trainingProjects[course]);
+      for (var edition in this.trainingProjects[course]['editions']){
+        console.log(' -> Inspecting the following edition:', this.trainingProjects[course]['editions'][edition]);
+        cumulated_students = cumulated_students + Number(this.trainingProjects[course]['editions'][edition].participants_count);
+        console.log(' -> Update:', cumulated_students);
+      }
+    }
+    console.log(' -> Final value:', cumulated_students);
+    return cumulated_students;
   }
 
   getAllTrainingProjects() {

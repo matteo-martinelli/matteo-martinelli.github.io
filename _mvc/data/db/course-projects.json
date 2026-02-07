@@ -87,7 +87,7 @@
             "from": "2025-12",
             "to": "2025-12",
             "total_taught_hours": {
-                "value": 24,
+                "value": 12,
                 "unit": "hours"
             },
             "notes": null,
@@ -99,7 +99,7 @@
                     "delivery_mode": "remote",
                     "location": "Reggio nell'Emilia",
                     "total_hours": {
-                        "value": 24,
+                        "value": 12,
                         "unit": "hours"
                     },
                     "participants_count": 8,
@@ -197,7 +197,7 @@
             "from": "2024-11",
             "to": "2027-12",
             "total_taught_hours": {
-                "value": null,
+                "value": 312,
                 "unit": "hours"
             },
             "notes": null,
@@ -303,7 +303,7 @@
                     "delivery_mode": "in-person",
                     "location": "Reggio nell'Emilia",
                     "total_hours": {
-                        "value": null,
+                        "value": 156,
                         "unit": "hours"
                     },
                     "participants_count": 25,

@@ -32,9 +32,9 @@ export class TrainingView {
         
         // Setting an introduction content
         var total_students = document.createElement('b');
-        total_students.textContent = `${Math.floor(totalStudents/10)*10}+`;     // TODO: make it clearer
+        total_students.textContent = `${Math.floor(totalStudents/10)*10}+`;     // Rounding down using a mathematical expression
         var total_hours = document.createElement('b');
-        total_hours.textContent = `${Math.floor(totalHours/10)*10}`;            // TODO: make it clearer
+        total_hours.textContent = `${Math.floor(totalHours/10)*10}`;            // Rounding down using a mathematical expression
         var intro_par = document.createElement('p');
         intro_par.id = 'training-intro';
         intro_par.innerHTML = 

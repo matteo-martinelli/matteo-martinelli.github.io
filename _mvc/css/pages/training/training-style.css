@@ -32,6 +32,17 @@ body {
     margin-bottom: 0.4em
 }
 
+#app {
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+}
+
+#layout-footer {
+   height: 85px;
+   min-height: 85px;
+}
+
 #content-container {
     display: flex;
     flex-direction: column;

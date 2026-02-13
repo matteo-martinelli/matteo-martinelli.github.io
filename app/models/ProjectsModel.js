@@ -34,11 +34,9 @@ export class ProjectsModel {
     const json_projects = await response.json();
     console.log('Extracted response:', json_projects);
     const raw_projects = json_projects['scientific-projects'];
-    // console.log('Scientific projects:', raw_projects);
     for (var elem in raw_projects) {
       this.scientificProjects.push(raw_projects[elem]);
     }
-    // console.log(this.scientificProjects);
   }
 
   getAll() {

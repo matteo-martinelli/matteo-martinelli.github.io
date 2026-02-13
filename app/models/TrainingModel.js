@@ -11,7 +11,7 @@ export class TrainingModel {
     this.totalStudentsTaught = this.getTotalTaughtStudents();
   }
 
-// TODO: move DB links at the top of the page as constants
+  // TODO: move DB links at the top of the page as constants
   async loadTrainingProjects(path='/data/db/course-projects.json') {
     const response = await fetch(path);
     console.log('Fetched response:', response);

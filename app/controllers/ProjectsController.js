@@ -41,7 +41,6 @@ export class ProjectsController {
     const sec_separator = document.querySelector('#sections-separator-2');
     if (sec_separator) {
         console.log('Appending the footer ...');
-        // footer_container.innerHTML = await this.view.getHtml('/templates/low-page-call-to-action.html');
         sec_separator.insertAdjacentHTML('afterend', await this.view.getHtml('/templates/low-page-call-to-action.html'));
         console.log('Footer appended.');
     }

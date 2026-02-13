@@ -5,8 +5,6 @@ Unit Test: TrainingModel.js
 import { TrainingModel } from "../app/models/TrainingModel.js";
 
 
-// TODO: Move the mocked data into a separated file; 
-// TODO: compute standard fields for the mocked data (i.e., for totalHoursTaught and totaStudentsTaught).
 // Mocking a fetch function
 global.fetch = async (url) => {
     console.log('[Mock fetch] Intercepted request to ${url}');
@@ -175,8 +173,6 @@ async function runTest() {
     console.log('Testing the class', model.constructor.name);
     console.log('Fields under inspection are:');
     Object.keys(model).forEach(field => console.log('🔹', field));
-    // console.log('Methods under inspection are:');
-    // Object.keys(model).forEach(field => console.log('🔹', field));
     
     var testPassed = true;
 
@@ -190,7 +186,7 @@ async function runTest() {
     // Testing load()
     await model.load();
     
-    // Inspecting model.trainingProjects - START
+    // ### Inspecting model.trainingProjects ###
     console.log(
         '🆗 model.trainingProjects has been loaded;',
         '\n💠 Checking model.trainingProjects after load: ',
@@ -216,7 +212,7 @@ async function runTest() {
         console.log('❇️  No problems about the type so far!');
     }
 
-    // Inspecting model.totalHoursTaught
+    // ### Inspecting model.totalHoursTaught ###
     console.log(
         '\n💠 Checking model.totalHoursTaught after load: ',
         '\n🔹content is', model.totalHoursTaught,
@@ -241,7 +237,7 @@ async function runTest() {
         console.log('❇️  No problems about the type so far!');
     }
 
-    // Inspecting model.totalStudentsTaught
+    // ### Inspecting model.totalStudentsTaught ###
     console.log(
         '\n💠 Checking model.totalStudentsTaught after load: ',
         '\n🔹content is', model.totalStudentsTaught,
@@ -273,7 +269,7 @@ async function runTest() {
         '\n🔸 Inspecting model.getAllTrainingProjects;'
     );
 
-    // Inspecting model.getTotalTaughtHours()
+    // ### Inspecting model.getTotalTaughtHours() ###
     console.log('➡️  Calling model.getTotalTaughtHours()');
 
     const totalTaughtHours = model.getTotalTaughtHours();
@@ -301,7 +297,7 @@ async function runTest() {
         console.log('❇️  No problems about the type so far!');
     }
 
-    // Inspecting model.getTotalTaughtHours()
+    // ### Inspecting model.getTotalTaughtHours() ###
     console.log('\n➡️  Calling model.getAllTrainingProjects()');
 
     const allTrainingProjects = model.getAllTrainingProjects();
@@ -331,7 +327,7 @@ async function runTest() {
         console.log('❇️  No problems about the type so far!');
     }
     
-    // Inspecting model.getTotalTaughtStudents()
+    // ### Inspecting model.getTotalTaughtStudents() ###
     console.log('\n➡️  Calling model.getTotalTaughtStudents()');
 
     const allTaughtStudents = model.getTotalTaughtStudents();

@@ -60,6 +60,7 @@ global.fetch = async (url) => {
 }
 
 async function runTest() {
+    // TODO: Follow the TestTrainingModel.js setup: first test fields, then methods.
     console.log('\n--- Starting test for PublicationModel ---');
 
     const model = new PublicationsModel();

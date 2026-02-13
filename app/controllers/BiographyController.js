@@ -41,13 +41,12 @@ export class BiographyController {
         // Check if the navbar is disappeard during navigation
         const navbarContainer = document.querySelector('#landing-page-menu');
         if (navbarContainer && navbarContainer.getHTML() === "") {
-            // console.log('Navbar is empty, loading partial ...');
+            console.log('Navbar is empty, loading partial ...');
             navbarContainer.innerHTML = await this.view.getHtml('/templates/low-navbar.html')
-            // console.log('Navbar after html insertion: ', navbarContainer);
+            console.log('Navbar after html insertion: ', navbarContainer);
         }
     }
     
-    // TODO: call this method in init()
     async injectHtmlContent(selector, url) {
         const container = document.querySelector(selector);
         if (!container) return;

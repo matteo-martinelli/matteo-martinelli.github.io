@@ -50,10 +50,8 @@ export class PublicationsController {
         this.view.renderUniversityPubsHtml(this.model.university_thesis);
         
         const sec_separator = document.querySelector('#sections-separator-2');
-        // const footer_container = document.querySelector('#layout-footer');
         if (sec_separator) {
             console.log('Appending the footer ...');
-            // footer_container.innerHTML = await this.view.getHtml('/templates/low-page-call-to-action.html');
             sec_separator.insertAdjacentHTML('afterend', await this.view.getHtml('/templates/low-page-call-to-action.html'));
             console.log('Footer appended.');
         }

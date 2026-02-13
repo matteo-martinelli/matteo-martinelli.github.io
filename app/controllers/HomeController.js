@@ -2,7 +2,6 @@ import { HomeView } from "../views/HomeView.js";
 import { HomeModel } from "../models/HomeModel.js";
 
 
-// TODO: move all the parts inserting HTML here and there in the view section.
 export class HomeController {
     constructor(rootSelector, router) {
         this.view = new HomeView(rootSelector);

@@ -14,7 +14,7 @@ global.fetch = async (url) => {
         };
     }
 
-    if (url === '/assets/db/publications.json') {
+    if (url === '/data/db/publications.json') {
         return {
             ok: true, 
             json: async () => (

@@ -26,20 +26,20 @@ global.fetch = async (url) => {
                     "dxf2plc-coordinates-extractor": {
                         "title": "DXF2PLC Coordinates Extractor 🤖",
                         "links": {
-                            "presentation-link": "/assets/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
-                            "essay-link": "/assets/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
+                            "presentation-link": "/data/docs/dxf2plc/dxf2plc-presentation-website_version.pdf",
+                            "essay-link": "/data/docs/dxf2plc/dxf2plc-essay-website_version.pdf"
                         }
                     },
                     "assembly-line-redesign": {
                         "title": "Assembly Line Redesign 🧑🏽‍🏭",
                         "links": {
-                            "presentation-link": "/assets/docs/assembly_line_redesign/assembly_line_redesign-presentation-website_version.pdf"
+                            "presentation-link": "/data/docs/assembly_line_redesign/assembly_line_redesign-presentation-website_version.pdf"
                         }
                     },
                     "intelligent-poka-yoke": {
                         "title": "Intelligent Poka Yoke 📹",
                         "links":{
-                            "presentation-link": "/assets/docs/intelligent-poka-yoke/intelligent_poka_yoke-presentation-website_version.pdf",
+                            "presentation-link": "/data/docs/intelligent-poka-yoke/intelligent_poka_yoke-presentation-website_version.pdf",
                             "scientific-article-link": "https://www.mdpi.com/2076-3417/12/21/11071"
                         }
                     }

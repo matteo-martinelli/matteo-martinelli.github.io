@@ -40,7 +40,7 @@ export class BiographyView {
                     
                     <p id="bio-par-sec">
                         Do you want to know more about me? 
-                        <a class="link" id="cv-download" href="/data/docs/cv/CV 5.0 - Matteo Martinelli.pdf" target="_blank" rel="noopener noreferrer">
+                        <a class="link" id="cv-download" href="/data/docs/cv/CV 5.2 - Matteo Martinelli.pdf" target="_blank" rel="noopener noreferrer">
                             Download my CV!
                         </a> 
                         📜<br>

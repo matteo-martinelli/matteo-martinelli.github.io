@@ -41,7 +41,7 @@ export class Router {
             const contactButton = event.target.closest('#contacts-page');
             if (contactButton) {
                 event.preventDefault();
-                alert('Write me at matteo.martinelli.1991@gmail.com!');
+                alert('Write me at mmartinelli@ik.me!');
                 return;
             }
 
